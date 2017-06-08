@@ -2174,8 +2174,6 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 </module>
 </modules>
 <parts>
-<part name="C_LED" library="led" deviceset="LED" device="3MM"/>
-<part name="B_LED" library="led" deviceset="LED" device="3MM"/>
 <part name="XOR_LED" library="led" deviceset="LED" device="3MM"/>
 <part name="OR_LED" library="led" deviceset="LED" device="3MM"/>
 <part name="AND_LED" library="led" deviceset="LED" device="3MM"/>
@@ -2197,8 +2195,6 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <moduleinst name="LOGIC_BLOCK1" module="LOGIC_BLOCK" x="71.12" y="58.42"/>
 </moduleinsts>
 <instances>
-<instance part="C_LED" gate="G$1" x="40.64" y="45.72"/>
-<instance part="B_LED" gate="G$1" x="40.64" y="68.58" rot="R180"/>
 <instance part="XOR_LED" gate="G$1" x="99.06" y="45.72" rot="R90"/>
 <instance part="OR_LED" gate="G$1" x="99.06" y="53.34" rot="R90"/>
 <instance part="AND_LED" gate="G$1" x="99.06" y="60.96" rot="R90"/>
@@ -2235,18 +2231,12 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <junction x="2.54" y="50.8"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="68.58" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="60.96" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="58.42" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="53.34" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="45.72" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="B_LED" gate="G$1" pin="C"/>
 <pinref part="NOT_LED" gate="G$1" pin="C"/>
 <wire x1="104.14" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
-<junction x="109.22" y="68.58"/>
 <pinref part="AND_LED" gate="G$1" pin="C"/>
 <wire x1="104.14" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <junction x="109.22" y="60.96"/>
@@ -2255,8 +2245,6 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <junction x="109.22" y="53.34"/>
 <pinref part="XOR_LED" gate="G$1" pin="C"/>
 <wire x1="104.14" y1="45.72" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
-<junction x="109.22" y="45.72"/>
-<pinref part="C_LED" gate="G$1" pin="C"/>
 <pinref part="GND2" gate="1" pin="GNDA"/>
 <wire x1="114.3" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
 <junction x="109.22" y="58.42"/>
@@ -2271,24 +2259,17 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <net name="B" class="0">
 <segment>
 <portref moduleinst="LOGIC_BLOCK1" port="B"/>
-<wire x1="40.64" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <junction x="50.8" y="66.04"/>
-<pinref part="B_LED" gate="G$1" pin="A"/>
 <pinref part="B_SWTCH" gate="&gt;PART" pin="S"/>
-<wire x1="27.94" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
-<junction x="40.64" y="66.04"/>
+<wire x1="27.94" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C" class="0">
 <segment>
 <portref moduleinst="LOGIC_BLOCK1" port="C"/>
-<wire x1="27.94" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
 <pinref part="C_SWTCH" gate="&gt;PART" pin="S"/>
-<pinref part="C_LED" gate="G$1" pin="A"/>
-<wire x1="40.64" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<junction x="40.64" y="50.8"/>
 </segment>
 </net>
 <net name="AND" class="0">
