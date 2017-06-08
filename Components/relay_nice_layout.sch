@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -372,7 +372,7 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="73.66" y="17.78" rot="R90"/>
-<instance part="R1" gate="1" x="63.5" y="17.78" rot="R90"/>
+<instance part="R1" gate="1" x="63.5" y="17.78" rot="MR90"/>
 <instance part="R1" gate="2" x="60.96" y="68.58" rot="MR90"/>
 <instance part="R1" gate="3" x="60.96" y="55.88" rot="MR90"/>
 <instance part="R1" gate="4" x="60.96" y="43.18" rot="MR90"/>
@@ -383,8 +383,7 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <nets>
 <net name="GNDA" class="0">
 <segment>
-<pinref part="R1" gate="1" pin="2"/>
-<junction x="68.58" y="17.78"/>
+<pinref part="R1" gate="1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GNDA"/>
 <wire x1="68.58" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 </segment>
