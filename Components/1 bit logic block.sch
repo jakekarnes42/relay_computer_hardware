@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -398,12 +398,12 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <instance part="GND2" gate="1" x="96.52" y="20.32" rot="R90"/>
 <instance part="GND1" gate="1" x="96.52" y="91.44" rot="R90"/>
 <instance part="P+1" gate="1" x="66.04" y="116.84" rot="R90"/>
-<instance part="R1" gate="1" x="86.36" y="91.44" rot="R90"/>
+<instance part="R1" gate="1" x="83.82" y="91.44" rot="MR90"/>
 <instance part="R1" gate="2" x="83.82" y="142.24" rot="MR90"/>
 <instance part="R1" gate="3" x="83.82" y="129.54" rot="MR90"/>
 <instance part="R1" gate="4" x="83.82" y="116.84" rot="MR90"/>
 <instance part="R1" gate="5" x="83.82" y="104.14" rot="MR90"/>
-<instance part="R2" gate="1" x="86.36" y="20.32" rot="R90"/>
+<instance part="R2" gate="1" x="86.36" y="20.32" rot="MR90"/>
 <instance part="R2" gate="2" x="83.82" y="71.12" rot="MR90"/>
 <instance part="R2" gate="3" x="83.82" y="58.42" rot="MR90"/>
 <instance part="R2" gate="4" x="83.82" y="45.72" rot="MR90"/>
@@ -414,34 +414,28 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <nets>
 <net name="GNDA" class="0">
 <segment>
-<pinref part="R1" gate="1" pin="2"/>
-<junction x="91.44" y="91.44"/>
-<pinref part="GND1" gate="1" pin="GNDA"/>
-<wire x1="91.44" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GNDA"/>
+<wire x1="93.98" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R2" gate="1" pin="1"/>
 </segment>
 <segment>
-<pinref part="GND2" gate="1" pin="GNDA"/>
-<pinref part="R2" gate="1" pin="2"/>
-<wire x1="93.98" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
-<junction x="91.44" y="20.32"/>
+<pinref part="R1" gate="1" pin="1"/>
+<wire x1="88.9" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GNDA"/>
 </segment>
 </net>
 <net name="B" class="0">
 <segment>
-<wire x1="55.88" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 <label x="58.42" y="93.98" size="1.778" layer="95"/>
-<pinref part="R1" gate="1" pin="1"/>
-<wire x1="60.96" y1="91.44" x2="78.327596875" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="91.44" x2="78.327596875" y2="91.44" width="0.1524" layer="91"/>
-<junction x="81.28" y="91.44"/>
+<wire x1="55.88" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R1" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="C" class="0">
 <segment>
 <label x="63.5" y="22.86" size="1.778" layer="95" rot="R180"/>
-<pinref part="R2" gate="1" pin="1"/>
 <wire x1="60.96" y1="20.32" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
-<junction x="81.28" y="20.32"/>
+<pinref part="R2" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -454,17 +448,16 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <junction x="73.66" y="116.84"/>
 <junction x="73.66" y="104.14"/>
 <wire x1="73.66" y1="116.84" x2="73.66" y2="120.4952875" width="0.1524" layer="91"/>
-<pinref part="R1" gate="5" pin="P"/>
 <wire x1="73.66" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
 <junction x="73.66" y="116.84"/>
-<pinref part="R1" gate="4" pin="P"/>
 <wire x1="73.66" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <junction x="73.66" y="129.54"/>
-<pinref part="R1" gate="3" pin="P"/>
 <wire x1="73.66" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R2" gate="3" pin="P"/>
 <wire x1="81.28" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<junction x="81.28" y="58.42"/>
+<pinref part="R1" gate="5" pin="P"/>
+<pinref part="R1" gate="4" pin="P"/>
+<pinref part="R1" gate="3" pin="P"/>
+<pinref part="R2" gate="3" pin="P"/>
 </segment>
 </net>
 <net name="XOR" class="0">
@@ -472,21 +465,17 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <label x="127" y="27.94" size="1.778" layer="95" rot="R180"/>
-<pinref part="R2" gate="4" pin="P"/>
 <wire x1="81.28" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<junction x="81.28" y="45.72"/>
+<pinref part="R2" gate="4" pin="P"/>
 </segment>
 </net>
 <net name="AND" class="0">
 <segment>
-<wire x1="78.74" y1="76.2" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="78.74" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 <label x="127" y="86.36" size="1.778" layer="95" rot="R180"/>
-<pinref part="R2" gate="2" pin="P"/>
-<junction x="81.28" y="71.12"/>
 <wire x1="81.28" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="71.12" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="71.12" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R2" gate="2" pin="P"/>
 </segment>
 </net>
 <net name="NOT" class="0">
@@ -494,60 +483,45 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <label x="127" y="111.76" size="1.778" layer="95" rot="R180"/>
 <wire x1="88.9" y1="109.22" x2="127" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="5" pin="O"/>
-<junction x="88.9" y="109.22"/>
 </segment>
 </net>
 <net name="OR" class="0">
 <segment>
-<label x="127" y="66.04" size="1.778" layer="95" rot="R180"/>
-<wire x1="109.22" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="111.76" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R1" gate="4" pin="S"/>
-<junction x="88.9" y="111.76"/>
+<label x="127" y="55.88" size="1.778" layer="95" rot="R180"/>
+<wire x1="109.22" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R2" gate="3" pin="O"/>
-<junction x="88.9" y="63.5"/>
-<wire x1="88.9" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
-<junction x="109.22" y="63.5"/>
+<pinref part="R1" gate="4" pin="S"/>
+<pinref part="R2" gate="3" pin="S"/>
+<wire x1="88.9" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<junction x="109.22" y="53.34"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R2" gate="3" pin="S"/>
-<junction x="88.9" y="53.34"/>
-<pinref part="R1" gate="3" pin="S"/>
-<junction x="88.9" y="124.46"/>
-<wire x1="94.392403125" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="53.34" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="50.8" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="53.34" x2="94.392403125" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R1" gate="3" pin="S"/>
+<pinref part="R2" gate="4" pin="O"/>
+<wire x1="88.9" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="R2" gate="4" pin="S"/>
-<junction x="88.9" y="40.64"/>
-<pinref part="R1" gate="2" pin="S"/>
-<junction x="88.9" y="137.16"/>
-<wire x1="119.38" y1="137.16" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="45.72" x2="119.38" y2="41.7552875" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="134.62" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="40.64" x2="119.38" y2="41.7552875" width="0.1524" layer="91"/>
+<pinref part="R2" gate="4" pin="S"/>
+<pinref part="R1" gate="3" pin="O"/>
+<wire x1="88.9" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R1" gate="5" pin="S"/>
-<junction x="88.9" y="99.06"/>
-<wire x1="89.312403125" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="99.06" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R2" gate="2" pin="S"/>
 <wire x1="88.9" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="99.06" x2="89.312403125" y2="99.06" width="0.1524" layer="91"/>
-<junction x="88.9" y="66.04"/>
+<pinref part="R1" gate="5" pin="S"/>
+<pinref part="R2" gate="2" pin="S"/>
 </segment>
 </net>
 </nets>
@@ -555,7 +529,7 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 </sheets>
 <errors>
 <approved hash="106,1,81.28,71.12,AND,,,,,"/>
-<approved hash="106,1,81.28,91.44,B,,,,,"/>
+<approved hash="106,1,78.74,91.44,B,,,,,"/>
 <approved hash="106,1,81.28,20.32,C,,,,,"/>
 <approved hash="106,1,88.9,109.22,NOT,,,,,"/>
 <approved hash="106,1,81.28,45.72,XOR,,,,,"/>
