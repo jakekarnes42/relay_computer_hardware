@@ -2192,7 +2192,7 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="LOGIC_BLOCK1" module="LOGIC_BLOCK" x="71.12" y="58.42"/>
+<moduleinst name="LOGIC_BLOCK1" module="LOGIC_BLOCK" x="66.04" y="58.42"/>
 </moduleinsts>
 <instances>
 <instance part="XOR_LED" gate="G$1" x="99.06" y="45.72" rot="R90"/>
@@ -2203,7 +2203,7 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <instance part="PWR" gate="-2" x="0" y="58.42" rot="R180"/>
 <instance part="GND1" gate="1" x="5.08" y="45.72"/>
 <instance part="B_SWTCH" gate="&gt;PART" x="22.86" y="66.04" rot="R270"/>
-<instance part="C_SWTCH" gate="&gt;PART" x="22.86" y="50.8" rot="R270"/>
+<instance part="C_SWTCH" gate="&gt;PART" x="22.86" y="50.8" rot="R90"/>
 <instance part="GND2" gate="1" x="116.84" y="58.42" rot="R90"/>
 <instance part="GND3" gate="1" x="45.72" y="55.88"/>
 <instance part="P+1" gate="1" x="5.08" y="63.5"/>
@@ -2215,11 +2215,9 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <net name="NOT" class="0">
 <segment>
 <portref moduleinst="LOGIC_BLOCK1" port="NOT"/>
-<wire x1="91.44" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="NOT_LED" gate="G$1" pin="A"/>
 <wire x1="96.52" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<junction x="91.44" y="66.04"/>
+<wire x1="91.44" y1="68.58" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -2252,50 +2250,40 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <segment>
 <pinref part="GND3" gate="1" pin="GNDA"/>
 <portref moduleinst="LOGIC_BLOCK1" port="GNDA"/>
-<wire x1="45.72" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
-<junction x="50.8" y="58.42"/>
+<junction x="45.72" y="58.42"/>
 </segment>
 </net>
 <net name="B" class="0">
 <segment>
 <portref moduleinst="LOGIC_BLOCK1" port="B"/>
-<junction x="50.8" y="66.04"/>
+<junction x="45.72" y="66.04"/>
 <pinref part="B_SWTCH" gate="&gt;PART" pin="S"/>
-<wire x1="27.94" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="C" class="0">
-<segment>
-<portref moduleinst="LOGIC_BLOCK1" port="C"/>
-<wire x1="27.94" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<junction x="50.8" y="50.8"/>
-<pinref part="C_SWTCH" gate="&gt;PART" pin="S"/>
+<wire x1="27.94" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AND" class="0">
 <segment>
 <pinref part="AND_LED" gate="G$1" pin="A"/>
 <portref moduleinst="LOGIC_BLOCK1" port="AND"/>
-<wire x1="91.44" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<junction x="91.44" y="60.96"/>
+<wire x1="86.36" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<junction x="86.36" y="60.96"/>
 </segment>
 </net>
 <net name="OR" class="0">
 <segment>
 <pinref part="OR_LED" gate="G$1" pin="A"/>
 <portref moduleinst="LOGIC_BLOCK1" port="OR"/>
-<wire x1="96.52" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="53.34" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
-<junction x="91.44" y="55.88"/>
+<wire x1="96.52" y1="53.34" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<junction x="86.36" y="55.88"/>
 </segment>
 </net>
 <net name="XOR" class="0">
 <segment>
 <pinref part="XOR_LED" gate="G$1" pin="A"/>
 <portref moduleinst="LOGIC_BLOCK1" port="XOR"/>
-<wire x1="91.44" y1="50.8" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="50.8" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<junction x="91.44" y="50.8"/>
+<junction x="86.36" y="50.8"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -2310,30 +2298,36 @@ Socked 78604 Source: http://www.schrack.com/.. 5836.pdf&lt;br&gt;</description>
 <segment>
 <pinref part="B_SWTCH" gate="&gt;PART" pin="P"/>
 <wire x1="17.78" y1="58.42" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C_SWTCH" gate="&gt;PART" pin="P"/>
-<wire x1="17.78" y1="58.42" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <junction x="17.78" y="58.42"/>
 <junction x="17.78" y="66.04"/>
 <portref moduleinst="LOGIC_BLOCK1" port="+12V"/>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<junction x="50.8" y="60.96"/>
+<wire x1="20.32" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
+<junction x="45.72" y="60.96"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="12.7" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C_SWTCH" gate="&gt;PART" pin="S"/>
+<wire x1="17.78" y1="50.8" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="C" class="0">
+<segment>
+<portref moduleinst="LOGIC_BLOCK1" port="C"/>
+<wire x1="45.72" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
+<junction x="45.72" y="50.8"/>
+<pinref part="C_SWTCH" gate="&gt;PART" pin="P"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,40.9617,44.45,C_LED,,,,,"/>
-<approved hash="113,1,40.3183,69.85,B_LED,,,,,"/>
 <approved hash="113,1,100.33,46.0417,XOR_LED,,,,,"/>
 <approved hash="113,1,100.33,53.6617,OR_LED,,,,,"/>
 <approved hash="113,1,100.33,61.2817,AND_LED,,,,,"/>
 <approved hash="113,1,100.33,68.9017,NOT_LED,,,,,"/>
-<approved hash="118,1@LOGIC_BLOCK,52.07,116.84,Net,+12V,,,,"/>
-<approved hash="118,1@LOGIC_BLOCK,74.93,86.36,Net,GNDA,,,,"/>
+<approved hash="118,1@LOGIC_BLOCK,20.32,101.6,Net,+12V,,,,"/>
+<approved hash="118,1@LOGIC_BLOCK,41.91,5.08,Net,GNDA,,,,"/>
 </errors>
 </schematic>
 </drawing>
