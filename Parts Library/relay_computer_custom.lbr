@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -283,6 +283,34 @@ reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
 <wire x1="21" y1="3.5" x2="23" y2="3.5" width="0.127" layer="21"/>
 <wire x1="23" y1="3.5" x2="24.5" y2="4" width="0.127" layer="21"/>
 </package>
+<package name="TO170P440X1000X1975-5B">
+<description>Original name &lt;b&gt;TO170P440X1000X1975-5B&lt;/b&gt;&lt;p&gt;
+Max Component Height - 19.75mm</description>
+<pad name="1" x="-1.95" y="3.4" drill="1.3" diameter="1.9" shape="square"/>
+<pad name="2" x="1.95" y="1.7" drill="1.3" diameter="1.9"/>
+<pad name="3" x="-1.95" y="0" drill="1.3" diameter="1.9"/>
+<pad name="4" x="1.95" y="-1.7" drill="1.3" diameter="1.9"/>
+<pad name="5" x="-1.95" y="-3.4" drill="1.3" diameter="1.9"/>
+<wire x1="2.05" y1="-5" x2="2.05" y2="5" width="0.1" layer="51"/>
+<wire x1="6.45" y1="-5" x2="6.45" y2="5" width="0.1" layer="51"/>
+<wire x1="2.05" y1="5" x2="6.45" y2="5" width="0.1" layer="51"/>
+<wire x1="2.05" y1="-5" x2="6.45" y2="-5" width="0.1" layer="51"/>
+<wire x1="-3.15" y1="-5.25" x2="6.7" y2="-5.25" width="0.1" layer="39"/>
+<wire x1="0" y1="-0.5" x2="0" y2="0.5" width="0.1" layer="23"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.1" layer="23"/>
+<wire x1="6.7" y1="-5.25" x2="6.7" y2="5.25" width="0.1" layer="39"/>
+<wire x1="-3.15" y1="5.25" x2="6.7" y2="5.25" width="0.1" layer="39"/>
+<wire x1="-3.15" y1="-5.25" x2="-3.15" y2="5.25" width="0.1" layer="39"/>
+<circle x="-1.95" y="4.95" radius="0.125" width="0.25" layer="21"/>
+<wire x1="2.05" y1="-0.404" x2="2.05" y2="0.404" width="0.2" layer="21"/>
+<wire x1="2.05" y1="-5" x2="2.05" y2="-2.996" width="0.2" layer="21"/>
+<wire x1="2.05" y1="2.996" x2="2.05" y2="5" width="0.2" layer="21"/>
+<wire x1="6.45" y1="-5" x2="6.45" y2="5" width="0.2" layer="21"/>
+<wire x1="2.05" y1="5" x2="6.45" y2="5" width="0.2" layer="21"/>
+<wire x1="2.05" y1="-5" x2="6.45" y2="-5" width="0.2" layer="21"/>
+<text x="-3.175" y="5.715" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-6.985" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="K">
@@ -402,6 +430,19 @@ reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="BTS4X2E2">
+<pin name="VBB" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
+<pin name="ST" x="-5.08" y="-7.62" length="middle" direction="oc"/>
+<pin name="IN" x="-5.08" y="-12.7" length="middle" direction="in"/>
+<pin name="GND" x="22.86" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="22.86" y="-12.7" length="middle" direction="out" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-17.145" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -580,6 +621,28 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <connect gate="1" pin="2" pad="2"/>
 <connect gate="G$1" pin="P" pad="4"/>
 <connect gate="G$1" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BTS442E2" prefix="U">
+<description>&lt;b&gt;BTS442E2&lt;/b&gt;&lt;p&gt;
+Smart High Side Power Switch, VBB 63V, R(ON) 18mOhm&lt;p&gt;
+TO170P440X1000X1975-5B</description>
+<gates>
+<gate name="G$1" symbol="BTS4X2E2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO170P440X1000X1975-5B">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="ST" pad="4"/>
+<connect gate="G$1" pin="VBB" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
