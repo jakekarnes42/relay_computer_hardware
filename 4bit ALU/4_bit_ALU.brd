@@ -60,15 +60,15 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
-<text x="46" y="96" size="1.778" layer="25">FUNC</text>
-<text x="49" y="91" size="1.778" layer="25">A</text>
-<text x="49" y="87" size="1.778" layer="25">B</text>
-<text x="5" y="96" size="1" layer="25" rot="R90">GND</text>
-<text x="9" y="96" size="1" layer="25" rot="R90">12V</text>
+<wire x1="0" y1="0" x2="150" y2="0" width="0" layer="20"/>
+<wire x1="150" y1="0" x2="150" y2="110" width="0" layer="20"/>
+<wire x1="150" y1="110" x2="0" y2="110" width="0" layer="20"/>
+<wire x1="0" y1="110" x2="0" y2="0" width="0" layer="20"/>
+<text x="34" y="106" size="1.778" layer="25">FUNC</text>
+<text x="56" y="106" size="1.778" layer="25">A</text>
+<text x="76" y="106" size="1.778" layer="25">B</text>
+<text x="5" y="109" size="1" layer="25" rot="R180">GND</text>
+<text x="9" y="109" size="1" layer="25" rot="R180">12V</text>
 </plain>
 <libraries>
 <library name="relay_computer_custom">
@@ -290,7 +290,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="30mil"/>
-<param name="msDrill" value="13mil"/>
+<param name="msDrill" value="16mil"/>
 <param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -347,7 +347,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="0"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -437,76 +437,140 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="PWR_BLK:PWR" library="relay_computer_custom" package="1751248" value="PWR_BLK" x="6.59" y="91.36" smashed="yes">
-<attribute name="MF" value="" x="6.59" y="93.9" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="6.59" y="93.9" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.59" y="93.9" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.59" y="93.9" size="1.778" layer="27" display="off"/>
+<element name="PWR_BLK:PWR" library="relay_computer_custom" package="1751248" value="PWR_BLK" x="5.59" y="103.36" smashed="yes">
+<attribute name="MF" value="" x="5.59" y="105.9" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="5.59" y="105.9" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.59" y="105.9" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="5.59" y="105.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="INPUT_BLK:X1" library="relay_computer_custom" package="55917-1230" value="55917-1230" x="19.7" y="91.84" smashed="yes">
-<attribute name="MF" value="" x="19.7" y="91.84" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="55917-1230" x="19.7" y="91.84" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="14.08" y="85.53" size="1.27" layer="25"/>
-<attribute name="OC_FARNELL" value="unknown" x="19.7" y="91.84" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="19.7" y="91.84" size="1.778" layer="27" display="off"/>
+<element name="INPUT_BLK:X1" library="relay_computer_custom" package="55917-1230" value="55917-1230" x="19.7" y="103.84" smashed="yes">
+<attribute name="MF" value="" x="19.7" y="103.84" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="55917-1230" x="19.7" y="103.84" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.08" y="97.53" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="unknown" x="19.7" y="103.84" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="19.7" y="103.84" size="1.778" layer="27" display="off"/>
 </element>
-<element name="INPUT_BLK:LED1" library="relay_computer_custom" package="LED3MM" value="" x="32.67" y="96.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="34.321" y="98.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED1" library="relay_computer_custom" package="LED3MM" value="" x="31.67" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="33.321" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED2" library="relay_computer_custom" package="LED3MM" value="" x="37.64" y="96.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="39.291" y="98.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED2" library="relay_computer_custom" package="LED3MM" value="" x="36.64" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="38.291" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED3" library="relay_computer_custom" package="LED3MM" value="" x="42.61" y="96.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="44.261" y="98.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED3" library="relay_computer_custom" package="LED3MM" value="" x="41.61" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.261" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED4" library="relay_computer_custom" package="LED3MM" value="" x="30.58" y="91.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="32.231" y="93.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED4" library="relay_computer_custom" package="LED3MM" value="" x="48.58" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="50.231" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED5" library="relay_computer_custom" package="LED3MM" value="" x="35.55" y="91.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="37.201" y="93.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED5" library="relay_computer_custom" package="LED3MM" value="" x="53.55" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="55.201" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED6" library="relay_computer_custom" package="LED3MM" value="" x="40.52" y="91.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="42.171" y="93.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED6" library="relay_computer_custom" package="LED3MM" value="" x="58.52" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="60.171" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED7" library="relay_computer_custom" package="LED3MM" value="" x="45.49" y="91.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="47.141" y="93.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED7" library="relay_computer_custom" package="LED3MM" value="" x="63.49" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="65.141" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED8" library="relay_computer_custom" package="LED3MM" value="" x="30.46" y="86.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="32.111" y="88.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED8" library="relay_computer_custom" package="LED3MM" value="" x="68.46" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="70.111" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED9" library="relay_computer_custom" package="LED3MM" value="" x="35.43" y="86.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="37.081" y="88.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED9" library="relay_computer_custom" package="LED3MM" value="" x="73.43" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="75.081" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED10" library="relay_computer_custom" package="LED3MM" value="" x="40.4" y="86.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="42.051" y="88.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED10" library="relay_computer_custom" package="LED3MM" value="" x="78.4" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="80.051" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INPUT_BLK:LED11" library="relay_computer_custom" package="LED3MM" value="" x="45.37" y="86.89" smashed="yes" rot="R90">
-<attribute name="VALUE" x="47.021" y="88.795" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="INPUT_BLK:LED11" library="relay_computer_custom" package="LED3MM" value="" x="83.37" y="102.89" smashed="yes" rot="R90">
+<attribute name="VALUE" x="85.021" y="104.795" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="DECODE:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="64" y="78">
-<attribute name="MF" value="" x="30" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="30" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="" x="30" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="" x="30" y="115" size="1.778" layer="27" display="off"/>
+<element name="DECODE:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="62" y="75">
+<attribute name="MF" value="" x="28" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="28" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="28" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="28" y="112" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DECODE:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="64" y="65"/>
-<element name="DECODE:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="64" y="69"/>
-<element name="DECODE:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="88" y="78">
-<attribute name="MF" value="" x="54" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="54" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="" x="54" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="" x="54" y="115" size="1.778" layer="27" display="off"/>
+<element name="DECODE:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="62" y="62"/>
+<element name="DECODE:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="62" y="66" rot="R180"/>
+<element name="DECODE:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="86" y="75">
+<attribute name="MF" value="" x="52" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="52" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="52" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="52" y="112" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DECODE:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="87" y="65"/>
-<element name="DECODE:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="88" y="69"/>
-<element name="DECODE:K3" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="112" y="78">
-<attribute name="MF" value="" x="78" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="78" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="" x="78" y="115" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="" x="78" y="115" size="1.778" layer="27" display="off"/>
+<element name="DECODE:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="85" y="62"/>
+<element name="DECODE:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="86" y="66" rot="R180"/>
+<element name="DECODE:K3" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="110" y="75">
+<attribute name="MF" value="" x="76" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="76" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="76" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="76" y="112" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DECODE:D5" library="relay_computer_custom" package="DO41-10" value="1N4007" x="112" y="65"/>
-<element name="DECODE:D6" library="relay_computer_custom" package="C1702-15" value="1N5359" x="112" y="69"/>
+<element name="DECODE:D5" library="relay_computer_custom" package="DO41-10" value="1N4007" x="110" y="62"/>
+<element name="DECODE:D6" library="relay_computer_custom" package="C1702-15" value="1N5359" x="110" y="66" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC0:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="14" y="75">
+<attribute name="MF" value="" x="-20" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-20" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="-20" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="-20" y="112" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC0:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="14" y="62"/>
+<element name="LOGIC:1_BIT_LOGIC0:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="14" y="66" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC0:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="38" y="75">
+<attribute name="MF" value="" x="4" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="4" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="4" y="112" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="4" y="112" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC0:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="38" y="62"/>
+<element name="LOGIC:1_BIT_LOGIC0:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="38" y="66" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC1:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="61" y="25"/>
+<element name="LOGIC:1_BIT_LOGIC1:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="61" y="29" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC1:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="109" y="27"/>
+<element name="LOGIC:1_BIT_LOGIC1:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="109" y="30" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC1:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="61" y="38">
+<attribute name="MF" value="" x="27" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="27" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="27" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="27" y="-1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC1:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="109" y="38">
+<attribute name="MF" value="" x="9" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="9" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="9" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="9" y="-1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC2:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="133" y="26"/>
+<element name="LOGIC:1_BIT_LOGIC2:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="134" y="30" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC2:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="84" y="26"/>
+<element name="LOGIC:1_BIT_LOGIC2:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="85" y="30" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC2:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="134" y="38">
+<attribute name="MF" value="" x="100" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="100" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="100" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="100" y="-1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC2:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="85" y="38">
+<attribute name="MF" value="" x="-15" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-15" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="-15" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="-15" y="-1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC3:D1" library="relay_computer_custom" package="DO41-10" value="1N4007" x="10" y="26"/>
+<element name="LOGIC:1_BIT_LOGIC3:D2" library="relay_computer_custom" package="C1702-15" value="1N5359" x="12" y="29" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC3:D3" library="relay_computer_custom" package="DO41-10" value="1N4007" x="37" y="26"/>
+<element name="LOGIC:1_BIT_LOGIC3:D4" library="relay_computer_custom" package="C1702-15" value="1N5359" x="37" y="29" rot="R180"/>
+<element name="LOGIC:1_BIT_LOGIC3:K1" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="12" y="38">
+<attribute name="MF" value="" x="-22" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-22" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="-22" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="-22" y="-1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LOGIC:1_BIT_LOGIC3:K2" library="relay_computer_custom" package="PY14-02" value="PY14-02" x="37" y="38">
+<attribute name="MF" value="" x="-63" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-63" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="" x="-63" y="-1" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="" x="-63" y="-1" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -528,140 +592,164 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="DECODE:D4" pad="C"/>
 <contactref element="DECODE:K3" pad="A1"/>
 <contactref element="DECODE:D6" pad="C"/>
-<wire x1="104.38" y1="69" x2="118.6" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="94.6" y1="78" x2="104.38" y2="69" width="0" layer="19" extent="1-1"/>
-<wire x1="80.38" y1="69" x2="94.6" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="70.6" y1="78" x2="80.38" y2="69" width="0" layer="19" extent="1-1"/>
-<wire x1="56.38" y1="69" x2="70.6" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="45.37" y1="88.16" x2="56.38" y2="69" width="0" layer="19" extent="1-1"/>
-<wire x1="40.4" y1="88.16" x2="45.37" y2="88.16" width="0" layer="19" extent="1-1"/>
-<wire x1="35.43" y1="88.16" x2="40.4" y2="88.16" width="0" layer="19" extent="1-1"/>
-<wire x1="30.46" y1="88.16" x2="35.43" y2="88.16" width="0" layer="19" extent="1-1"/>
-<wire x1="45.49" y1="93.16" x2="45.37" y2="88.16" width="0" layer="19" extent="1-1"/>
-<wire x1="40.52" y1="93.16" x2="45.49" y2="93.16" width="0" layer="19" extent="1-1"/>
-<wire x1="35.55" y1="93.16" x2="40.52" y2="93.16" width="0" layer="19" extent="1-1"/>
-<wire x1="30.58" y1="93.16" x2="35.55" y2="93.16" width="0" layer="19" extent="1-1"/>
-<wire x1="42.61" y1="98.16" x2="40.52" y2="93.16" width="0" layer="19" extent="1-1"/>
-<wire x1="37.64" y1="98.16" x2="42.61" y2="98.16" width="0" layer="19" extent="1-1"/>
-<wire x1="32.67" y1="98.16" x2="37.64" y2="98.16" width="0" layer="19" extent="1-1"/>
-<wire x1="4.84" y1="91.26" x2="30.46" y2="88.16" width="0" layer="19" extent="1-1"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D2" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D4" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D2" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D4" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D2" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D4" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D2" pad="C"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="A1"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D4" pad="C"/>
+<wire x1="117.62" y1="66" x2="116.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="92.6" y1="75" x2="116.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="93.62" y1="66" x2="92.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="68.6" y1="75" x2="92.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="69.62" y1="66" x2="68.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="44.6" y1="75" x2="68.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="45.62" y1="66" x2="44.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="20.6" y1="75" x2="44.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="21.62" y1="66" x2="20.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="115.6" y1="38" x2="117.62" y2="66" width="0" layer="19" extent="1-1"/>
+<wire x1="116.62" y1="30" x2="115.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="91.6" y1="38" x2="115.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="92.62" y1="30" x2="91.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="67.6" y1="38" x2="91.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="68.62" y1="29" x2="67.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="43.6" y1="38" x2="67.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="44.62" y1="29" x2="43.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="140.6" y1="38" x2="115.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="141.62" y1="30" x2="140.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="18.6" y1="38" x2="43.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="19.62" y1="29" x2="18.6" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="68.46" y1="104.16" x2="68.6" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="73.43" y1="104.16" x2="68.46" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="78.4" y1="104.16" x2="73.43" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="83.37" y1="104.16" x2="78.4" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="63.49" y1="104.16" x2="68.46" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="58.52" y1="104.16" x2="63.49" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="53.55" y1="104.16" x2="58.52" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="48.58" y1="104.16" x2="53.55" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="41.61" y1="104.16" x2="48.58" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="36.64" y1="104.16" x2="41.61" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="31.67" y1="104.16" x2="36.64" y2="104.16" width="0" layer="19" extent="1-1"/>
+<wire x1="3.84" y1="103.26" x2="31.67" y2="104.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="PWR_BLK:PWR" pad="2"/>
 <contactref element="DECODE:K1" pad="41"/>
-<wire x1="8.34" y1="91.26" x2="57.4" y2="84.35" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="A3">
-<contactref element="INPUT_BLK:X1" pad="11"/>
-<contactref element="INPUT_BLK:LED7" pad="A"/>
-<wire x1="24.7" y1="89.34" x2="45.49" y2="90.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="A2">
-<contactref element="INPUT_BLK:X1" pad="9"/>
-<contactref element="INPUT_BLK:LED6" pad="A"/>
-<wire x1="22.7" y1="89.34" x2="40.52" y2="90.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="A1">
-<contactref element="INPUT_BLK:X1" pad="7"/>
-<contactref element="INPUT_BLK:LED5" pad="A"/>
-<wire x1="20.7" y1="89.34" x2="35.55" y2="90.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="A0">
-<contactref element="INPUT_BLK:X1" pad="5"/>
-<contactref element="INPUT_BLK:LED4" pad="A"/>
-<wire x1="18.7" y1="89.34" x2="30.58" y2="90.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="B0">
-<contactref element="INPUT_BLK:X1" pad="12"/>
-<contactref element="INPUT_BLK:LED8" pad="A"/>
-<wire x1="30.46" y1="85.62" x2="24.7" y2="94.34" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="B1">
-<contactref element="INPUT_BLK:X1" pad="10"/>
-<contactref element="INPUT_BLK:LED9" pad="A"/>
-<wire x1="22.7" y1="94.34" x2="35.43" y2="85.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="B2">
-<contactref element="INPUT_BLK:X1" pad="8"/>
-<contactref element="INPUT_BLK:LED10" pad="A"/>
-<wire x1="20.7" y1="94.34" x2="40.4" y2="85.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="B3">
-<contactref element="INPUT_BLK:X1" pad="6"/>
-<contactref element="INPUT_BLK:LED11" pad="A"/>
-<wire x1="18.7" y1="94.34" x2="45.37" y2="85.62" width="0" layer="19" extent="1-1"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="31"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="41"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="31"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="41"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="31"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="41"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="21"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="31"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="41"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="21"/>
+<wire x1="131.8" y1="44.35" x2="136.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="127.4" y1="44.35" x2="131.8" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="111.2" y1="44.35" x2="127.4" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="87.2" y1="44.35" x2="111.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="63.2" y1="44.35" x2="87.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="58.8" y1="44.35" x2="63.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="54.4" y1="44.35" x2="58.8" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="39.2" y1="44.35" x2="54.4" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="44.35" x2="39.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="9.8" y1="44.35" x2="14.2" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="5.4" y1="44.35" x2="9.8" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="55.4" y1="81.35" x2="54.4" y2="44.35" width="0" layer="19" extent="1-1"/>
+<wire x1="40.2" y1="81.35" x2="55.4" y2="81.35" width="0" layer="19" extent="1-1"/>
+<wire x1="16.2" y1="81.35" x2="40.2" y2="81.35" width="0" layer="19" extent="1-1"/>
+<wire x1="11.8" y1="81.35" x2="16.2" y2="81.35" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="81.35" x2="11.8" y2="81.35" width="0" layer="19" extent="1-1"/>
+<wire x1="7.34" y1="103.26" x2="7.4" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FUNC0">
-<contactref element="INPUT_BLK:X1" pad="2"/>
-<contactref element="INPUT_BLK:LED1" pad="A"/>
-<contactref element="DECODE:K1" pad="A2"/>
-<contactref element="DECODE:D1" pad="C"/>
-<wire x1="58.92" y1="65" x2="57.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="32.67" y1="95.62" x2="57.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="14.7" y1="94.34" x2="32.67" y2="95.62" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="FUNC2">
 <contactref element="INPUT_BLK:X1" pad="3"/>
 <contactref element="INPUT_BLK:LED3" pad="A"/>
 <contactref element="DECODE:K3" pad="A2"/>
 <contactref element="DECODE:D5" pad="C"/>
-<wire x1="106.92" y1="65" x2="105.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="42.61" y1="95.62" x2="105.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="16.7" y1="89.34" x2="42.61" y2="95.62" width="0" layer="19" extent="1-1"/>
+<wire x1="104.92" y1="62" x2="103.4" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="41.61" y1="101.62" x2="103.4" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="16.7" y1="101.34" x2="41.61" y2="101.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FUNC2">
+<contactref element="INPUT_BLK:X1" pad="2"/>
+<contactref element="INPUT_BLK:LED1" pad="A"/>
+<contactref element="DECODE:K1" pad="A2"/>
+<contactref element="DECODE:D1" pad="C"/>
+<wire x1="14.7" y1="106.34" x2="31.67" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="55.4" y1="75" x2="31.67" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="56.92" y1="62" x2="55.4" y2="75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FUNC1">
 <contactref element="INPUT_BLK:X1" pad="1"/>
 <contactref element="INPUT_BLK:LED2" pad="A"/>
 <contactref element="DECODE:K2" pad="A2"/>
 <contactref element="DECODE:D3" pad="C"/>
-<wire x1="81.92" y1="65" x2="81.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="37.64" y1="95.62" x2="81.4" y2="78" width="0" layer="19" extent="1-1"/>
-<wire x1="14.7" y1="89.34" x2="37.64" y2="95.62" width="0" layer="19" extent="1-1"/>
+<wire x1="79.92" y1="62" x2="79.4" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="36.64" y1="101.62" x2="79.4" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="14.7" y1="101.34" x2="36.64" y2="101.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:D$1">
 <contactref element="DECODE:D1" pad="A"/>
 <contactref element="DECODE:D2" pad="A"/>
-<wire x1="69.08" y1="65" x2="71.62" y2="69" width="0" layer="19" extent="1-1"/>
+<wire x1="54.38" y1="66" x2="67.08" y2="62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:D$2">
 <contactref element="DECODE:D3" pad="A"/>
 <contactref element="DECODE:D4" pad="A"/>
-<wire x1="92.08" y1="65" x2="95.62" y2="69" width="0" layer="19" extent="1-1"/>
+<wire x1="78.38" y1="66" x2="90.08" y2="62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:D$3">
 <contactref element="DECODE:D5" pad="A"/>
 <contactref element="DECODE:D6" pad="A"/>
-<wire x1="117.08" y1="65" x2="119.62" y2="69" width="0" layer="19" extent="1-1"/>
+<wire x1="102.38" y1="66" x2="115.08" y2="62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$1">
 <contactref element="DECODE:K1" pad="44"/>
 <contactref element="DECODE:K2" pad="41"/>
-<wire x1="57.4" y1="90.7" x2="81.4" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="55.4" y1="87.7" x2="79.4" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$2">
 <contactref element="DECODE:K1" pad="42"/>
 <contactref element="DECODE:K2" pad="31"/>
-<wire x1="57.4" y1="94.7" x2="85.8" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="55.4" y1="91.7" x2="83.8" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$3">
 <contactref element="DECODE:K2" pad="44"/>
 <contactref element="DECODE:K3" pad="41"/>
-<wire x1="81.4" y1="90.7" x2="105.4" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="79.4" y1="87.7" x2="103.4" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$4">
 <contactref element="DECODE:K2" pad="42"/>
 <contactref element="DECODE:K3" pad="31"/>
-<wire x1="81.4" y1="94.7" x2="109.8" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="79.4" y1="91.7" x2="107.8" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$5">
 <contactref element="DECODE:K2" pad="34"/>
 <contactref element="DECODE:K3" pad="21"/>
-<wire x1="85.8" y1="90.7" x2="114.2" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="83.8" y1="87.7" x2="112.2" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DECODE:N$6">
 <contactref element="DECODE:K2" pad="32"/>
 <contactref element="DECODE:K3" pad="11"/>
-<wire x1="85.8" y1="94.7" x2="118.6" y2="84.35" width="0" layer="19" extent="1-1"/>
+<wire x1="83.8" y1="91.7" x2="116.6" y2="81.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENABLE_CTL0">
 <contactref element="DECODE:K3" pad="12"/>
@@ -686,6 +774,234 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ENABLE_CTL7">
 <contactref element="DECODE:K3" pad="44"/>
+</signal>
+<signal name="A3">
+<contactref element="INPUT_BLK:X1" pad="5"/>
+<contactref element="INPUT_BLK:LED4" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D1" pad="C"/>
+<wire x1="18.7" y1="101.34" x2="48.58" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="5.4" y1="38" x2="18.7" y2="101.34" width="0" layer="19" extent="1-1"/>
+<wire x1="4.92" y1="26" x2="5.4" y2="38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="A2">
+<contactref element="INPUT_BLK:X1" pad="7"/>
+<contactref element="INPUT_BLK:LED5" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D1" pad="C"/>
+<wire x1="127.92" y1="26" x2="127.4" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="53.55" y1="101.62" x2="127.4" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="20.7" y1="101.34" x2="53.55" y2="101.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="A1">
+<contactref element="INPUT_BLK:X1" pad="9"/>
+<contactref element="INPUT_BLK:LED6" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D1" pad="C"/>
+<wire x1="22.7" y1="101.34" x2="58.52" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="54.4" y1="38" x2="58.52" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="55.92" y1="25" x2="54.4" y2="38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="A0">
+<contactref element="INPUT_BLK:X1" pad="11"/>
+<contactref element="INPUT_BLK:LED7" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D1" pad="C"/>
+<wire x1="24.7" y1="101.34" x2="63.49" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="75" x2="24.7" y2="101.34" width="0" layer="19" extent="1-1"/>
+<wire x1="8.92" y1="62" x2="7.4" y2="75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B3">
+<contactref element="INPUT_BLK:X1" pad="12"/>
+<contactref element="INPUT_BLK:LED8" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D3" pad="C"/>
+<wire x1="24.7" y1="106.34" x2="68.46" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="30.4" y1="38" x2="24.7" y2="106.34" width="0" layer="19" extent="1-1"/>
+<wire x1="31.92" y1="26" x2="30.4" y2="38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B2">
+<contactref element="INPUT_BLK:X1" pad="10"/>
+<contactref element="INPUT_BLK:LED9" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D3" pad="C"/>
+<wire x1="22.7" y1="106.34" x2="73.43" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="78.4" y1="38" x2="73.43" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="78.92" y1="26" x2="78.4" y2="38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B1">
+<contactref element="INPUT_BLK:X1" pad="8"/>
+<contactref element="INPUT_BLK:LED10" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D3" pad="C"/>
+<wire x1="20.7" y1="106.34" x2="78.4" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="102.4" y1="38" x2="78.4" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="103.92" y1="27" x2="102.4" y2="38" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B0">
+<contactref element="INPUT_BLK:X1" pad="6"/>
+<contactref element="INPUT_BLK:LED11" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="A2"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D3" pad="C"/>
+<wire x1="31.4" y1="75" x2="83.37" y2="101.62" width="0" layer="19" extent="1-1"/>
+<wire x1="32.92" y1="62" x2="31.4" y2="75" width="0" layer="19" extent="1-1"/>
+<wire x1="18.7" y1="106.34" x2="31.4" y2="75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC0:D$1">
+<contactref element="LOGIC:1_BIT_LOGIC0:D1" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D2" pad="A"/>
+<wire x1="6.38" y1="66" x2="19.08" y2="62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC0:D$2">
+<contactref element="LOGIC:1_BIT_LOGIC0:D3" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:D4" pad="A"/>
+<wire x1="30.38" y1="66" x2="43.08" y2="62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC0:N$1">
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="44"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="14"/>
+<wire x1="7.4" y1="87.7" x2="44.6" y2="87.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC0:N$2">
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="24"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="32"/>
+<wire x1="16.2" y1="87.7" x2="35.8" y2="91.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC0:N$3">
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="22"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="34"/>
+<wire x1="16.2" y1="91.7" x2="35.8" y2="87.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NOT0">
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="42"/>
+</signal>
+<signal name="OR0">
+<contactref element="LOGIC:1_BIT_LOGIC0:K1" pad="34"/>
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="24"/>
+<wire x1="11.8" y1="87.7" x2="40.2" y2="87.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="XOR0">
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="31"/>
+</signal>
+<signal name="AND0">
+<contactref element="LOGIC:1_BIT_LOGIC0:K2" pad="11"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC1:D$1">
+<contactref element="LOGIC:1_BIT_LOGIC1:D1" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D2" pad="A"/>
+<wire x1="53.38" y1="29" x2="66.08" y2="25" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC1:D$2">
+<contactref element="LOGIC:1_BIT_LOGIC1:D3" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:D4" pad="A"/>
+<wire x1="101.38" y1="30" x2="114.08" y2="27" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC1:N$1">
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="44"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="14"/>
+<wire x1="54.4" y1="50.7" x2="115.6" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC1:N$2">
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="24"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="32"/>
+<wire x1="63.2" y1="50.7" x2="106.8" y2="54.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC1:N$3">
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="22"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="34"/>
+<wire x1="63.2" y1="54.7" x2="106.8" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NOT1">
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="42"/>
+</signal>
+<signal name="OR1">
+<contactref element="LOGIC:1_BIT_LOGIC1:K1" pad="34"/>
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="24"/>
+<wire x1="58.8" y1="50.7" x2="111.2" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="XOR1">
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="31"/>
+</signal>
+<signal name="AND1">
+<contactref element="LOGIC:1_BIT_LOGIC1:K2" pad="11"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC2:D$1">
+<contactref element="LOGIC:1_BIT_LOGIC2:D1" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D2" pad="A"/>
+<wire x1="126.38" y1="30" x2="138.08" y2="26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC2:D$2">
+<contactref element="LOGIC:1_BIT_LOGIC2:D3" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:D4" pad="A"/>
+<wire x1="77.38" y1="30" x2="89.08" y2="26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC2:N$1">
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="44"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="14"/>
+<wire x1="91.6" y1="50.7" x2="127.4" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC2:N$2">
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="24"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="32"/>
+<wire x1="82.8" y1="54.7" x2="136.2" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC2:N$3">
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="22"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="34"/>
+<wire x1="82.8" y1="50.7" x2="136.2" y2="54.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NOT2">
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="42"/>
+</signal>
+<signal name="OR2">
+<contactref element="LOGIC:1_BIT_LOGIC2:K1" pad="34"/>
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="24"/>
+<wire x1="87.2" y1="50.7" x2="131.8" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="XOR2">
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="31"/>
+</signal>
+<signal name="AND2">
+<contactref element="LOGIC:1_BIT_LOGIC2:K2" pad="11"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC3:D$1">
+<contactref element="LOGIC:1_BIT_LOGIC3:D1" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D2" pad="A"/>
+<wire x1="4.38" y1="29" x2="15.08" y2="26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC3:D$2">
+<contactref element="LOGIC:1_BIT_LOGIC3:D3" pad="A"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:D4" pad="A"/>
+<wire x1="29.38" y1="29" x2="42.08" y2="26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC3:N$1">
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="44"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="14"/>
+<wire x1="5.4" y1="50.7" x2="43.6" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC3:N$2">
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="24"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="32"/>
+<wire x1="14.2" y1="50.7" x2="34.8" y2="54.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LOGIC:1_BIT_LOGIC3:N$3">
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="22"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="34"/>
+<wire x1="14.2" y1="54.7" x2="34.8" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NOT3">
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="42"/>
+</signal>
+<signal name="OR3">
+<contactref element="LOGIC:1_BIT_LOGIC3:K1" pad="34"/>
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="24"/>
+<wire x1="9.8" y1="50.7" x2="39.2" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="XOR3">
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="31"/>
+</signal>
+<signal name="AND3">
+<contactref element="LOGIC:1_BIT_LOGIC3:K2" pad="11"/>
 </signal>
 </signals>
 </board>

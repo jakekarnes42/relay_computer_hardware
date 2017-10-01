@@ -654,7 +654,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </bus>
 </busses>
 <nets>
-<net name="A3" class="0">
+<net name="A0" class="0">
 <segment>
 <pinref part="X1" gate="-11" pin="S"/>
 <wire x1="58.42" y1="68.58" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
@@ -666,7 +666,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="60.96" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A2" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="X1" gate="-9" pin="S"/>
 <wire x1="58.42" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
@@ -680,7 +680,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="50.8" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A1" class="0">
+<net name="A2" class="0">
 <segment>
 <pinref part="X1" gate="-7" pin="S"/>
 <wire x1="58.42" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
@@ -694,7 +694,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="40.64" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A0" class="0">
+<net name="A3" class="0">
 <segment>
 <pinref part="X1" gate="-5" pin="S"/>
 <wire x1="58.42" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
@@ -708,7 +708,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="30.48" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="FUNC0" class="0">
+<net name="FUNC2" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
 <wire x1="78.74" y1="81.28" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
@@ -722,7 +722,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-12.7" y1="15.24" x2="15.24" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FUNC2" class="0">
+<net name="FUNC0" class="0">
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="58.42" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
@@ -748,7 +748,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-2.54" y1="12.7" x2="15.24" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="B0" class="0">
+<net name="B3" class="0">
 <segment>
 <pinref part="X1" gate="-12" pin="S"/>
 <wire x1="78.74" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
@@ -762,7 +762,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="88.9" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="B1" class="0">
+<net name="B2" class="0">
 <segment>
 <pinref part="X1" gate="-10" pin="S"/>
 <wire x1="78.74" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
@@ -776,7 +776,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="99.06" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="B2" class="0">
+<net name="B1" class="0">
 <segment>
 <pinref part="X1" gate="-8" pin="S"/>
 <wire x1="78.74" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
@@ -790,7 +790,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="109.22" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="B3" class="0">
+<net name="B0" class="0">
 <segment>
 <pinref part="X1" gate="-6" pin="S"/>
 <wire x1="78.74" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
@@ -902,7 +902,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <busses>
 </busses>
 <nets>
-<net name="FUNC0" class="0">
+<net name="FUNC2" class="0">
 <segment>
 <wire x1="7.62" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
@@ -930,7 +930,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="27.94" y="20.32" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="FUNC2" class="0">
+<net name="FUNC0" class="0">
 <segment>
 <pinref part="K3" gate="1" pin="2"/>
 <wire x1="139.7" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
@@ -1124,43 +1124,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <ports>
 <port name="A[0..3]" side="top" coord="-10.16" direction="in"/>
 <port name="B[0..3]" side="top" coord="-5.08" direction="in"/>
-<port name="ADD" side="top" coord="5.08" direction="in"/>
-<port name="INC" side="top" coord="7.62" direction="in"/>
-<port name="DEC" side="top" coord="10.16" direction="in"/>
+<port name="INC" side="top" coord="5.08" direction="in"/>
+<port name="DEC" side="top" coord="7.62" direction="in"/>
+<port name="ADD" side="top" coord="10.16" direction="in"/>
 <port name="ADDR[0..3]" side="bottom" coord="-7.62" direction="out"/>
 <port name="CARRY" side="bottom" coord="5.08" direction="out"/>
 <port name="OVERFLOW" side="bottom" coord="12.7" direction="out"/>
 <port name="+12V" side="left" coord="2.54" direction="pwr"/>
 <port name="GND" side="left" coord="-2.54" direction="pwr"/>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
-<module name="LOGIC" prefix="" dx="40.64" dy="25.4">
-<ports>
-<port name="A[0..3]" side="top" coord="-7.62" direction="in"/>
-<port name="B[0..3]" side="top" coord="5.08" direction="in"/>
-<port name="AND[0..3]" side="bottom" coord="-15.24" direction="out"/>
-<port name="OR[0..3]" side="bottom" coord="0" direction="out"/>
-<port name="XOR[0..3]" side="bottom" coord="-7.62" direction="out"/>
-<port name="NOT[0..3]" side="bottom" coord="7.62" direction="out"/>
-<port name="SHL[0..3]" side="bottom" coord="15.24" direction="out"/>
-<port name="+12V" side="left" coord="10.16" direction="pwr"/>
-<port name="GND" side="left" coord="5.08" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -1297,6 +1268,464 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="PWR" gate="-2" pin="K"/>
 <wire x1="73.66" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="+12V" pin="+12V"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="1_BIT_LOGIC" prefix="" dx="30.48" dy="20.32">
+<ports>
+<port name="X" side="top" coord="-7.62" direction="in"/>
+<port name="Y" side="top" coord="7.62" direction="in"/>
+<port name="+12V" side="left" coord="5.08" direction="pwr"/>
+<port name="GND" side="left" coord="-2.54" direction="pwr"/>
+<port name="AND" side="bottom" coord="-10.16" direction="out"/>
+<port name="XOR" side="bottom" coord="-2.54" direction="out"/>
+<port name="OR" side="bottom" coord="5.08" direction="out"/>
+<port name="NOT" side="bottom" coord="12.7" direction="out"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="K1" library="relay_computer_custom" deviceset="PY14-02" device=""/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="D1" library="relay_computer_custom" deviceset="1N4007" device=""/>
+<part name="D2" library="relay_computer_custom" deviceset="1N5359" device=""/>
+<part name="K2" library="relay_computer_custom" deviceset="PY14-02" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="D3" library="relay_computer_custom" deviceset="1N4007" device=""/>
+<part name="D4" library="relay_computer_custom" deviceset="1N5359" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="K1" gate="1" x="68.58" y="88.9" rot="MR90"/>
+<instance part="K1" gate="2" x="66.04" y="142.24" rot="MR90"/>
+<instance part="K1" gate="3" x="66.04" y="129.54" rot="MR90"/>
+<instance part="K1" gate="4" x="66.04" y="116.84" rot="MR90"/>
+<instance part="K1" gate="5" x="66.04" y="104.14" rot="MR90"/>
+<instance part="SUPPLY1" gate="GND" x="86.36" y="86.36" rot="R90"/>
+<instance part="D1" gate="1" x="63.5" y="81.28" rot="R180"/>
+<instance part="D2" gate="1" x="73.66" y="81.28"/>
+<instance part="K2" gate="1" x="68.58" y="15.24" rot="MR90"/>
+<instance part="K2" gate="2" x="66.04" y="68.58" rot="MR90"/>
+<instance part="K2" gate="3" x="66.04" y="55.88" rot="MR90"/>
+<instance part="K2" gate="4" x="66.04" y="43.18" rot="MR90"/>
+<instance part="K2" gate="5" x="66.04" y="30.48" rot="MR90"/>
+<instance part="SUPPLY2" gate="GND" x="86.36" y="12.7" rot="R90"/>
+<instance part="D3" gate="1" x="63.5" y="7.62" rot="R180"/>
+<instance part="D4" gate="1" x="73.66" y="7.62"/>
+<instance part="SUPPLY3" gate="+12V" x="38.1" y="116.84" rot="R90"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="D$1" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="A"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="66.04" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="K1" gate="1" pin="1"/>
+<wire x1="73.66" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="88.9" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="78.74" y1="86.36" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="78.74" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
+<junction x="78.74" y="86.36"/>
+</segment>
+<segment>
+<pinref part="K2" gate="1" pin="1"/>
+<wire x1="73.66" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="15.24" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="D4" gate="1" pin="C"/>
+<wire x1="78.74" y1="12.7" x2="78.74" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="7.62" x2="78.74" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<wire x1="78.74" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<junction x="78.74" y="12.7"/>
+</segment>
+</net>
+<net name="X" class="0">
+<segment>
+<pinref part="K1" gate="1" pin="2"/>
+<wire x1="63.5" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="88.9" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<junction x="58.42" y="83.82"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="60.96" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="81.28" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<label x="40.64" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D$2" class="0">
+<segment>
+<pinref part="D3" gate="1" pin="A"/>
+<pinref part="D4" gate="1" pin="A"/>
+<wire x1="66.04" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="Y" class="0">
+<segment>
+<pinref part="K2" gate="1" pin="2"/>
+<wire x1="63.5" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="15.24" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
+<junction x="58.42" y="10.16"/>
+<pinref part="D3" gate="1" pin="C"/>
+<wire x1="60.96" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="7.62" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="10.16" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
+<label x="40.64" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="K1" gate="3" pin="P"/>
+<wire x1="63.5" y1="129.54" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="129.54" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="K1" gate="4" pin="P"/>
+<wire x1="63.5" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="K1" gate="5" pin="P"/>
+<wire x1="63.5" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="104.14" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<junction x="50.8" y="116.84"/>
+<wire x1="50.8" y1="116.84" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
+<pinref part="K2" gate="3" pin="P"/>
+<wire x1="50.8" y1="104.14" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<junction x="50.8" y="104.14"/>
+<label x="48.26" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="XOR" class="0">
+<segment>
+<pinref part="K2" gate="4" pin="P"/>
+<wire x1="63.5" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="43.18" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="2.54" x2="134.62" y2="2.54" width="0.1524" layer="91"/>
+<label x="129.54" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="K1" gate="5" pin="S"/>
+<wire x1="71.12" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="99.06" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="K2" gate="2" pin="S"/>
+<wire x1="91.44" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AND" class="0">
+<segment>
+<pinref part="K2" gate="2" pin="P"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="129.54" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NOT" class="0">
+<segment>
+<pinref part="K1" gate="5" pin="O"/>
+<wire x1="71.12" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OR" class="0">
+<segment>
+<pinref part="K1" gate="4" pin="S"/>
+<wire x1="71.12" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="111.76" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="K2" gate="3" pin="S"/>
+<wire x1="96.52" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
+<junction x="96.52" y="50.8"/>
+<label x="132.08" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="K1" gate="3" pin="S"/>
+<wire x1="71.12" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="K2" gate="4" pin="O"/>
+<wire x1="104.14" y1="124.46" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="K1" gate="3" pin="O"/>
+<wire x1="71.12" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="K2" gate="4" pin="S"/>
+<wire x1="109.22" y1="134.62" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="LOGIC" prefix="" dx="40.64" dy="25.4">
+<ports>
+<port name="A[0..3]" side="top" coord="-7.62" direction="in"/>
+<port name="B[0..3]" side="top" coord="5.08" direction="in"/>
+<port name="AND[0..3]" side="bottom" coord="-15.24" direction="out"/>
+<port name="OR[0..3]" side="bottom" coord="0" direction="out"/>
+<port name="XOR[0..3]" side="bottom" coord="-7.62" direction="out"/>
+<port name="NOT[0..3]" side="bottom" coord="7.62" direction="out"/>
+<port name="SHL[0..3]" side="bottom" coord="15.24" direction="out"/>
+<port name="+12V" side="left" coord="10.16" direction="pwr"/>
+<port name="GND" side="left" coord="5.08" direction="pwr"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<moduleinsts>
+<moduleinst name="1_BIT_LOGIC0" module="1_BIT_LOGIC" x="182.88" y="38.1"/>
+<moduleinst name="1_BIT_LOGIC1" module="1_BIT_LOGIC" x="132.08" y="38.1"/>
+<moduleinst name="1_BIT_LOGIC2" module="1_BIT_LOGIC" x="81.28" y="38.1"/>
+<moduleinst name="1_BIT_LOGIC3" module="1_BIT_LOGIC" x="30.48" y="38.1"/>
+</moduleinsts>
+<instances>
+<instance part="SUPPLY1" gate="+12V" x="160.02" y="43.18" rot="R90"/>
+<instance part="SUPPLY2" gate="GND" x="160.02" y="35.56" rot="R270"/>
+<instance part="SUPPLY3" gate="+12V" x="109.22" y="43.18" rot="R90"/>
+<instance part="SUPPLY4" gate="GND" x="109.22" y="35.56" rot="R270"/>
+<instance part="SUPPLY5" gate="+12V" x="58.42" y="43.18" rot="R90"/>
+<instance part="SUPPLY6" gate="GND" x="58.42" y="35.56" rot="R270"/>
+<instance part="SUPPLY7" gate="+12V" x="7.62" y="43.18" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="7.62" y="35.56" rot="R270"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="A0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="X"/>
+<wire x1="175.26" y1="71.12" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="175.26" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="Y"/>
+<wire x1="190.5" y1="71.12" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
+<label x="190.5" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="+12V"/>
+<pinref part="SUPPLY1" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="+12V"/>
+<pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="+12V"/>
+<pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="+12V"/>
+<pinref part="SUPPLY7" gate="+12V" pin="+12V"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="GND"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="GND"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="GND"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="GND"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="NOT0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="NOT"/>
+<wire x1="195.58" y1="22.86" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
+<label x="195.58" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OR0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="OR"/>
+<wire x1="187.96" y1="22.86" x2="187.96" y2="17.78" width="0.1524" layer="91"/>
+<label x="187.96" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="XOR0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="XOR"/>
+<wire x1="180.34" y1="22.86" x2="180.34" y2="17.78" width="0.1524" layer="91"/>
+<label x="180.34" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AND0" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC0" port="AND"/>
+<wire x1="172.72" y1="22.86" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
+<label x="172.72" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="X"/>
+<wire x1="124.46" y1="71.12" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<label x="124.46" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="Y"/>
+<wire x1="139.7" y1="71.12" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
+<label x="139.7" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NOT1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="NOT"/>
+<wire x1="144.78" y1="22.86" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+<label x="144.78" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OR1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="OR"/>
+<wire x1="137.16" y1="22.86" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
+<label x="137.16" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="XOR1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="XOR"/>
+<wire x1="129.54" y1="22.86" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
+<label x="129.54" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AND1" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC1" port="AND"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
+<label x="121.92" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="X"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<label x="73.66" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="Y"/>
+<wire x1="88.9" y1="71.12" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
+<label x="88.9" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NOT2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="NOT"/>
+<wire x1="93.98" y1="22.86" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<label x="93.98" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OR2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="OR"/>
+<wire x1="86.36" y1="22.86" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
+<label x="86.36" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="XOR2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="XOR"/>
+<wire x1="78.74" y1="22.86" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
+<label x="78.74" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AND2" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC2" port="AND"/>
+<wire x1="71.12" y1="22.86" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<label x="71.12" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="X"/>
+<wire x1="22.86" y1="71.12" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<label x="22.86" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="Y"/>
+<wire x1="38.1" y1="71.12" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<label x="38.1" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NOT3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="NOT"/>
+<wire x1="43.18" y1="22.86" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<label x="43.18" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OR3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="OR"/>
+<wire x1="35.56" y1="22.86" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+<label x="35.56" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="XOR3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="XOR"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="27.94" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AND3" class="0">
+<segment>
+<portref moduleinst="1_BIT_LOGIC3" port="AND"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<label x="20.32" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -1455,23 +1884,26 @@ In this library the device names are the same as the pin names of the symbols, t
 <nets>
 <net name="ENABLE_CTL0" class="0">
 <segment>
-<portref moduleinst="ADDER" port="ADD"/>
+<portref moduleinst="ADDER" port="INC"/>
 <wire x1="129.54" y1="190.5" x2="93.98" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="190.5" x2="93.98" y2="172.72" width="0.1524" layer="91"/>
+<label x="96.52" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENABLE_CTL1" class="0">
 <segment>
-<portref moduleinst="ADDER" port="INC"/>
+<portref moduleinst="ADDER" port="DEC"/>
 <wire x1="129.54" y1="187.96" x2="96.52" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="187.96" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
+<label x="101.6" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENABLE_CTL2" class="0">
 <segment>
 <wire x1="129.54" y1="185.42" x2="99.06" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="185.42" x2="99.06" y2="172.72" width="0.1524" layer="91"/>
-<portref moduleinst="ADDER" port="DEC"/>
+<portref moduleinst="ADDER" port="ADD"/>
+<label x="104.14" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CARRY" class="0">
