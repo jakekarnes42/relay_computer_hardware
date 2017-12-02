@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1462,7 +1462,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="121.92" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="NOT" class="0">
+<net name="XOR" class="0">
 <segment>
 <pinref part="K2" gate="4" pin="O"/>
 <wire x1="58.42" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
@@ -1477,7 +1477,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="43.18" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XOR" class="0">
+<net name="NOT" class="0">
 <segment>
 <pinref part="K2" gate="5" pin="S"/>
 <wire x1="58.42" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
@@ -1639,7 +1639,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="35.56" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="43.18" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
-<label x="86.36" y="22.86" size="1.778" layer="95"/>
+<label x="83.82" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AND" class="0">
@@ -2201,7 +2201,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <moduleinst name="ENABLE_A" module="ENABLE4" x="35.56" y="63.5"/>
 <moduleinst name="ENABLE_B" module="ENABLE4" x="78.74" y="63.5"/>
 <moduleinst name="ZERO_DETECT1" module="ZERO_DETECT" x="45.72" y="-27.94" rot="R270"/>
-<moduleinst name="OUTPUT4-1" module="OUTPUT4" x="78.74" y="-116.84"/>
+<moduleinst name="OUTPUT4-1" module="OUTPUT4" x="78.74" y="-114.3"/>
 <moduleinst name="OUTPUT4-2" module="OUTPUT4" x="25.4" y="-114.3"/>
 <moduleinst name="ENABLE4-3" module="ENABLE4" x="25.4" y="-78.74"/>
 <moduleinst name="ENABLE4-4" module="ENABLE4" x="78.74" y="-78.74"/>
@@ -2218,7 +2218,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY5" gate="GND" x="15.24" y="58.42"/>
 <instance part="SUPPLY13" gate="+12V" x="45.72" y="-50.8" rot="R90"/>
 <instance part="SUPPLY12" gate="GND" x="53.34" y="-50.8" rot="R90"/>
-<instance part="SUPPLY11" gate="GND" x="55.88" y="-116.84" rot="R270"/>
+<instance part="SUPPLY11" gate="GND" x="55.88" y="-114.3" rot="R270"/>
 <instance part="SUPPLY14" gate="GND" x="2.54" y="-114.3" rot="R270"/>
 <instance part="SUPPLY16" gate="GND" x="2.54" y="-81.28" rot="R270"/>
 <instance part="SUPPLY19" gate="GND" x="55.88" y="-81.28" rot="R270"/>
@@ -2327,8 +2327,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-2.54" y1="-58.42" x2="58.42" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-58.42" x2="58.42" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="-2.54" y="-58.42"/>
-<label x="-10.16" y="-73.66" size="1.778" layer="95"/>
-<label x="53.34" y="-60.96" size="1.778" layer="95"/>
+<label x="0" y="-73.66" size="1.778" layer="95"/>
+<label x="53.34" y="-73.66" size="1.778" layer="95"/>
 <wire x1="96.52" y1="114.3" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_OP" port="IN2"/>
 <wire x1="96.52" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
@@ -2503,7 +2503,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="ENABLE4-4" port="OUT3"/>
 <portref moduleinst="OUTPUT4-1" port="OUT3"/>
-<wire x1="66.04" y1="-101.6" x2="66.04" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-99.06" x2="66.04" y2="-93.98" width="0.1524" layer="91"/>
 <label x="63.5" y="-99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -2511,7 +2511,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="ENABLE4-4" port="OUT2"/>
 <portref moduleinst="OUTPUT4-1" port="OUT2"/>
-<wire x1="73.66" y1="-101.6" x2="73.66" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-99.06" x2="73.66" y2="-93.98" width="0.1524" layer="91"/>
 <label x="71.12" y="-99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -2519,7 +2519,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="ENABLE4-4" port="OUT1"/>
 <portref moduleinst="OUTPUT4-1" port="OUT1"/>
-<wire x1="81.28" y1="-101.6" x2="81.28" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-99.06" x2="81.28" y2="-93.98" width="0.1524" layer="91"/>
 <label x="78.74" y="-99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -2527,7 +2527,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="ENABLE4-4" port="OUT0"/>
 <portref moduleinst="OUTPUT4-1" port="OUT0"/>
-<wire x1="88.9" y1="-101.6" x2="88.9" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-99.06" x2="88.9" y2="-93.98" width="0.1524" layer="91"/>
 <label x="86.36" y="-99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
