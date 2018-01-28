@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -286,38 +286,55 @@ reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
 <pad name="5" x="-4" y="0" drill="0.8" rot="R180"/>
 <rectangle x1="-4.25" y1="-0.25" x2="-3.75" y2="0.25" layer="51" rot="R180"/>
 </package>
-<package name="55932-1230">
-<description>&lt;b&gt;12 Pin - 2mm Single Row Single Wafer, Vertical T/H HDR&lt;/b&gt;</description>
-<wire x1="-14" y1="-4.15" x2="14" y2="-4.15" width="0.2032" layer="21"/>
-<wire x1="14" y1="-4.15" x2="14" y2="3" width="0.2032" layer="21"/>
-<wire x1="14" y1="3" x2="-14" y2="3" width="0.2032" layer="21"/>
-<wire x1="-14" y1="3" x2="-14" y2="-4.15" width="0.2032" layer="21"/>
-<pad name="1" x="11" y="0" drill="0.8" rot="R180"/>
-<pad name="2" x="9" y="0" drill="0.8" rot="R180"/>
-<pad name="3" x="7" y="0" drill="0.8" rot="R180"/>
-<text x="-13.62" y="-3.81" size="1" layer="25">&gt;NAME</text>
-<text x="1.23" y="-3.81" size="1" layer="27">&gt;VALUE</text>
-<rectangle x1="10.75" y1="-0.25" x2="11.25" y2="0.25" layer="51" rot="R180"/>
-<rectangle x1="8.75" y1="-0.25" x2="9.25" y2="0.25" layer="51" rot="R180"/>
-<rectangle x1="6.75" y1="-0.25" x2="7.25" y2="0.25" layer="51" rot="R180"/>
-<pad name="4" x="5" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="4.75" y1="-0.25" x2="5.25" y2="0.25" layer="51" rot="R180"/>
-<pad name="5" x="3" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="2.75" y1="-0.25" x2="3.25" y2="0.25" layer="51" rot="R180"/>
-<pad name="6" x="1" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.25" layer="51" rot="R180"/>
-<pad name="7" x="-1" y="0" drill="0.8" rot="R180"/>
-<pad name="8" x="-3" y="0" drill="0.8" rot="R180"/>
-<pad name="9" x="-5" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="-1.25" y1="-0.25" x2="-0.75" y2="0.25" layer="51" rot="R180"/>
-<rectangle x1="-3.25" y1="-0.25" x2="-2.75" y2="0.25" layer="51" rot="R180"/>
-<rectangle x1="-5.25" y1="-0.25" x2="-4.75" y2="0.25" layer="51" rot="R180"/>
-<pad name="10" x="-7" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="-7.25" y1="-0.25" x2="-6.75" y2="0.25" layer="51" rot="R180"/>
-<pad name="11" x="-9" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="-9.25" y1="-0.25" x2="-8.75" y2="0.25" layer="51" rot="R180"/>
-<pad name="12" x="-11" y="0" drill="0.8" rot="R180"/>
-<rectangle x1="-11.25" y1="-0.25" x2="-10.75" y2="0.25" layer="51" rot="R180"/>
+<package name="55917-2030">
+<description>&lt;b&gt;20 Pin - 2mm Dual Row Single Wafer, Vertical T/H HDR&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/559172030_sd.pdf</description>
+<wire x1="-11.7" y1="-6.65" x2="11.7" y2="-6.65" width="0.2032" layer="21"/>
+<wire x1="11.7" y1="-6.65" x2="11.7" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="11.7" y1="4.85" x2="-11.7" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-11.7" y1="4.85" x2="-11.7" y2="-6.65" width="0.2032" layer="21"/>
+<pad name="1" x="9" y="2.5" drill="0.8" rot="R180"/>
+<pad name="2" x="9" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="3" x="7" y="2.5" drill="0.8" rot="R180"/>
+<pad name="4" x="7" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="5" x="5" y="2.5" drill="0.8" rot="R180"/>
+<pad name="6" x="5" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="7" x="3" y="2.5" drill="0.8" rot="R180"/>
+<pad name="8" x="3" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="9" x="1" y="2.5" drill="0.8" rot="R180"/>
+<pad name="10" x="1" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="11" x="-1" y="2.5" drill="0.8" rot="R180"/>
+<pad name="12" x="-1" y="-2.5" drill="0.8" rot="R180"/>
+<text x="-10.12" y="-5.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="4.23" y="-5.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="8.75" y1="2.25" x2="9.25" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="8.75" y1="-2.75" x2="9.25" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="6.75" y1="2.25" x2="7.25" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="6.75" y1="-2.75" x2="7.25" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="4.75" y1="2.25" x2="5.25" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="4.75" y1="-2.75" x2="5.25" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="2.75" y1="2.25" x2="3.25" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="2.75" y1="-2.75" x2="3.25" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="0.75" y1="2.25" x2="1.25" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="0.75" y1="-2.75" x2="1.25" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="-1.25" y1="2.25" x2="-0.75" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="-1.25" y1="-2.75" x2="-0.75" y2="-2.25" layer="51" rot="R180"/>
+<pad name="13" x="-3" y="2.5" drill="0.8" rot="R180"/>
+<pad name="14" x="-3" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="15" x="-5" y="2.5" drill="0.8" rot="R180"/>
+<pad name="16" x="-5" y="-2.5" drill="0.8" rot="R180"/>
+<pad name="17" x="-7" y="2.5" drill="0.8" rot="R180"/>
+<pad name="18" x="-7" y="-2.5" drill="0.8" rot="R180"/>
+<rectangle x1="-3.25" y1="2.25" x2="-2.75" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="-3.25" y1="-2.75" x2="-2.75" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="-5.25" y1="2.25" x2="-4.75" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="-5.25" y1="-2.75" x2="-4.75" y2="-2.25" layer="51" rot="R180"/>
+<rectangle x1="-7.25" y1="2.25" x2="-6.75" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="-7.25" y1="-2.75" x2="-6.75" y2="-2.25" layer="51" rot="R180"/>
+<pad name="19" x="-9" y="2.5" drill="0.8" rot="R180"/>
+<pad name="20" x="-9" y="-2.5" drill="0.8" rot="R180"/>
+<rectangle x1="-9.25" y1="2.25" x2="-8.75" y2="2.75" layer="51" rot="R180"/>
+<rectangle x1="-9.25" y1="-2.75" x2="-8.75" y2="-2.25" layer="51" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -657,32 +674,48 @@ Source: http://www.molex.com/pdm_docs/sd/559320530_sd.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="55932-1230" prefix="X">
-<description>&lt;b&gt;12 pin- 2.00mm Pitch MicroClasp™ Wire-to-Board Header, Single Row, Vertical, without PCB Locator
-&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/559321230_sd.pdf</description>
+<deviceset name="55917-2030" prefix="X">
+<description>&lt;b&gt;20 Pin - 2mm Dual Row Single Wafer, Vertical T/H HDR&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/5591720
+30_sd.pdf</description>
 <gates>
-<gate name="-1" symbol="MV" x="0" y="10.16" addlevel="always"/>
-<gate name="-3" symbol="M" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="7.62"/>
-<gate name="-4" symbol="M" x="0" y="2.54" addlevel="always"/>
-<gate name="-5" symbol="M" x="0" y="0" addlevel="always"/>
-<gate name="-6" symbol="M" x="0" y="-2.54" addlevel="always"/>
-<gate name="-7" symbol="M" x="0" y="-5.08" addlevel="always"/>
-<gate name="-8" symbol="M" x="0" y="-7.62" addlevel="always"/>
-<gate name="-9" symbol="M" x="0" y="-10.16" addlevel="always"/>
-<gate name="-10" symbol="M" x="0" y="-12.7" addlevel="always"/>
-<gate name="-11" symbol="M" x="0" y="-15.24" addlevel="always"/>
-<gate name="-12" symbol="M" x="0" y="-17.78" addlevel="always"/>
+<gate name="-1" symbol="MV" x="-10.16" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="MV" x="10.16" y="7.62" addlevel="always"/>
+<gate name="-3" symbol="M" x="-10.16" y="5.08" addlevel="always"/>
+<gate name="-4" symbol="M" x="10.16" y="5.08" addlevel="always"/>
+<gate name="-5" symbol="M" x="-10.16" y="2.54" addlevel="always"/>
+<gate name="-6" symbol="M" x="10.16" y="2.54" addlevel="always"/>
+<gate name="-7" symbol="M" x="-10.16" y="0" addlevel="always"/>
+<gate name="-8" symbol="M" x="10.16" y="0" addlevel="always"/>
+<gate name="-9" symbol="M" x="-10.16" y="-2.54"/>
+<gate name="-10" symbol="M" x="10.16" y="-2.54"/>
+<gate name="-11" symbol="M" x="-10.16" y="-5.08"/>
+<gate name="-12" symbol="M" x="10.16" y="-5.08"/>
+<gate name="-13" symbol="M" x="-10.16" y="-7.62"/>
+<gate name="-14" symbol="M" x="10.16" y="-7.62"/>
+<gate name="-15" symbol="M" x="-10.16" y="-10.16"/>
+<gate name="-17" symbol="M" x="-10.16" y="-12.7"/>
+<gate name="-19" symbol="M" x="-10.16" y="-15.24"/>
+<gate name="-16" symbol="M" x="10.16" y="-10.16"/>
+<gate name="-18" symbol="M" x="10.16" y="-12.7"/>
+<gate name="-20" symbol="M" x="10.16" y="-15.24"/>
 </gates>
 <devices>
-<device name="" package="55932-1230">
+<device name="" package="55917-2030">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
 <connect gate="-11" pin="S" pad="11"/>
 <connect gate="-12" pin="S" pad="12"/>
+<connect gate="-13" pin="S" pad="13"/>
+<connect gate="-14" pin="S" pad="14"/>
+<connect gate="-15" pin="S" pad="15"/>
+<connect gate="-16" pin="S" pad="16"/>
+<connect gate="-17" pin="S" pad="17"/>
+<connect gate="-18" pin="S" pad="18"/>
+<connect gate="-19" pin="S" pad="19"/>
 <connect gate="-2" pin="S" pad="2"/>
+<connect gate="-20" pin="S" pad="20"/>
 <connect gate="-3" pin="S" pad="3"/>
 <connect gate="-4" pin="S" pad="4"/>
 <connect gate="-5" pin="S" pad="5"/>
@@ -2207,7 +2240,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <port name="IN2" side="top" coord="-5.08" direction="in"/>
 <port name="IN1" side="top" coord="5.08" direction="in"/>
 <port name="IN0" side="top" coord="12.7" direction="in"/>
-<port name="OUT0" side="right" coord="0" direction="in"/>
+<port name="OUT0" side="right" coord="0" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2272,21 +2305,29 @@ In this library the device names are the same as the pin names of the symbols, t
 </sheet>
 </sheets>
 </module>
-<module name="INPUT20" prefix="" dx="71.12" dy="20.32">
+<module name="INPUT20" prefix="" dx="111.76" dy="20.32">
 <ports>
-<port name="IN1" side="top" coord="30.48" direction="out"/>
-<port name="IN3" side="top" coord="20.32" direction="out"/>
-<port name="IN5" side="top" coord="10.16" direction="out"/>
-<port name="IN7" side="top" coord="-5.08" direction="out"/>
-<port name="IN9" side="top" coord="-15.24" direction="out"/>
-<port name="IN11" side="top" coord="-25.4" direction="out"/>
-<port name="IN2" side="top" coord="25.4" direction="out"/>
-<port name="IN4" side="top" coord="15.24" direction="out"/>
-<port name="IN6" side="top" coord="5.08" direction="out"/>
-<port name="IN8" side="top" coord="-10.16" direction="out"/>
-<port name="IN10" side="top" coord="-20.32" direction="out"/>
-<port name="IN12" side="top" coord="-30.48" direction="out"/>
+<port name="IN1" side="top" coord="53.34" direction="out"/>
+<port name="IN3" side="top" coord="43.18" direction="out"/>
+<port name="IN5" side="top" coord="33.02" direction="out"/>
+<port name="IN7" side="top" coord="22.86" direction="out"/>
+<port name="IN9" side="top" coord="12.7" direction="out"/>
+<port name="IN11" side="top" coord="-5.08" direction="out"/>
+<port name="IN2" side="top" coord="48.26" direction="out"/>
+<port name="IN4" side="top" coord="38.1" direction="out"/>
+<port name="IN6" side="top" coord="27.94" direction="out"/>
+<port name="IN8" side="top" coord="17.78" direction="out"/>
+<port name="IN10" side="top" coord="7.62" direction="out"/>
+<port name="IN12" side="top" coord="-10.16" direction="out"/>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
+<port name="IN13" side="top" coord="-15.24" direction="out"/>
+<port name="IN14" side="top" coord="-20.32" direction="out"/>
+<port name="IN15" side="top" coord="-25.4" direction="out"/>
+<port name="IN16" side="top" coord="-30.48" direction="out"/>
+<port name="IN17" side="top" coord="-35.56" direction="out"/>
+<port name="IN18" side="top" coord="-40.64" direction="out"/>
+<port name="IN19" side="top" coord="-45.72" direction="out"/>
+<port name="IN20" side="top" coord="-50.8" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -2294,7 +2335,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED_2" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_1" library="relay_computer_custom" deviceset="LED" device="3MM"/>
-<part name="X1" library="relay_computer_custom" deviceset="55932-1230" device=""/>
 <part name="LED_3" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_4" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_5" library="relay_computer_custom" deviceset="LED" device="3MM"/>
@@ -2303,225 +2343,364 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LED_8" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_9" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_10" library="relay_computer_custom" deviceset="LED" device="3MM"/>
-<part name="LED_11" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="X2" library="relay_computer_custom" deviceset="55917-2030" device=""/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="LED_19" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_20" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_18" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_17" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_16" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_15" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_14" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_13" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="LED_12" library="relay_computer_custom" deviceset="LED" device="3MM"/>
+<part name="LED_11" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SUPPLY11" gate="GND" x="121.92" y="116.84" rot="MR270"/>
-<instance part="LED_2" gate="G$1" x="96.52" y="111.76" rot="MR180"/>
-<instance part="LED_1" gate="G$1" x="106.68" y="111.76" rot="MR180"/>
-<instance part="X1" gate="-2" x="58.42" y="71.12" rot="R270"/>
-<instance part="X1" gate="-1" x="60.96" y="71.12" rot="R270"/>
-<instance part="X1" gate="-3" x="55.88" y="71.12" rot="R270"/>
-<instance part="X1" gate="-4" x="53.34" y="71.12" rot="R270"/>
-<instance part="X1" gate="-5" x="50.8" y="71.12" rot="R270"/>
-<instance part="X1" gate="-6" x="48.26" y="71.12" rot="R270"/>
-<instance part="X1" gate="-7" x="45.72" y="71.12" rot="R270"/>
-<instance part="X1" gate="-8" x="43.18" y="71.12" rot="R270"/>
-<instance part="X1" gate="-9" x="40.64" y="71.12" rot="R270"/>
-<instance part="X1" gate="-10" x="38.1" y="71.12" rot="R270"/>
-<instance part="X1" gate="-11" x="35.56" y="71.12" rot="R270"/>
-<instance part="X1" gate="-12" x="33.02" y="71.12" rot="R270"/>
-<instance part="LED_3" gate="G$1" x="86.36" y="111.76" rot="MR180"/>
-<instance part="LED_4" gate="G$1" x="76.2" y="111.76" rot="MR180"/>
-<instance part="LED_5" gate="G$1" x="66.04" y="111.76" rot="MR180"/>
-<instance part="LED_6" gate="G$1" x="55.88" y="111.76" rot="MR180"/>
-<instance part="LED_7" gate="G$1" x="45.72" y="111.76" rot="MR180"/>
-<instance part="LED_8" gate="G$1" x="35.56" y="111.76" rot="MR180"/>
-<instance part="LED_9" gate="G$1" x="25.4" y="111.76" rot="MR180"/>
-<instance part="LED_10" gate="G$1" x="15.24" y="111.76" rot="MR180"/>
-<instance part="LED_11" gate="G$1" x="5.08" y="111.76" rot="MR180"/>
-<instance part="LED_12" gate="G$1" x="-5.08" y="111.76" rot="MR180"/>
+<instance part="SUPPLY11" gate="GND" x="175.26" y="132.08" rot="MR270"/>
+<instance part="LED_2" gate="G$1" x="149.86" y="127" rot="MR180"/>
+<instance part="LED_1" gate="G$1" x="160.02" y="127" rot="MR180"/>
+<instance part="LED_3" gate="G$1" x="139.7" y="127" rot="MR180"/>
+<instance part="LED_4" gate="G$1" x="129.54" y="127" rot="MR180"/>
+<instance part="LED_5" gate="G$1" x="119.38" y="127" rot="MR180"/>
+<instance part="LED_6" gate="G$1" x="109.22" y="127" rot="MR180"/>
+<instance part="LED_7" gate="G$1" x="99.06" y="127" rot="MR180"/>
+<instance part="LED_8" gate="G$1" x="88.9" y="127" rot="MR180"/>
+<instance part="LED_9" gate="G$1" x="78.74" y="127" rot="MR180"/>
+<instance part="LED_10" gate="G$1" x="68.58" y="127" rot="MR180"/>
+<instance part="X2" gate="-9" x="111.76" y="106.68" rot="R270"/>
+<instance part="X2" gate="-1" x="121.92" y="106.68" rot="R270"/>
+<instance part="X2" gate="-2" x="121.92" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-3" x="119.38" y="106.68" rot="R270"/>
+<instance part="X2" gate="-4" x="119.38" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-5" x="116.84" y="106.68" rot="R270"/>
+<instance part="X2" gate="-6" x="116.84" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-7" x="114.3" y="106.68" rot="R270"/>
+<instance part="X2" gate="-8" x="114.3" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-10" x="111.76" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-11" x="109.22" y="106.68" rot="R270"/>
+<instance part="X2" gate="-12" x="109.22" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-13" x="106.68" y="106.68" rot="R270"/>
+<instance part="X2" gate="-14" x="106.68" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-15" x="104.14" y="106.68" rot="R270"/>
+<instance part="X2" gate="-17" x="101.6" y="106.68" rot="R270"/>
+<instance part="X2" gate="-19" x="99.06" y="106.68" rot="R270"/>
+<instance part="X2" gate="-16" x="104.14" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-18" x="101.6" y="73.66" rot="MR90"/>
+<instance part="X2" gate="-20" x="99.06" y="73.66" rot="MR90"/>
+<instance part="SUPPLY1" gate="GND" x="45.72" y="48.26" rot="MR90"/>
+<instance part="LED_19" gate="G$1" x="71.12" y="53.34" rot="MR0"/>
+<instance part="LED_20" gate="G$1" x="60.96" y="53.34" rot="MR0"/>
+<instance part="LED_18" gate="G$1" x="81.28" y="53.34" rot="MR0"/>
+<instance part="LED_17" gate="G$1" x="91.44" y="53.34" rot="MR0"/>
+<instance part="LED_16" gate="G$1" x="101.6" y="53.34" rot="MR0"/>
+<instance part="LED_15" gate="G$1" x="111.76" y="53.34" rot="MR0"/>
+<instance part="LED_14" gate="G$1" x="121.92" y="53.34" rot="MR0"/>
+<instance part="LED_13" gate="G$1" x="132.08" y="53.34" rot="MR0"/>
+<instance part="LED_12" gate="G$1" x="142.24" y="53.34" rot="MR0"/>
+<instance part="LED_11" gate="G$1" x="152.4" y="53.34" rot="MR0"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="IN2" class="0">
 <segment>
-<wire x1="91.44" y1="134.62" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="109.22" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="149.86" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="124.46" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_2" gate="G$1" pin="A"/>
-<wire x1="96.52" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
-<junction x="91.44" y="109.22"/>
-<label x="91.44" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-2" pin="S"/>
-<wire x1="58.42" y1="73.66" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<junction x="144.78" y="124.46"/>
+<label x="144.78" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="119.38" y1="109.22" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN1" class="0">
 <segment>
-<wire x1="101.6" y1="109.22" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_1" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
-<label x="101.6" y="127" size="1.778" layer="95" rot="MR270"/>
-<wire x1="101.6" y1="109.22" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
-<junction x="101.6" y="109.22"/>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="60.96" y1="73.66" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<label x="154.94" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
+<junction x="154.94" y="124.46"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="121.92" y1="109.22" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 <pinref part="LED_1" gate="G$1" pin="C"/>
-<wire x1="106.68" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="LED_12" gate="G$1" pin="C"/>
-<pinref part="LED_11" gate="G$1" pin="C"/>
-<wire x1="-5.08" y1="116.84" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="LED_10" gate="G$1" pin="C"/>
-<wire x1="5.08" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
-<junction x="5.08" y="116.84"/>
 <pinref part="LED_9" gate="G$1" pin="C"/>
-<wire x1="15.24" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
-<junction x="15.24" y="116.84"/>
+<wire x1="68.58" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="LED_8" gate="G$1" pin="C"/>
-<wire x1="25.4" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
-<junction x="25.4" y="116.84"/>
+<wire x1="78.74" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
+<junction x="78.74" y="132.08"/>
 <pinref part="LED_7" gate="G$1" pin="C"/>
-<wire x1="35.56" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
-<junction x="35.56" y="116.84"/>
+<wire x1="88.9" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<junction x="88.9" y="132.08"/>
 <pinref part="LED_6" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<junction x="45.72" y="116.84"/>
+<wire x1="99.06" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<junction x="99.06" y="132.08"/>
 <pinref part="LED_5" gate="G$1" pin="C"/>
-<wire x1="55.88" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
-<junction x="55.88" y="116.84"/>
+<wire x1="109.22" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
+<junction x="109.22" y="132.08"/>
 <pinref part="LED_4" gate="G$1" pin="C"/>
-<wire x1="66.04" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
-<junction x="66.04" y="116.84"/>
+<wire x1="119.38" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<junction x="119.38" y="132.08"/>
 <pinref part="LED_3" gate="G$1" pin="C"/>
-<wire x1="76.2" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<junction x="76.2" y="116.84"/>
+<wire x1="129.54" y1="132.08" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<junction x="129.54" y="132.08"/>
 <pinref part="LED_2" gate="G$1" pin="C"/>
-<wire x1="86.36" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
-<junction x="86.36" y="116.84"/>
-<wire x1="96.52" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
-<junction x="96.52" y="116.84"/>
-<junction x="106.68" y="116.84"/>
+<wire x1="139.7" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
+<junction x="139.7" y="132.08"/>
+<wire x1="149.86" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
+<junction x="149.86" y="132.08"/>
+<junction x="160.02" y="132.08"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<pinref part="LED_20" gate="G$1" pin="C"/>
+<wire x1="60.96" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LED_11" gate="G$1" pin="C"/>
+<pinref part="LED_12" gate="G$1" pin="C"/>
+<wire x1="152.4" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="LED_13" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<junction x="142.24" y="48.26"/>
+<pinref part="LED_14" gate="G$1" pin="C"/>
+<wire x1="132.08" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<junction x="132.08" y="48.26"/>
+<pinref part="LED_15" gate="G$1" pin="C"/>
+<wire x1="121.92" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<junction x="121.92" y="48.26"/>
+<pinref part="LED_16" gate="G$1" pin="C"/>
+<wire x1="111.76" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
+<junction x="111.76" y="48.26"/>
+<pinref part="LED_17" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<junction x="101.6" y="48.26"/>
+<pinref part="LED_18" gate="G$1" pin="C"/>
+<wire x1="91.44" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<junction x="91.44" y="48.26"/>
+<pinref part="LED_19" gate="G$1" pin="C"/>
+<wire x1="81.28" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+<junction x="81.28" y="48.26"/>
+<wire x1="71.12" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<junction x="71.12" y="48.26"/>
+<junction x="60.96" y="48.26"/>
 </segment>
 </net>
 <net name="IN3" class="0">
 <segment>
-<wire x1="81.28" y1="134.62" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="149.86" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="124.46" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_3" gate="G$1" pin="A"/>
-<wire x1="86.36" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<junction x="81.28" y="109.22"/>
-<label x="81.28" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-3" pin="S"/>
-<wire x1="55.88" y1="73.66" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<junction x="134.62" y="124.46"/>
+<label x="134.62" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-5" pin="S"/>
+<wire x1="116.84" y1="109.22" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN4" class="0">
 <segment>
-<wire x1="71.12" y1="134.62" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="109.22" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="149.86" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="124.46" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_4" gate="G$1" pin="A"/>
-<wire x1="76.2" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<junction x="71.12" y="109.22"/>
-<label x="71.12" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-4" pin="S"/>
-<wire x1="53.34" y1="73.66" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="124.46" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
+<junction x="124.46" y="124.46"/>
+<label x="124.46" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-7" pin="S"/>
+<wire x1="114.3" y1="109.22" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN5" class="0">
 <segment>
-<wire x1="60.96" y1="134.62" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="109.22" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="149.86" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="124.46" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_5" gate="G$1" pin="A"/>
-<wire x1="66.04" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<junction x="60.96" y="109.22"/>
-<label x="60.96" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-5" pin="S"/>
-<wire x1="60.96" y1="106.68" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<junction x="114.3" y="124.46"/>
+<label x="114.3" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-9" pin="S"/>
+<wire x1="111.76" y1="109.22" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN6" class="0">
 <segment>
-<wire x1="50.8" y1="134.62" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="109.22" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="149.86" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="124.46" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_6" gate="G$1" pin="A"/>
-<wire x1="55.88" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<junction x="50.8" y="109.22"/>
-<label x="50.8" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-6" pin="S"/>
-<wire x1="48.26" y1="73.66" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<junction x="104.14" y="124.46"/>
+<label x="104.14" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-11" pin="S"/>
+<wire x1="109.22" y1="109.22" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN7" class="0">
 <segment>
-<wire x1="40.64" y1="134.62" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="109.22" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="149.86" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="124.46" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_7" gate="G$1" pin="A"/>
-<wire x1="45.72" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
-<junction x="40.64" y="109.22"/>
-<label x="40.64" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-7" pin="S"/>
-<wire x1="45.72" y1="73.66" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
+<junction x="93.98" y="124.46"/>
+<label x="93.98" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-13" pin="S"/>
+<wire x1="106.68" y1="109.22" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN8" class="0">
 <segment>
-<wire x1="30.48" y1="134.62" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="109.22" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="149.86" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="124.46" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_8" gate="G$1" pin="A"/>
-<wire x1="35.56" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<junction x="30.48" y="109.22"/>
-<label x="30.48" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-8" pin="S"/>
-<wire x1="43.18" y1="73.66" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<junction x="83.82" y="124.46"/>
+<label x="83.82" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-15" pin="S"/>
+<wire x1="104.14" y1="109.22" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN9" class="0">
 <segment>
-<wire x1="20.32" y1="134.62" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="109.22" x2="20.32" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="124.46" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_9" gate="G$1" pin="A"/>
-<wire x1="25.4" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<junction x="20.32" y="109.22"/>
-<label x="20.32" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-9" pin="S"/>
-<wire x1="40.64" y1="73.66" x2="20.32" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<junction x="73.66" y="124.46"/>
+<label x="73.66" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-17" pin="S"/>
+<wire x1="101.6" y1="109.22" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN10" class="0">
 <segment>
-<wire x1="10.16" y1="134.62" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="109.22" x2="10.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="149.86" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="124.46" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="LED_10" gate="G$1" pin="A"/>
-<wire x1="15.24" y1="109.22" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
-<junction x="10.16" y="109.22"/>
-<label x="10.16" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-10" pin="S"/>
-<wire x1="38.1" y1="73.66" x2="10.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="124.46" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<junction x="63.5" y="124.46"/>
+<label x="63.5" y="142.24" size="1.778" layer="95" rot="MR270"/>
+<pinref part="X2" gate="-19" pin="S"/>
+<wire x1="99.06" y1="109.22" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN11" class="0">
 <segment>
-<wire x1="0" y1="134.62" x2="0" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="0" y1="109.22" x2="0" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="30.48" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="55.88" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LED_11" gate="G$1" pin="A"/>
-<wire x1="5.08" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
-<junction x="0" y="109.22"/>
-<label x="0" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-11" pin="S"/>
-<wire x1="35.56" y1="73.66" x2="0" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<junction x="157.48" y="55.88"/>
+<label x="157.48" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="121.92" y1="71.12" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN12" class="0">
 <segment>
-<wire x1="-10.16" y1="134.62" x2="-10.16" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="109.22" x2="-10.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="30.48" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="55.88" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LED_12" gate="G$1" pin="A"/>
-<wire x1="-5.08" y1="109.22" x2="-10.16" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-10.16" y="109.22"/>
-<label x="-12.7" y="127" size="1.778" layer="95" rot="MR270"/>
-<pinref part="X1" gate="-12" pin="S"/>
-<wire x1="33.02" y1="73.66" x2="-10.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
+<junction x="147.32" y="55.88"/>
+<label x="147.32" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="119.38" y1="71.12" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN13" class="0">
+<segment>
+<wire x1="137.16" y1="30.48" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_13" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
+<junction x="137.16" y="55.88"/>
+<label x="137.16" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="116.84" y1="71.12" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN14" class="0">
+<segment>
+<wire x1="127" y1="30.48" x2="127" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="55.88" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_14" gate="G$1" pin="A"/>
+<wire x1="121.92" y1="55.88" x2="127" y2="55.88" width="0.1524" layer="91"/>
+<junction x="127" y="55.88"/>
+<label x="127" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="114.3" y1="71.12" x2="127" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN15" class="0">
+<segment>
+<wire x1="116.84" y1="30.48" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="55.88" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_15" gate="G$1" pin="A"/>
+<wire x1="111.76" y1="55.88" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<junction x="116.84" y="55.88"/>
+<label x="116.84" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="111.76" y1="71.12" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN16" class="0">
+<segment>
+<wire x1="106.68" y1="30.48" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="55.88" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_16" gate="G$1" pin="A"/>
+<wire x1="101.6" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<junction x="106.68" y="55.88"/>
+<label x="106.68" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="109.22" y1="71.12" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN17" class="0">
+<segment>
+<wire x1="96.52" y1="30.48" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="55.88" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_17" gate="G$1" pin="A"/>
+<wire x1="91.44" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+<junction x="96.52" y="55.88"/>
+<label x="96.52" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="106.68" y1="71.12" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN18" class="0">
+<segment>
+<wire x1="86.36" y1="30.48" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="55.88" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_18" gate="G$1" pin="A"/>
+<wire x1="81.28" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<junction x="86.36" y="55.88"/>
+<label x="86.36" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="104.14" y1="71.12" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN19" class="0">
+<segment>
+<wire x1="76.2" y1="30.48" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_19" gate="G$1" pin="A"/>
+<wire x1="71.12" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<junction x="76.2" y="55.88"/>
+<label x="76.2" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="101.6" y1="71.12" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IN20" class="0">
+<segment>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED_20" gate="G$1" pin="A"/>
+<wire x1="60.96" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
+<label x="66.04" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<junction x="66.04" y="55.88"/>
+<wire x1="99.06" y1="71.12" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -2552,6 +2731,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="LED_LOAD_CCR" library="relay_computer_custom" deviceset="LED" device="3MM"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2561,30 +2744,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <moduleinst name="PWR_BLK" module="PWR_BLK" x="63.5" y="-12.7"/>
 <moduleinst name="INPUT_DATA" module="INPUT4" x="154.94" y="22.86" rot="MR180"/>
 <moduleinst name="INPUT_ADDR" module="INPUT4" x="-27.94" y="22.86" rot="MR180"/>
-<moduleinst name="REGISTER_C" module="REGISTER4" x="63.5" y="304.8" rot="R90"/>
-<moduleinst name="REGISTER_B" module="REGISTER4" x="63.5" y="203.2" rot="R90"/>
+<moduleinst name="REGISTER_C" module="REGISTER4" x="63.5" y="228.6" rot="R90"/>
+<moduleinst name="REGISTER_B" module="REGISTER4" x="63.5" y="165.1" rot="R90"/>
 <moduleinst name="REGISTER_A" module="REGISTER4" x="63.5" y="101.6" rot="R90"/>
-<moduleinst name="OUTPUT_AU_A" module="OUTPUT4" x="93.98" y="149.86" rot="R90"/>
-<moduleinst name="OUTPUT_LU_A" module="OUTPUT4" x="33.02" y="149.86" rot="MR90"/>
-<moduleinst name="OUTPUT_AU_B" module="OUTPUT4" x="93.98" y="248.92" rot="R90"/>
-<moduleinst name="OUTPUT_LU_B" module="OUTPUT4" x="35.56" y="248.92" rot="MR90"/>
-<moduleinst name="CCR" module="CC_REGISTER" x="66.04" y="396.24" rot="R180"/>
-<moduleinst name="INPUT_AU_CCR" module="INPUT4" x="96.52" y="434.34" rot="R270"/>
-<moduleinst name="INPUT_LU_CCR" module="INPUT4" x="35.56" y="434.34" rot="MR270"/>
+<moduleinst name="CCR" module="CC_REGISTER" x="66.04" y="508" rot="R180"/>
+<moduleinst name="INPUT_AU_CCR" module="INPUT4" x="96.52" y="546.1" rot="R270"/>
+<moduleinst name="INPUT_LU_CCR" module="INPUT4" x="35.56" y="546.1" rot="MR270"/>
 <moduleinst name="CCR_CONTROL" module="CONNECT5" x="-76.2" y="22.86"/>
 <moduleinst name="REGISTER_CONTROL" module="INPUT20" x="63.5" y="22.86"/>
-<moduleinst name="INPUT_AU_DATA" module="INPUT4" x="193.04" y="434.34" rot="R270"/>
-<moduleinst name="INPUT_LU_DATA" module="INPUT4" x="124.46" y="434.34" rot="MR270"/>
+<moduleinst name="INPUT_AU_DATA" module="INPUT4" x="193.04" y="546.1" rot="R270"/>
+<moduleinst name="INPUT_LU_DATA" module="INPUT4" x="124.46" y="546.1" rot="MR270"/>
+<moduleinst name="REGISTER_TMP1" module="REGISTER4" x="63.5" y="292.1" rot="R90"/>
+<moduleinst name="OUTPUT_AU_TMP1" module="OUTPUT4" x="93.98" y="340.36" rot="R90"/>
+<moduleinst name="OUTPUT_LU_TMP1" module="OUTPUT4" x="33.02" y="340.36" rot="MR90"/>
+<moduleinst name="REGISTER_TMP2" module="REGISTER4" x="63.5" y="393.7" rot="R90"/>
+<moduleinst name="OUTPUT_AU_TMP2" module="OUTPUT4" x="93.98" y="441.96" rot="R90"/>
+<moduleinst name="OUTPUT_LU_TMP2" module="OUTPUT4" x="33.02" y="441.96" rot="MR90"/>
 </moduleinsts>
 <instances>
 <instance part="SUPPLY17" gate="+12V" x="58.42" y="-30.48" rot="R180"/>
 <instance part="SUPPLY18" gate="GND" x="68.58" y="-30.48"/>
 <instance part="SUPPLY1" gate="+12V" x="60.96" y="73.66" rot="R180"/>
 <instance part="SUPPLY3" gate="GND" x="68.58" y="73.66"/>
-<instance part="SUPPLY5" gate="+12V" x="60.96" y="175.26" rot="R180"/>
-<instance part="SUPPLY6" gate="GND" x="68.58" y="175.26"/>
-<instance part="SUPPLY7" gate="+12V" x="60.96" y="276.86" rot="R180"/>
-<instance part="SUPPLY8" gate="GND" x="68.58" y="276.86"/>
+<instance part="SUPPLY5" gate="+12V" x="60.96" y="137.16" rot="R180"/>
+<instance part="SUPPLY6" gate="GND" x="68.58" y="137.16"/>
+<instance part="SUPPLY7" gate="+12V" x="60.96" y="200.66" rot="R180"/>
+<instance part="SUPPLY8" gate="GND" x="68.58" y="200.66"/>
 <instance part="SUPPLY16" gate="GND" x="190.5" y="76.2" rot="R90"/>
 <instance part="LED_DATA3" gate="G$1" x="147.32" y="81.28"/>
 <instance part="LED_DATA2" gate="G$1" x="157.48" y="81.28"/>
@@ -2595,21 +2780,25 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="LED_ADDR2" gate="G$1" x="-25.4" y="81.28"/>
 <instance part="LED_ADDR1" gate="G$1" x="-15.24" y="81.28"/>
 <instance part="LED_ADDR0" gate="G$1" x="-5.08" y="81.28"/>
-<instance part="SUPPLY23" gate="GND" x="45.72" y="393.7"/>
-<instance part="SUPPLY24" gate="+12V" x="45.72" y="401.32"/>
+<instance part="SUPPLY23" gate="GND" x="45.72" y="505.46"/>
+<instance part="SUPPLY24" gate="+12V" x="45.72" y="513.08"/>
 <instance part="LED_LOAD_CCR" gate="G$1" x="-48.26" y="81.28"/>
 <instance part="SUPPLY2" gate="GND" x="63.5" y="5.08"/>
+<instance part="SUPPLY4" gate="+12V" x="60.96" y="264.16" rot="R180"/>
+<instance part="SUPPLY9" gate="GND" x="68.58" y="264.16"/>
+<instance part="SUPPLY10" gate="+12V" x="60.96" y="365.76" rot="R180"/>
+<instance part="SUPPLY12" gate="GND" x="68.58" y="365.76"/>
 </instances>
 <busses>
-<bus name="LOADD_A,SELECTD_A,LOADD_B,SELECTD_B,LOADD_C,SELECTD_C">
+<bus name="LOADD_A,SELECTD_A,LOADD_B,SELECTD_B,LOADD_C,SELECTD_C,LOADD_TMP1,SELECTD_TMP1,LOADD_TMP2,SELECTD_TMP2">
 <segment>
-<wire x1="127" y1="60.96" x2="127" y2="325.12" width="0.762" layer="92"/>
+<wire x1="127" y1="60.96" x2="127" y2="408.94" width="0.762" layer="92"/>
 <wire x1="127" y1="60.96" x2="68.58" y2="60.96" width="0.762" layer="92"/>
 </segment>
 </bus>
-<bus name="LOADA_A,SELECTA_A,LOADA_B,SELECTA_B,LOADA_C,SELECTA_C">
+<bus name="LOADA_A,SELECTA_A,LOADA_B,SELECTA_B,LOADA_C,SELECTA_C,LOADA_TMP1,SELECTA_TMP1,LOADA_TMP2,SELECTA_TMP2">
 <segment>
-<wire x1="2.54" y1="60.96" x2="2.54" y2="325.12" width="0.762" layer="92"/>
+<wire x1="2.54" y1="60.96" x2="2.54" y2="408.94" width="0.762" layer="92"/>
 <wire x1="2.54" y1="60.96" x2="58.42" y2="60.96" width="0.762" layer="92"/>
 </segment>
 </bus>
@@ -2672,6 +2861,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <portref moduleinst="REGISTER_CONTROL" port="GND"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<portref moduleinst="REGISTER_TMP1" port="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<portref moduleinst="REGISTER_TMP2" port="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -2694,6 +2891,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <portref moduleinst="CCR" port="+12V"/>
 <pinref part="SUPPLY24" gate="+12V" pin="+12V"/>
 </segment>
+<segment>
+<pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
+<portref moduleinst="REGISTER_TMP1" port="+12V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+<portref moduleinst="REGISTER_TMP2" port="+12V"/>
+</segment>
 </net>
 <net name="DATA0" class="0">
 <segment>
@@ -2701,26 +2906,34 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="172.72" y="60.96" size="1.778" layer="95"/>
 <wire x1="172.72" y1="38.1" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="83.82" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="91.44" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
-<junction x="172.72" y="193.04"/>
+<wire x1="172.72" y1="91.44" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<junction x="172.72" y="154.94"/>
 <wire x1="83.82" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
 <junction x="172.72" y="91.44"/>
-<wire x1="172.72" y1="193.04" x2="172.72" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="294.64" x2="172.72" y2="294.64" width="0.1524" layer="91"/>
-<junction x="172.72" y="294.64"/>
+<wire x1="172.72" y1="154.94" x2="172.72" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="218.44" x2="172.72" y2="218.44" width="0.1524" layer="91"/>
+<junction x="172.72" y="218.44"/>
 <portref moduleinst="REGISTER_A" port="D0"/>
 <portref moduleinst="REGISTER_B" port="D0"/>
 <portref moduleinst="REGISTER_C" port="D0"/>
 <pinref part="LED_DATA0" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
 <junction x="172.72" y="83.82"/>
-<wire x1="172.72" y1="294.64" x2="172.72" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="218.44" x2="172.72" y2="281.94" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_AU_DATA" port="IN0"/>
 <portref moduleinst="INPUT_LU_DATA" port="IN0"/>
-<wire x1="177.8" y1="416.56" x2="172.72" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="416.56" x2="139.7" y2="416.56" width="0.1524" layer="91"/>
-<junction x="172.72" y="416.56"/>
+<wire x1="172.72" y1="281.94" x2="172.72" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="383.54" x2="172.72" y2="528.32" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="528.32" x2="172.72" y2="528.32" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="528.32" x2="139.7" y2="528.32" width="0.1524" layer="91"/>
+<junction x="172.72" y="528.32"/>
+<portref moduleinst="REGISTER_TMP1" port="D0"/>
+<wire x1="83.82" y1="281.94" x2="172.72" y2="281.94" width="0.1524" layer="91"/>
+<junction x="172.72" y="281.94"/>
+<portref moduleinst="REGISTER_TMP2" port="D0"/>
+<wire x1="83.82" y1="383.54" x2="172.72" y2="383.54" width="0.1524" layer="91"/>
+<junction x="172.72" y="383.54"/>
 </segment>
 </net>
 <net name="DATA1" class="0">
@@ -2729,26 +2942,34 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="162.56" y="63.5" size="1.778" layer="95"/>
 <wire x1="162.56" y1="38.1" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="83.82" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="96.52" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="96.52" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <junction x="162.56" y="96.52"/>
-<wire x1="83.82" y1="198.12" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
-<junction x="162.56" y="198.12"/>
-<wire x1="162.56" y1="198.12" x2="162.56" y2="299.72" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="299.72" x2="162.56" y2="299.72" width="0.1524" layer="91"/>
-<junction x="162.56" y="299.72"/>
+<wire x1="83.82" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
+<junction x="162.56" y="160.02"/>
+<wire x1="162.56" y1="160.02" x2="162.56" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="223.52" x2="162.56" y2="223.52" width="0.1524" layer="91"/>
+<junction x="162.56" y="223.52"/>
 <portref moduleinst="REGISTER_A" port="D1"/>
 <portref moduleinst="REGISTER_B" port="D1"/>
 <portref moduleinst="REGISTER_C" port="D1"/>
 <pinref part="LED_DATA1" gate="G$1" pin="A"/>
 <wire x1="167.64" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="162.56" y="83.82"/>
-<wire x1="162.56" y1="299.72" x2="162.56" y2="426.72" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="223.52" x2="162.56" y2="287.02" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_LU_DATA" port="IN1"/>
-<wire x1="139.7" y1="426.72" x2="162.56" y2="426.72" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="287.02" x2="162.56" y2="388.62" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="388.62" x2="162.56" y2="538.48" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="538.48" x2="162.56" y2="538.48" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_AU_DATA" port="IN1"/>
-<wire x1="162.56" y1="426.72" x2="177.8" y2="426.72" width="0.1524" layer="91"/>
-<junction x="162.56" y="426.72"/>
+<wire x1="162.56" y1="538.48" x2="177.8" y2="538.48" width="0.1524" layer="91"/>
+<junction x="162.56" y="538.48"/>
+<portref moduleinst="REGISTER_TMP1" port="D1"/>
+<wire x1="83.82" y1="287.02" x2="162.56" y2="287.02" width="0.1524" layer="91"/>
+<junction x="162.56" y="287.02"/>
+<portref moduleinst="REGISTER_TMP2" port="D1"/>
+<wire x1="83.82" y1="388.62" x2="162.56" y2="388.62" width="0.1524" layer="91"/>
+<junction x="162.56" y="388.62"/>
 </segment>
 </net>
 <net name="DATA2" class="0">
@@ -2757,26 +2978,34 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="152.4" y="66.04" size="1.778" layer="95"/>
 <wire x1="152.4" y1="38.1" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="83.82" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="101.6" x2="152.4" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="101.6" x2="152.4" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="101.6" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
 <junction x="152.4" y="101.6"/>
-<wire x1="83.82" y1="203.2" x2="152.4" y2="203.2" width="0.1524" layer="91"/>
-<junction x="152.4" y="203.2"/>
-<wire x1="152.4" y1="203.2" x2="152.4" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="304.8" x2="152.4" y2="304.8" width="0.1524" layer="91"/>
-<junction x="152.4" y="304.8"/>
+<wire x1="83.82" y1="165.1" x2="152.4" y2="165.1" width="0.1524" layer="91"/>
+<junction x="152.4" y="165.1"/>
+<wire x1="152.4" y1="165.1" x2="152.4" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="228.6" x2="152.4" y2="228.6" width="0.1524" layer="91"/>
+<junction x="152.4" y="228.6"/>
 <portref moduleinst="REGISTER_A" port="D2"/>
 <portref moduleinst="REGISTER_B" port="D2"/>
 <portref moduleinst="REGISTER_C" port="D2"/>
 <pinref part="LED_DATA2" gate="G$1" pin="A"/>
 <wire x1="157.48" y1="83.82" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
 <junction x="152.4" y="83.82"/>
-<wire x1="152.4" y1="304.8" x2="152.4" y2="436.88" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="228.6" x2="152.4" y2="292.1" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_AU_DATA" port="IN2"/>
 <portref moduleinst="INPUT_LU_DATA" port="IN2"/>
-<wire x1="177.8" y1="436.88" x2="152.4" y2="436.88" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="436.88" x2="139.7" y2="436.88" width="0.1524" layer="91"/>
-<junction x="152.4" y="436.88"/>
+<wire x1="152.4" y1="292.1" x2="152.4" y2="393.7" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="393.7" x2="152.4" y2="548.64" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="548.64" x2="152.4" y2="548.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="548.64" x2="139.7" y2="548.64" width="0.1524" layer="91"/>
+<junction x="152.4" y="548.64"/>
+<portref moduleinst="REGISTER_TMP1" port="D2"/>
+<wire x1="83.82" y1="292.1" x2="152.4" y2="292.1" width="0.1524" layer="91"/>
+<junction x="152.4" y="292.1"/>
+<portref moduleinst="REGISTER_TMP2" port="D2"/>
+<wire x1="83.82" y1="393.7" x2="152.4" y2="393.7" width="0.1524" layer="91"/>
+<junction x="152.4" y="393.7"/>
 </segment>
 </net>
 <net name="DATA3" class="0">
@@ -2785,26 +3014,34 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="142.24" y="68.58" size="1.778" layer="95"/>
 <wire x1="142.24" y1="38.1" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="83.82" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="106.68" x2="142.24" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="106.68" x2="142.24" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
 <junction x="142.24" y="106.68"/>
-<wire x1="83.82" y1="208.28" x2="142.24" y2="208.28" width="0.1524" layer="91"/>
-<junction x="142.24" y="208.28"/>
-<wire x1="142.24" y1="208.28" x2="142.24" y2="309.88" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="309.88" x2="142.24" y2="309.88" width="0.1524" layer="91"/>
-<junction x="142.24" y="309.88"/>
+<wire x1="83.82" y1="170.18" x2="142.24" y2="170.18" width="0.1524" layer="91"/>
+<junction x="142.24" y="170.18"/>
+<wire x1="142.24" y1="170.18" x2="142.24" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="233.68" x2="142.24" y2="233.68" width="0.1524" layer="91"/>
+<junction x="142.24" y="233.68"/>
 <portref moduleinst="REGISTER_A" port="D3"/>
 <portref moduleinst="REGISTER_B" port="D3"/>
 <portref moduleinst="REGISTER_C" port="D3"/>
 <pinref part="LED_DATA3" gate="G$1" pin="A"/>
 <wire x1="147.32" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <junction x="142.24" y="83.82"/>
-<wire x1="142.24" y1="309.88" x2="142.24" y2="447.04" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="233.68" x2="142.24" y2="297.18" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_LU_DATA" port="IN3"/>
 <portref moduleinst="INPUT_AU_DATA" port="IN3"/>
-<wire x1="139.7" y1="447.04" x2="142.24" y2="447.04" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="447.04" x2="177.8" y2="447.04" width="0.1524" layer="91"/>
-<junction x="142.24" y="447.04"/>
+<wire x1="142.24" y1="297.18" x2="142.24" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="398.78" x2="142.24" y2="558.8" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="558.8" x2="142.24" y2="558.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="558.8" x2="177.8" y2="558.8" width="0.1524" layer="91"/>
+<junction x="142.24" y="558.8"/>
+<portref moduleinst="REGISTER_TMP1" port="D3"/>
+<wire x1="83.82" y1="297.18" x2="142.24" y2="297.18" width="0.1524" layer="91"/>
+<junction x="142.24" y="297.18"/>
+<portref moduleinst="REGISTER_TMP2" port="D3"/>
+<wire x1="83.82" y1="398.78" x2="142.24" y2="398.78" width="0.1524" layer="91"/>
+<junction x="142.24" y="398.78"/>
 </segment>
 </net>
 <net name="ADDR0" class="0">
@@ -2813,19 +3050,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-10.16" y1="38.1" x2="-10.16" y2="83.82" width="0.1524" layer="91"/>
 <label x="-10.16" y="60.96" size="1.778" layer="95"/>
 <wire x1="-10.16" y1="83.82" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="91.44" x2="-10.16" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="91.44" x2="-10.16" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="91.44" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-10.16" y="91.44"/>
-<wire x1="43.18" y1="193.04" x2="-10.16" y2="193.04" width="0.1524" layer="91"/>
-<junction x="-10.16" y="193.04"/>
-<wire x1="-10.16" y1="193.04" x2="-10.16" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="294.64" x2="-10.16" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="154.94" x2="-10.16" y2="154.94" width="0.1524" layer="91"/>
+<junction x="-10.16" y="154.94"/>
+<wire x1="-10.16" y1="154.94" x2="-10.16" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="218.44" x2="-10.16" y2="218.44" width="0.1524" layer="91"/>
 <portref moduleinst="REGISTER_A" port="A0"/>
 <portref moduleinst="REGISTER_B" port="A0"/>
 <portref moduleinst="REGISTER_C" port="A0"/>
 <pinref part="LED_ADDR0" gate="G$1" pin="A"/>
 <wire x1="-5.08" y1="83.82" x2="-10.16" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-10.16" y="83.82"/>
+<wire x1="43.18" y1="281.94" x2="-10.16" y2="281.94" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="A0"/>
+<wire x1="-10.16" y1="218.44" x2="-10.16" y2="281.94" width="0.1524" layer="91"/>
+<junction x="-10.16" y="218.44"/>
+<wire x1="43.18" y1="383.54" x2="-10.16" y2="383.54" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="A0"/>
+<wire x1="-10.16" y1="281.94" x2="-10.16" y2="383.54" width="0.1524" layer="91"/>
+<junction x="-10.16" y="281.94"/>
 </segment>
 </net>
 <net name="ADDR1" class="0">
@@ -2834,19 +3079,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-20.32" y1="38.1" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="-20.32" y="63.5" size="1.778" layer="95"/>
 <wire x1="-20.32" y1="83.82" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="96.52" x2="-20.32" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="96.52" x2="-20.32" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="96.52" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-20.32" y="96.52"/>
-<wire x1="43.18" y1="198.12" x2="-20.32" y2="198.12" width="0.1524" layer="91"/>
-<junction x="-20.32" y="198.12"/>
-<wire x1="-20.32" y1="198.12" x2="-20.32" y2="299.72" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="299.72" x2="-20.32" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="160.02" x2="-20.32" y2="160.02" width="0.1524" layer="91"/>
+<junction x="-20.32" y="160.02"/>
+<wire x1="-20.32" y1="160.02" x2="-20.32" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="223.52" x2="-20.32" y2="223.52" width="0.1524" layer="91"/>
 <portref moduleinst="REGISTER_A" port="A1"/>
 <portref moduleinst="REGISTER_B" port="A1"/>
 <portref moduleinst="REGISTER_C" port="A1"/>
 <pinref part="LED_ADDR1" gate="G$1" pin="A"/>
 <wire x1="-15.24" y1="83.82" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-20.32" y="83.82"/>
+<wire x1="43.18" y1="287.02" x2="-20.32" y2="287.02" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="A1"/>
+<wire x1="-20.32" y1="223.52" x2="-20.32" y2="287.02" width="0.1524" layer="91"/>
+<junction x="-20.32" y="223.52"/>
+<wire x1="43.18" y1="388.62" x2="-20.32" y2="388.62" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="A1"/>
+<wire x1="-20.32" y1="287.02" x2="-20.32" y2="388.62" width="0.1524" layer="91"/>
+<junction x="-20.32" y="287.02"/>
 </segment>
 </net>
 <net name="ADDR2" class="0">
@@ -2855,19 +3108,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-30.48" y1="38.1" x2="-30.48" y2="83.82" width="0.1524" layer="91"/>
 <label x="-30.48" y="66.04" size="1.778" layer="95"/>
 <wire x1="-30.48" y1="83.82" x2="-30.48" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="101.6" x2="-30.48" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="101.6" x2="-30.48" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="101.6" x2="-30.48" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-30.48" y="101.6"/>
-<wire x1="43.18" y1="203.2" x2="-30.48" y2="203.2" width="0.1524" layer="91"/>
-<junction x="-30.48" y="203.2"/>
-<wire x1="-30.48" y1="203.2" x2="-30.48" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="304.8" x2="-30.48" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="165.1" x2="-30.48" y2="165.1" width="0.1524" layer="91"/>
+<junction x="-30.48" y="165.1"/>
+<wire x1="-30.48" y1="165.1" x2="-30.48" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="228.6" x2="-30.48" y2="228.6" width="0.1524" layer="91"/>
 <portref moduleinst="REGISTER_A" port="A2"/>
 <portref moduleinst="REGISTER_B" port="A2"/>
 <portref moduleinst="REGISTER_C" port="A2"/>
 <pinref part="LED_ADDR2" gate="G$1" pin="A"/>
 <wire x1="-25.4" y1="83.82" x2="-30.48" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-30.48" y="83.82"/>
+<wire x1="43.18" y1="292.1" x2="-30.48" y2="292.1" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="A2"/>
+<wire x1="-30.48" y1="228.6" x2="-30.48" y2="292.1" width="0.1524" layer="91"/>
+<junction x="-30.48" y="228.6"/>
+<wire x1="43.18" y1="393.7" x2="-30.48" y2="393.7" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="A2"/>
+<wire x1="-30.48" y1="292.1" x2="-30.48" y2="393.7" width="0.1524" layer="91"/>
+<junction x="-30.48" y="292.1"/>
 </segment>
 </net>
 <net name="ADDR3" class="0">
@@ -2876,163 +3137,88 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-40.64" y1="38.1" x2="-40.64" y2="83.82" width="0.1524" layer="91"/>
 <label x="-40.64" y="68.58" size="1.778" layer="95"/>
 <wire x1="-40.64" y1="83.82" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="106.68" x2="-40.64" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="106.68" x2="-40.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="106.68" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-40.64" y="106.68"/>
-<wire x1="43.18" y1="208.28" x2="-40.64" y2="208.28" width="0.1524" layer="91"/>
-<junction x="-40.64" y="208.28"/>
-<wire x1="-40.64" y1="208.28" x2="-40.64" y2="309.88" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="309.88" x2="-40.64" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="170.18" x2="-40.64" y2="170.18" width="0.1524" layer="91"/>
+<junction x="-40.64" y="170.18"/>
+<wire x1="-40.64" y1="170.18" x2="-40.64" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="233.68" x2="-40.64" y2="233.68" width="0.1524" layer="91"/>
 <portref moduleinst="REGISTER_A" port="A3"/>
 <portref moduleinst="REGISTER_B" port="A3"/>
 <portref moduleinst="REGISTER_C" port="A3"/>
 <pinref part="LED_ADDR3" gate="G$1" pin="A"/>
 <wire x1="-35.56" y1="83.82" x2="-40.64" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-40.64" y="83.82"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_A" port="OUT3"/>
-<portref moduleinst="OUTPUT_AU_A" port="OUT3"/>
-<wire x1="48.26" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_A" port="R3"/>
-<wire x1="50.8" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="127" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<junction x="50.8" y="162.56"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_A" port="OUT2"/>
-<portref moduleinst="OUTPUT_AU_A" port="OUT2"/>
-<wire x1="48.26" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_A" port="R2"/>
-<wire x1="58.42" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="127" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<junction x="58.42" y="154.94"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_A" port="OUT1"/>
-<portref moduleinst="OUTPUT_AU_A" port="OUT1"/>
-<wire x1="48.26" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_A" port="R1"/>
-<wire x1="68.58" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="127" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
-<junction x="68.58" y="144.78"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_A" port="OUT0"/>
-<portref moduleinst="OUTPUT_AU_A" port="OUT0"/>
-<wire x1="48.26" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_A" port="R0"/>
-<wire x1="76.2" y1="137.16" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="127" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
-<junction x="76.2" y="137.16"/>
+<wire x1="43.18" y1="297.18" x2="-40.64" y2="297.18" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="A3"/>
+<wire x1="-40.64" y1="233.68" x2="-40.64" y2="297.18" width="0.1524" layer="91"/>
+<junction x="-40.64" y="233.68"/>
+<wire x1="43.18" y1="398.78" x2="-40.64" y2="398.78" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="A3"/>
+<wire x1="-40.64" y1="297.18" x2="-40.64" y2="398.78" width="0.1524" layer="91"/>
+<junction x="-40.64" y="297.18"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<portref moduleinst="OUTPUT_LU_B" port="OUT3"/>
-<portref moduleinst="OUTPUT_AU_B" port="OUT3"/>
-<wire x1="50.8" y1="261.62" x2="78.74" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="226.06" x2="50.8" y2="228.6" width="0.1524" layer="91"/>
-<junction x="50.8" y="261.62"/>
+<wire x1="50.8" y1="187.96" x2="50.8" y2="190.5" width="0.1524" layer="91"/>
 <portref moduleinst="REGISTER_B" port="R3"/>
-<wire x1="50.8" y1="228.6" x2="50.8" y2="261.62" width="0.1524" layer="91"/>
-<junction x="50.8" y="228.6"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_B" port="OUT2"/>
-<portref moduleinst="OUTPUT_AU_B" port="OUT2"/>
-<wire x1="50.8" y1="254" x2="58.42" y2="254" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_B" port="R2"/>
-<wire x1="58.42" y1="254" x2="78.74" y2="254" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="228.6" x2="58.42" y2="254" width="0.1524" layer="91"/>
-<junction x="58.42" y="254"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_B" port="OUT1"/>
-<portref moduleinst="OUTPUT_AU_B" port="OUT1"/>
-<wire x1="50.8" y1="243.84" x2="68.58" y2="243.84" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_B" port="R1"/>
-<wire x1="68.58" y1="243.84" x2="78.74" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="228.6" x2="68.58" y2="243.84" width="0.1524" layer="91"/>
-<junction x="68.58" y="243.84"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<portref moduleinst="OUTPUT_LU_B" port="OUT0"/>
-<portref moduleinst="OUTPUT_AU_B" port="OUT0"/>
-<wire x1="50.8" y1="236.22" x2="76.2" y2="236.22" width="0.1524" layer="91"/>
-<portref moduleinst="REGISTER_B" port="R0"/>
-<wire x1="76.2" y1="236.22" x2="78.74" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="228.6" x2="76.2" y2="236.22" width="0.1524" layer="91"/>
-<junction x="76.2" y="236.22"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <portref moduleinst="INPUT_AU_CCR" port="IN0"/>
 <portref moduleinst="INPUT_LU_CCR" port="IN0"/>
-<wire x1="81.28" y1="416.56" x2="78.74" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="528.32" x2="78.74" y2="528.32" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="Z_IN"/>
-<wire x1="78.74" y1="416.56" x2="50.8" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="411.48" x2="78.74" y2="416.56" width="0.1524" layer="91"/>
-<junction x="78.74" y="416.56"/>
+<wire x1="78.74" y1="528.32" x2="50.8" y2="528.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="523.24" x2="78.74" y2="528.32" width="0.1524" layer="91"/>
+<junction x="78.74" y="528.32"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <portref moduleinst="INPUT_LU_CCR" port="IN1"/>
-<wire x1="50.8" y1="426.72" x2="71.12" y2="426.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="538.48" x2="71.12" y2="538.48" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="S_IN"/>
-<wire x1="71.12" y1="411.48" x2="71.12" y2="426.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="523.24" x2="71.12" y2="538.48" width="0.1524" layer="91"/>
 <portref moduleinst="INPUT_AU_CCR" port="IN1"/>
-<wire x1="71.12" y1="426.72" x2="81.28" y2="426.72" width="0.1524" layer="91"/>
-<junction x="71.12" y="426.72"/>
+<wire x1="71.12" y1="538.48" x2="81.28" y2="538.48" width="0.1524" layer="91"/>
+<junction x="71.12" y="538.48"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <portref moduleinst="INPUT_AU_CCR" port="IN2"/>
 <portref moduleinst="INPUT_LU_CCR" port="IN2"/>
-<wire x1="81.28" y1="436.88" x2="60.96" y2="436.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="548.64" x2="60.96" y2="548.64" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="O_IN"/>
-<wire x1="60.96" y1="436.88" x2="50.8" y2="436.88" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="411.48" x2="60.96" y2="436.88" width="0.1524" layer="91"/>
-<junction x="60.96" y="436.88"/>
+<wire x1="60.96" y1="548.64" x2="50.8" y2="548.64" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="523.24" x2="60.96" y2="548.64" width="0.1524" layer="91"/>
+<junction x="60.96" y="548.64"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <portref moduleinst="INPUT_LU_CCR" port="IN3"/>
 <portref moduleinst="INPUT_AU_CCR" port="IN3"/>
-<wire x1="50.8" y1="447.04" x2="53.34" y2="447.04" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="558.8" x2="53.34" y2="558.8" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="C_IN"/>
-<wire x1="53.34" y1="447.04" x2="81.28" y2="447.04" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="411.48" x2="53.34" y2="447.04" width="0.1524" layer="91"/>
-<junction x="53.34" y="447.04"/>
+<wire x1="53.34" y1="558.8" x2="81.28" y2="558.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="523.24" x2="53.34" y2="558.8" width="0.1524" layer="91"/>
+<junction x="53.34" y="558.8"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="LOAD_CCR" class="0">
 <segment>
 <portref moduleinst="CCR" port="LOAD"/>
-<wire x1="86.36" y1="393.7" x2="86.36" y2="355.6" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="355.6" x2="-55.88" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="505.46" x2="86.36" y2="467.36" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="467.36" x2="-55.88" y2="467.36" width="0.1524" layer="91"/>
 <portref moduleinst="CCR_CONTROL" port="OUT0"/>
 <wire x1="-55.88" y1="22.86" x2="-55.88" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="LED_LOAD_CCR" gate="G$1" pin="A"/>
-<wire x1="-55.88" y1="83.82" x2="-55.88" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="83.82" x2="-55.88" y2="467.36" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="83.82" x2="-48.26" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-55.88" y="83.82"/>
 </segment>
@@ -3045,8 +3231,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN2"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
-<label x="88.9" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="111.76" y1="38.1" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+<label x="109.22" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADD_A" class="0">
@@ -3057,56 +3243,56 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN1"/>
-<wire x1="93.98" y1="38.1" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<label x="93.98" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="116.84" y1="38.1" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<label x="114.3" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="SELECTD_B" class="0">
 <segment>
 <portref moduleinst="REGISTER_B" port="SELECTD"/>
-<wire x1="83.82" y1="213.36" x2="127" y2="213.36" width="0.1524" layer="91"/>
-<label x="101.6" y="213.36" size="1.778" layer="95"/>
+<wire x1="83.82" y1="175.26" x2="127" y2="175.26" width="0.1524" layer="91"/>
+<label x="101.6" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN4"/>
-<wire x1="78.74" y1="38.1" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="78.74" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="101.6" y1="38.1" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<label x="99.06" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADD_B" class="0">
 <segment>
 <portref moduleinst="REGISTER_B" port="LOADD"/>
-<wire x1="83.82" y1="218.44" x2="127" y2="218.44" width="0.1524" layer="91"/>
-<label x="101.6" y="218.44" size="1.778" layer="95"/>
+<wire x1="83.82" y1="180.34" x2="127" y2="180.34" width="0.1524" layer="91"/>
+<label x="101.6" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN3"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
-<label x="83.82" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="106.68" y1="38.1" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<label x="104.14" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="SELECTD_C" class="0">
 <segment>
 <portref moduleinst="REGISTER_C" port="SELECTD"/>
-<wire x1="83.82" y1="314.96" x2="127" y2="314.96" width="0.1524" layer="91"/>
-<label x="101.6" y="314.96" size="1.778" layer="95"/>
+<wire x1="83.82" y1="238.76" x2="127" y2="238.76" width="0.1524" layer="91"/>
+<label x="101.6" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN6"/>
-<wire x1="68.58" y1="38.1" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-<label x="68.58" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="91.44" y1="38.1" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<label x="88.9" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADD_C" class="0">
 <segment>
 <portref moduleinst="REGISTER_C" port="LOADD"/>
-<wire x1="83.82" y1="320.04" x2="127" y2="320.04" width="0.1524" layer="91"/>
-<label x="101.6" y="320.04" size="1.778" layer="95"/>
+<wire x1="83.82" y1="243.84" x2="127" y2="243.84" width="0.1524" layer="91"/>
+<label x="101.6" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <portref moduleinst="REGISTER_CONTROL" port="IN5"/>
-<wire x1="73.66" y1="38.1" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<label x="73.66" y="58.42" size="1.778" layer="95" rot="R270"/>
+<wire x1="96.52" y1="38.1" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<label x="93.98" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="SELECTA_A" class="0">
@@ -3116,9 +3302,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="22.86" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN8"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN12"/>
 <wire x1="53.34" y1="38.1" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<label x="53.34" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="50.8" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADA_A" class="0">
@@ -3128,94 +3314,276 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="22.86" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN7"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN11"/>
 <wire x1="58.42" y1="38.1" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<label x="58.42" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="55.88" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="SELECTA_B" class="0">
 <segment>
 <portref moduleinst="REGISTER_B" port="SELECTA"/>
-<wire x1="43.18" y1="213.36" x2="2.54" y2="213.36" width="0.1524" layer="91"/>
-<label x="22.86" y="213.36" size="1.778" layer="95"/>
+<wire x1="43.18" y1="175.26" x2="2.54" y2="175.26" width="0.1524" layer="91"/>
+<label x="22.86" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN10"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN14"/>
 <wire x1="43.18" y1="38.1" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
-<label x="43.18" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="40.64" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADA_B" class="0">
 <segment>
 <portref moduleinst="REGISTER_B" port="LOADA"/>
-<wire x1="43.18" y1="218.44" x2="2.54" y2="218.44" width="0.1524" layer="91"/>
-<label x="22.86" y="218.44" size="1.778" layer="95"/>
+<wire x1="43.18" y1="180.34" x2="2.54" y2="180.34" width="0.1524" layer="91"/>
+<label x="22.86" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN9"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN13"/>
 <wire x1="48.26" y1="38.1" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
-<label x="48.26" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="45.72" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="SELECTA_C" class="0">
 <segment>
 <portref moduleinst="REGISTER_C" port="SELECTA"/>
-<wire x1="43.18" y1="314.96" x2="2.54" y2="314.96" width="0.1524" layer="91"/>
-<label x="22.86" y="314.96" size="1.778" layer="95"/>
+<wire x1="43.18" y1="238.76" x2="2.54" y2="238.76" width="0.1524" layer="91"/>
+<label x="22.86" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN12"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN16"/>
 <wire x1="33.02" y1="38.1" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<label x="33.02" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="30.48" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="LOADA_C" class="0">
 <segment>
 <portref moduleinst="REGISTER_C" port="LOADA"/>
-<wire x1="43.18" y1="320.04" x2="2.54" y2="320.04" width="0.1524" layer="91"/>
-<label x="22.86" y="320.04" size="1.778" layer="95"/>
+<wire x1="43.18" y1="243.84" x2="2.54" y2="243.84" width="0.1524" layer="91"/>
+<label x="22.86" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="REGISTER_CONTROL" port="IN11"/>
+<portref moduleinst="REGISTER_CONTROL" port="IN15"/>
 <wire x1="38.1" y1="38.1" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<label x="38.1" y="58.42" size="1.778" layer="95" rot="R270"/>
+<label x="35.56" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <portref moduleinst="CCR" port="CARRY"/>
 <portref moduleinst="CCR_CONTROL" port="IN3"/>
-<wire x1="53.34" y1="381" x2="-88.9" y2="381" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="381" x2="-88.9" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="492.76" x2="-88.9" y2="492.76" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="492.76" x2="-88.9" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <portref moduleinst="CCR_CONTROL" port="IN2"/>
-<wire x1="-81.28" y1="38.1" x2="-81.28" y2="375.92" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="375.92" x2="60.96" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="38.1" x2="-81.28" y2="487.68" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="487.68" x2="60.96" y2="487.68" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="OVERFLOW"/>
-<wire x1="60.96" y1="375.92" x2="60.96" y2="381" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="487.68" x2="60.96" y2="492.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <portref moduleinst="CCR_CONTROL" port="IN1"/>
-<wire x1="-71.12" y1="38.1" x2="-71.12" y2="370.84" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="370.84" x2="71.12" y2="370.84" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="38.1" x2="-71.12" y2="482.6" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="482.6" x2="71.12" y2="482.6" width="0.1524" layer="91"/>
 <portref moduleinst="CCR" port="SIGN"/>
-<wire x1="71.12" y1="370.84" x2="71.12" y2="381" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="482.6" x2="71.12" y2="492.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <portref moduleinst="CCR" port="ZERO"/>
-<wire x1="78.74" y1="381" x2="78.74" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="363.22" x2="-50.8" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="492.76" x2="78.74" y2="474.98" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="474.98" x2="-63.5" y2="474.98" width="0.1524" layer="91"/>
 <portref moduleinst="CCR_CONTROL" port="IN0"/>
-<wire x1="-50.8" y1="363.22" x2="-53.34" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="38.1" x2="-63.5" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="363.22" x2="-53.34" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="38.1" x2="-63.5" y2="474.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP1" port="OUT3"/>
+<portref moduleinst="OUTPUT_AU_TMP1" port="OUT3"/>
+<wire x1="48.26" y1="353.06" x2="50.8" y2="353.06" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="R3"/>
+<wire x1="50.8" y1="353.06" x2="78.74" y2="353.06" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="317.5" x2="50.8" y2="353.06" width="0.1524" layer="91"/>
+<junction x="50.8" y="353.06"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP1" port="OUT2"/>
+<portref moduleinst="OUTPUT_AU_TMP1" port="OUT2"/>
+<wire x1="48.26" y1="345.44" x2="58.42" y2="345.44" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="R2"/>
+<wire x1="58.42" y1="345.44" x2="78.74" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="317.5" x2="58.42" y2="345.44" width="0.1524" layer="91"/>
+<junction x="58.42" y="345.44"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP1" port="OUT1"/>
+<portref moduleinst="OUTPUT_AU_TMP1" port="OUT1"/>
+<wire x1="48.26" y1="335.28" x2="68.58" y2="335.28" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="R1"/>
+<wire x1="68.58" y1="335.28" x2="78.74" y2="335.28" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="317.5" x2="68.58" y2="335.28" width="0.1524" layer="91"/>
+<junction x="68.58" y="335.28"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP1" port="OUT0"/>
+<portref moduleinst="OUTPUT_AU_TMP1" port="OUT0"/>
+<wire x1="48.26" y1="327.66" x2="76.2" y2="327.66" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP1" port="R0"/>
+<wire x1="76.2" y1="327.66" x2="78.74" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="317.5" x2="76.2" y2="327.66" width="0.1524" layer="91"/>
+<junction x="76.2" y="327.66"/>
+</segment>
+</net>
+<net name="LOADA_TMP1" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP1" port="LOADA"/>
+<wire x1="43.18" y1="307.34" x2="2.54" y2="307.34" width="0.1524" layer="91"/>
+<label x="22.86" y="307.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN17"/>
+<wire x1="27.94" y1="38.1" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+<label x="25.4" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="LOADD_TMP1" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP1" port="LOADD"/>
+<wire x1="83.82" y1="307.34" x2="127" y2="307.34" width="0.1524" layer="91"/>
+<label x="101.6" y="307.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN7"/>
+<wire x1="86.36" y1="38.1" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<label x="83.82" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="SELECTD_TMP1" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP1" port="SELECTD"/>
+<wire x1="83.82" y1="302.26" x2="127" y2="302.26" width="0.1524" layer="91"/>
+<label x="101.6" y="302.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN8"/>
+<wire x1="81.28" y1="38.1" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
+<label x="78.74" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="SELECTA_TMP1" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP1" port="SELECTA"/>
+<wire x1="43.18" y1="302.26" x2="2.54" y2="302.26" width="0.1524" layer="91"/>
+<label x="22.86" y="302.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN18"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="20.32" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP2" port="OUT3"/>
+<portref moduleinst="OUTPUT_AU_TMP2" port="OUT3"/>
+<wire x1="48.26" y1="454.66" x2="50.8" y2="454.66" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="R3"/>
+<wire x1="50.8" y1="454.66" x2="78.74" y2="454.66" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="419.1" x2="50.8" y2="454.66" width="0.1524" layer="91"/>
+<junction x="50.8" y="454.66"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP2" port="OUT2"/>
+<portref moduleinst="OUTPUT_AU_TMP2" port="OUT2"/>
+<wire x1="48.26" y1="447.04" x2="58.42" y2="447.04" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="R2"/>
+<wire x1="58.42" y1="447.04" x2="78.74" y2="447.04" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="419.1" x2="58.42" y2="447.04" width="0.1524" layer="91"/>
+<junction x="58.42" y="447.04"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP2" port="OUT1"/>
+<portref moduleinst="OUTPUT_AU_TMP2" port="OUT1"/>
+<wire x1="48.26" y1="436.88" x2="68.58" y2="436.88" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="R1"/>
+<wire x1="68.58" y1="436.88" x2="78.74" y2="436.88" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="419.1" x2="68.58" y2="436.88" width="0.1524" layer="91"/>
+<junction x="68.58" y="436.88"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<portref moduleinst="OUTPUT_LU_TMP2" port="OUT0"/>
+<portref moduleinst="OUTPUT_AU_TMP2" port="OUT0"/>
+<wire x1="48.26" y1="429.26" x2="76.2" y2="429.26" width="0.1524" layer="91"/>
+<portref moduleinst="REGISTER_TMP2" port="R0"/>
+<wire x1="76.2" y1="429.26" x2="78.74" y2="429.26" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="419.1" x2="76.2" y2="429.26" width="0.1524" layer="91"/>
+<junction x="76.2" y="429.26"/>
+</segment>
+</net>
+<net name="LOADA_TMP2" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP2" port="LOADA"/>
+<wire x1="43.18" y1="408.94" x2="2.54" y2="408.94" width="0.1524" layer="91"/>
+<label x="22.86" y="408.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN19"/>
+<wire x1="17.78" y1="38.1" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="15.24" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="SELECTA_TMP2" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP2" port="SELECTA"/>
+<wire x1="43.18" y1="403.86" x2="2.54" y2="403.86" width="0.1524" layer="91"/>
+<label x="22.86" y="403.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN20"/>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+<label x="10.16" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="LOADD_TMP2" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP2" port="LOADD"/>
+<wire x1="83.82" y1="408.94" x2="127" y2="408.94" width="0.1524" layer="91"/>
+<label x="101.6" y="408.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN9"/>
+<wire x1="76.2" y1="38.1" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<label x="73.66" y="58.42" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="SELECTD_TMP2" class="0">
+<segment>
+<portref moduleinst="REGISTER_TMP2" port="SELECTD"/>
+<wire x1="83.82" y1="403.86" x2="127" y2="403.86" width="0.1524" layer="91"/>
+<label x="101.6" y="403.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<portref moduleinst="REGISTER_CONTROL" port="IN10"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<label x="68.58" y="58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
