@@ -647,10 +647,10 @@ Source: http://www.molex.com/pdm_docs/sd/559172030_sd.pdf</description>
 <pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
 <symbol name="BTS4X2E2">
-<pin name="VBB" x="22.86" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="+12V" x="22.86" y="-2.54" length="middle" direction="pwr" rot="R180"/>
 <pin name="ST" x="-5.08" y="-7.62" length="middle" direction="oc"/>
 <pin name="IN" x="-5.08" y="-2.54" length="middle" direction="in"/>
-<pin name="GND" x="-5.08" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND3" x="-5.08" y="-12.7" length="middle" direction="pwr"/>
 <pin name="OUT" x="22.86" y="-12.7" length="middle" direction="out" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
@@ -930,11 +930,11 @@ TO170P440X1000X1975-5B</description>
 <devices>
 <device name="" package="TO170P440X1000X1975-5B">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="+12V" pad="3"/>
+<connect gate="G$1" pin="GND3" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="ST" pad="4"/>
-<connect gate="G$1" pin="VBB" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
