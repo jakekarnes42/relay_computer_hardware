@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.7.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -86,37 +86,37 @@ diameter 3.5 mm, vertical, grid 5.08 mm</description>
 <package name="HF41F-12-Z">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
 reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
-<wire x1="28" y1="0" x2="28" y2="5" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="28" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="3.809" x2="2.365" y2="3.301" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="3.301" x2="2.365" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="2.92" x2="2.365" y2="2.031" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="2.031" x2="3.635" y2="2.031" width="0.1524" layer="21"/>
-<wire x1="3.635" y1="2.031" x2="3.635" y2="2.539" width="0.1524" layer="21"/>
-<wire x1="3.635" y1="2.539" x2="3.635" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="3.635" y1="2.92" x2="3.635" y2="3.809" width="0.1524" layer="21"/>
-<wire x1="3.635" y1="3.809" x2="2.365" y2="3.809" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="2.92" x2="1.19" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="1.19" y1="2.166" x2="1.19" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="3.635" y1="2.92" x2="4.81" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="4.81" y1="2.166" x2="4.81" y2="2.92" width="0.1524" layer="21"/>
-<wire x1="2.365" y1="3.301" x2="2.619" y2="3.301" width="0.1524" layer="21"/>
-<wire x1="2.619" y1="3.301" x2="3.381" y2="2.539" width="0.1524" layer="21"/>
-<wire x1="3.381" y1="2.539" x2="3.635" y2="2.539" width="0.1524" layer="21"/>
-<pad name="1" x="0.9" y="1.2" drill="1" rot="R90"/>
-<pad name="2" x="4.68" y="1.2" drill="1" rot="R90"/>
-<pad name="3" x="16.02" y="1.2" drill="1.3" rot="R90"/>
-<pad name="4" x="21.06" y="1.2" drill="1.3" rot="R90"/>
-<wire x1="0" y1="5" x2="28" y2="5" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="5" width="0.1524" layer="21"/>
-<pad name="5" x="26.1" y="1.2" drill="1.3" rot="R90"/>
-<wire x1="26" y1="2.5" x2="26" y2="3.5" width="0.127" layer="21"/>
-<wire x1="26" y1="3.5" x2="22" y2="3.5" width="0.127" layer="21"/>
-<wire x1="16" y1="2.5" x2="16" y2="3.5" width="0.127" layer="21"/>
-<wire x1="16" y1="3.5" x2="20.5" y2="3.5" width="0.127" layer="21"/>
-<wire x1="21" y1="2.5" x2="21" y2="3" width="0.127" layer="21"/>
-<wire x1="21" y1="3" x2="20.5" y2="3.5" width="0.127" layer="21"/>
-<wire x1="20.5" y1="3.5" x2="20" y2="4" width="0.127" layer="21"/>
+<wire x1="-0.06" y1="0" x2="-0.06" y2="5" width="0.1524" layer="22"/>
+<wire x1="27.94" y1="0" x2="-0.06" y2="0" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="3.809" x2="25.575" y2="3.301" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="3.301" x2="25.575" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="2.92" x2="25.575" y2="2.031" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="2.031" x2="24.305" y2="2.031" width="0.1524" layer="22"/>
+<wire x1="24.305" y1="2.031" x2="24.305" y2="2.539" width="0.1524" layer="22"/>
+<wire x1="24.305" y1="2.539" x2="24.305" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="24.305" y1="2.92" x2="24.305" y2="3.809" width="0.1524" layer="22"/>
+<wire x1="24.305" y1="3.809" x2="25.575" y2="3.809" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="2.92" x2="26.75" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="26.75" y1="2.166" x2="26.75" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="24.305" y1="2.92" x2="23.13" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="23.13" y1="2.166" x2="23.13" y2="2.92" width="0.1524" layer="22"/>
+<wire x1="25.575" y1="3.301" x2="25.321" y2="3.301" width="0.1524" layer="22"/>
+<wire x1="25.321" y1="3.301" x2="24.559" y2="2.539" width="0.1524" layer="22"/>
+<wire x1="24.559" y1="2.539" x2="24.305" y2="2.539" width="0.1524" layer="22"/>
+<pad name="1" x="27.04" y="1.2" drill="1" rot="R90"/>
+<pad name="2" x="23.26" y="1.2" drill="1" rot="R90"/>
+<pad name="3" x="11.92" y="1.2" drill="1.3" rot="R90"/>
+<pad name="4" x="6.88" y="1.2" drill="1.3" rot="R90"/>
+<wire x1="27.94" y1="5" x2="-0.06" y2="5" width="0.1524" layer="22"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="5" width="0.1524" layer="22"/>
+<pad name="5" x="1.84" y="1.2" drill="1.3" rot="R90"/>
+<wire x1="1.94" y1="2.5" x2="1.94" y2="3.5" width="0.127" layer="22"/>
+<wire x1="1.94" y1="3.5" x2="5.94" y2="3.5" width="0.127" layer="22"/>
+<wire x1="11.94" y1="2.5" x2="11.94" y2="3.5" width="0.127" layer="22"/>
+<wire x1="11.94" y1="3.5" x2="7.44" y2="3.5" width="0.127" layer="22"/>
+<wire x1="6.94" y1="2.5" x2="6.94" y2="3" width="0.127" layer="22"/>
+<wire x1="6.94" y1="3" x2="7.44" y2="3.5" width="0.127" layer="22"/>
+<wire x1="7.44" y1="3.5" x2="7.94" y2="4" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -301,7 +301,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </instance>
 <instance part="D2" gate="1" x="22.86" y="7.62"/>
 <instance part="K1" gate="1" x="17.78" y="15.24" rot="R90"/>
-<instance part="K1" gate="2" x="15.24" y="27.94" rot="R270"/>
+<instance part="K1" gate="2" x="15.24" y="27.94" rot="MR90"/>
 </instances>
 <busses>
 </busses>
