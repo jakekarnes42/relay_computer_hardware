@@ -1681,13 +1681,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="LED3" library="relay_computer_custom" deviceset="LED" device="3MM">
+<part name="LED0" library="relay_computer_custom" deviceset="LED" device="3MM">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="X1" library="relay_computer_custom" deviceset="SWTCH_BLCK" device=""/>
-<part name="X2" library="relay_computer_custom" deviceset="SWTCH_BLCK" device=""/>
+<part name="X0" library="relay_computer_custom" deviceset="SWTCH_BLCK" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND3" device=""/>
@@ -1732,13 +1732,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="MF" x="58.42" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="58.42" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="LED3" gate="G$1" x="160.02" y="99.06" rot="R180">
+<instance part="LED0" gate="G$1" x="160.02" y="99.06" rot="R180">
 <attribute name="OC_NEWARK" x="160.02" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MF" x="160.02" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="MPN" x="160.02" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X1" gate="&gt;PART" x="50.8" y="91.44" rot="R90"/>
-<instance part="X2" gate="&gt;PART" x="152.4" y="91.44" rot="R90"/>
+<instance part="X0" gate="&gt;PART" x="152.4" y="91.44" rot="R90"/>
 <instance part="SUPPLY17" gate="+12V" x="17.78" y="106.68"/>
 <instance part="SUPPLY18" gate="GND" x="7.62" y="106.68" rot="R180"/>
 <instance part="SUPPLY1" gate="G$1" x="78.74" y="5.08" rot="R270"/>
@@ -1746,7 +1746,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY4" gate="G$1" x="124.46" y="48.26"/>
 <instance part="SUPPLY5" gate="GND" x="129.54" y="83.82" rot="R180"/>
 <instance part="SUPPLY6" gate="+12V" x="121.92" y="83.82"/>
-<instance part="SUPPLY7" gate="GND" x="109.22" y="109.22" rot="R180"/>
+<instance part="SUPPLY7" gate="GND" x="109.22" y="111.76" rot="R180"/>
 <instance part="+3V2" gate="G$1" x="175.26" y="48.26" rot="R180"/>
 <instance part="SUPPLY8" gate="GND" x="175.26" y="83.82" rot="R180"/>
 <instance part="SUPPLY3" gate="+12V" x="142.24" y="91.44" rot="R90"/>
@@ -1773,14 +1773,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="109.22" y1="104.14" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="104.14" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="12V_TO_3V3_1BIT1" port="GND"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED0" gate="G$1" pin="C"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="160.02" y1="104.14" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -1804,7 +1804,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY6" gate="+12V" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="X2" gate="&gt;PART" pin="S"/>
+<pinref part="X0" gate="&gt;PART" pin="S"/>
 <pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
 <wire x1="144.78" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 </segment>
@@ -1857,11 +1857,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="X2" gate="&gt;PART" pin="P"/>
+<pinref part="X0" gate="&gt;PART" pin="P"/>
 <portref moduleinst="12V_TO_3V3_1BIT1" port="IN"/>
 <wire x1="157.48" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="91.44" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED0" gate="G$1" pin="A"/>
 <wire x1="160.02" y1="91.44" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
 <junction x="160.02" y="91.44"/>
 </segment>
