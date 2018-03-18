@@ -179,7 +179,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.524" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.016"/>
 <pad name="A" x="1.27" y="0" drill="1.016"/>
-<text x="-2.54" y="-2.54" size="0.508" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="1.27" size="0.2286" layer="27" rot="R180">1N4007</text>
 </package>
 <package name="RAD2.5_D2">
 <description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
@@ -190,7 +190,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.778" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.397"/>
 <pad name="A" x="1.27" y="0" drill="1.397"/>
-<text x="-2.54" y="-2.54" size="0.508" layer="27">&gt;VALUE</text>
+<text x="-2.032" y="1.143" size="0.3048" layer="27" font="vector" ratio="15">1N5359</text>
 </package>
 </packages>
 <symbols>
