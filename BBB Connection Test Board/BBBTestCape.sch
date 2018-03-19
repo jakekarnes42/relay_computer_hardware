@@ -235,7 +235,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.524" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.016"/>
 <pad name="A" x="1.27" y="0" drill="1.016"/>
-<text x="-0.635" y="1.27" size="0.2286" layer="27" rot="R180">1N4007</text>
+<text x="2.286" y="1.524" size="0.4064" layer="27" ratio="11" rot="R180">1N4007</text>
 </package>
 <package name="RAD2.5_D2">
 <description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
@@ -246,7 +246,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.778" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.397"/>
 <pad name="A" x="1.27" y="0" drill="1.397"/>
-<text x="-2.032" y="1.143" size="0.3048" layer="27" font="vector" ratio="15">1N5359</text>
+<text x="0.508" y="1.27" size="0.508" layer="27" font="vector" ratio="15">1N5359</text>
 </package>
 <package name="HF41F-12-H">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
@@ -279,6 +279,7 @@ reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
 <wire x1="6.94" y1="2.5" x2="6.94" y2="3.5" width="0.127" layer="22"/>
 <wire x1="6.94" y1="3.5" x2="4.94" y2="3.5" width="0.127" layer="22"/>
 <wire x1="4.94" y1="3.5" x2="3.44" y2="4" width="0.127" layer="22"/>
+<text x="8.89" y="1.27" size="1.27" layer="21">HF41F-12-H</text>
 </package>
 <package name="TO170P440X1000X1975-5B">
 <description>Original name &lt;b&gt;TO170P440X1000X1975-5B&lt;/b&gt;&lt;p&gt;
@@ -315,7 +316,7 @@ Max Component Height - 19.75mm</description>
 <circle x="0" y="0" radius="4" width="0.2032" layer="21"/>
 <pad name="2" x="-2.5" y="0" drill="0.8" diameter="1.651"/>
 <pad name="1" x="2.5" y="0" drill="0.8" diameter="1.651" shape="square"/>
-<text x="0" y="-2.929" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">100µF</text>
+<text x="0" y="-1.27" size="1.27" layer="27" font="vector" ratio="20" align="top-center">100µF</text>
 </package>
 <package name="DIL28-3">
 <description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
@@ -420,7 +421,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.905" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="0.8128"/>
 <pad name="A" x="1.27" y="0" drill="0.8128"/>
-<text x="-2.032" y="1.143" size="0.4064" layer="27">4.7kΩ</text>
+<text x="2.286" y="1.778" size="0.508" layer="27" ratio="15" rot="R180">4.7kΩ</text>
 </package>
 <package name="VERT_CAP">
 <description>&lt;B&gt;Vertical Capacitor&lt;/B&gt;&lt;p&gt;</description>
@@ -430,7 +431,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.55" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1"/>
 <pad name="A" x="1.15" y="0" drill="1"/>
-<text x="-0.635" y="1.27" size="0.3048" layer="27" rot="R180">0.1µF</text>
+<text x="2.159" y="1.524" size="0.508" layer="27" ratio="16" rot="R180">0.1µF</text>
 </package>
 </packages>
 <symbols>
@@ -1057,7 +1058,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="1.778" drill="0">
+<class number="0" name="default" width="1.27" drill="0">
 </class>
 <class number="1" name="pwr" width="0" drill="0">
 </class>
@@ -1534,6 +1535,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R1" library="relay_computer_custom" deviceset="4.7KOHM" device=""/>
 <part name="R2" library="relay_computer_custom" deviceset="4.7KOHM" device=""/>
 <part name="C2" library="relay_computer_custom" deviceset="0.1UF" device=""/>
+<part name="R3" library="relay_computer_custom" deviceset="4.7KOHM" device=""/>
+<part name="R4" library="relay_computer_custom" deviceset="4.7KOHM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1548,6 +1551,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R1" gate="G$1" x="63.5" y="35.56"/>
 <instance part="R2" gate="G$1" x="63.5" y="43.18"/>
 <instance part="C2" gate="G$1" x="43.18" y="25.4"/>
+<instance part="R3" gate="G$1" x="55.88" y="78.74"/>
+<instance part="R4" gate="G$1" x="78.74" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -1582,6 +1587,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="88.9" y="35.56" size="1.778" layer="95" rot="R90"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="43.18" y="22.86"/>
+<wire x1="88.9" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+<junction x="88.9" y="22.86"/>
+<wire x1="109.22" y1="22.86" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="78.74" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
+<junction x="83.82" y="86.36"/>
+<label x="71.12" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1642,8 +1658,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="IN0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPA0"/>
-<wire x1="48.26" y1="71.12" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
 <label x="48.26" y="73.66" size="1.778" layer="95" rot="R90"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="78.74" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<junction x="48.26" y="78.74"/>
 </segment>
 </net>
 <net name="OUT0" class="0">
@@ -1656,8 +1676,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="IN1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPB0"/>
-<wire x1="71.12" y1="71.12" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="71.12" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
 <label x="71.12" y="73.66" size="1.778" layer="95" rot="R90"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="78.74" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<junction x="71.12" y="78.74"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
