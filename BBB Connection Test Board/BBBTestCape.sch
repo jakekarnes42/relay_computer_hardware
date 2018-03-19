@@ -235,7 +235,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.524" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.016"/>
 <pad name="A" x="1.27" y="0" drill="1.016"/>
-<text x="2.286" y="1.524" size="0.4064" layer="27" ratio="11" rot="R180">1N4007</text>
+<text x="2.286" y="1.524" size="0.4064" layer="25" ratio="11" rot="R180">1N4007</text>
 </package>
 <package name="RAD2.5_D2">
 <description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
@@ -246,40 +246,40 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.778" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.397"/>
 <pad name="A" x="1.27" y="0" drill="1.397"/>
-<text x="0.508" y="1.27" size="0.508" layer="27" font="vector" ratio="15">1N5359</text>
+<text x="0.508" y="1.27" size="0.508" layer="25" font="vector" ratio="15">1N5359</text>
 </package>
 <package name="HF41F-12-H">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
 reed, 1 x norm. open, grid 5.08 mm, Hamlin</description>
-<wire x1="-0.06" y1="0" x2="-0.06" y2="5" width="0.1524" layer="22"/>
-<wire x1="27.94" y1="0" x2="-0.06" y2="0" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="3.809" x2="25.575" y2="3.301" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="3.301" x2="25.575" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="2.92" x2="25.575" y2="2.031" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="2.031" x2="24.305" y2="2.031" width="0.1524" layer="22"/>
-<wire x1="24.305" y1="2.031" x2="24.305" y2="2.539" width="0.1524" layer="22"/>
-<wire x1="24.305" y1="2.539" x2="24.305" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="24.305" y1="2.92" x2="24.305" y2="3.809" width="0.1524" layer="22"/>
-<wire x1="24.305" y1="3.809" x2="25.575" y2="3.809" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="2.92" x2="26.75" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="26.75" y1="2.166" x2="26.75" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="24.305" y1="2.92" x2="23.13" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="23.13" y1="2.166" x2="23.13" y2="2.92" width="0.1524" layer="22"/>
-<wire x1="25.575" y1="3.301" x2="25.321" y2="3.301" width="0.1524" layer="22"/>
-<wire x1="25.321" y1="3.301" x2="24.559" y2="2.539" width="0.1524" layer="22"/>
-<wire x1="24.559" y1="2.539" x2="24.305" y2="2.539" width="0.1524" layer="22"/>
+<wire x1="-0.06" y1="0" x2="-0.06" y2="5" width="0.1524" layer="21"/>
+<wire x1="27.94" y1="0" x2="-0.06" y2="0" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="3.809" x2="25.575" y2="3.301" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="3.301" x2="25.575" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="2.92" x2="25.575" y2="2.031" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="2.031" x2="24.305" y2="2.031" width="0.1524" layer="21"/>
+<wire x1="24.305" y1="2.031" x2="24.305" y2="2.539" width="0.1524" layer="21"/>
+<wire x1="24.305" y1="2.539" x2="24.305" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="24.305" y1="2.92" x2="24.305" y2="3.809" width="0.1524" layer="21"/>
+<wire x1="24.305" y1="3.809" x2="25.575" y2="3.809" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="2.92" x2="26.75" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="26.75" y1="2.166" x2="26.75" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="24.305" y1="2.92" x2="23.13" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="23.13" y1="2.166" x2="23.13" y2="2.92" width="0.1524" layer="21"/>
+<wire x1="25.575" y1="3.301" x2="25.321" y2="3.301" width="0.1524" layer="21"/>
+<wire x1="25.321" y1="3.301" x2="24.559" y2="2.539" width="0.1524" layer="21"/>
+<wire x1="24.559" y1="2.539" x2="24.305" y2="2.539" width="0.1524" layer="21"/>
 <pad name="1" x="27.04" y="1.2" drill="1" rot="R90"/>
 <pad name="2" x="23.26" y="1.2" drill="1" rot="R90"/>
 <pad name="4" x="6.88" y="1.2" drill="1.3" rot="R90"/>
-<wire x1="27.94" y1="5" x2="-0.06" y2="5" width="0.1524" layer="22"/>
-<wire x1="27.94" y1="0" x2="27.94" y2="5" width="0.1524" layer="22"/>
+<wire x1="27.94" y1="5" x2="-0.06" y2="5" width="0.1524" layer="21"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="5" width="0.1524" layer="21"/>
 <pad name="5" x="1.84" y="1.2" drill="1.3" rot="R90"/>
-<wire x1="1.94" y1="2.5" x2="1.94" y2="3.5" width="0.127" layer="22"/>
-<wire x1="1.94" y1="3.5" x2="3.4" y2="3.5" width="0.127" layer="22"/>
-<wire x1="6.94" y1="2.5" x2="6.94" y2="3.5" width="0.127" layer="22"/>
-<wire x1="6.94" y1="3.5" x2="4.94" y2="3.5" width="0.127" layer="22"/>
-<wire x1="4.94" y1="3.5" x2="3.44" y2="4" width="0.127" layer="22"/>
-<text x="8.89" y="1.27" size="1.27" layer="21">HF41F-12-H</text>
+<wire x1="1.94" y1="2.5" x2="1.94" y2="3.5" width="0.127" layer="21"/>
+<wire x1="1.94" y1="3.5" x2="3.4" y2="3.5" width="0.127" layer="21"/>
+<wire x1="6.94" y1="2.5" x2="6.94" y2="3.5" width="0.127" layer="21"/>
+<wire x1="6.94" y1="3.5" x2="4.94" y2="3.5" width="0.127" layer="21"/>
+<wire x1="4.94" y1="3.5" x2="3.44" y2="4" width="0.127" layer="21"/>
+<text x="8.89" y="1.27" size="1.27" layer="25">HF41F-12-H</text>
 </package>
 <package name="TO170P440X1000X1975-5B">
 <description>Original name &lt;b&gt;TO170P440X1000X1975-5B&lt;/b&gt;&lt;p&gt;
@@ -306,7 +306,7 @@ Max Component Height - 19.75mm</description>
 <wire x1="6.45" y1="-5" x2="6.45" y2="5" width="0.2" layer="21"/>
 <wire x1="2.05" y1="5" x2="6.45" y2="5" width="0.2" layer="21"/>
 <wire x1="2.05" y1="-5" x2="6.45" y2="-5" width="0.2" layer="21"/>
-<text x="5.715" y="-3.175" size="1.016" layer="27" rot="R90">BTS442E2</text>
+<text x="5.715" y="-3.175" size="1.016" layer="25" rot="R90">BTS442E2</text>
 </package>
 <package name="CPOL-RADIAL-5MM-8MM">
 <description>5 mm spaced PTHs with 8 mm diameter outline</description>
@@ -316,7 +316,7 @@ Max Component Height - 19.75mm</description>
 <circle x="0" y="0" radius="4" width="0.2032" layer="21"/>
 <pad name="2" x="-2.5" y="0" drill="0.8" diameter="1.651"/>
 <pad name="1" x="2.5" y="0" drill="0.8" diameter="1.651" shape="square"/>
-<text x="0" y="-1.27" size="1.27" layer="27" font="vector" ratio="20" align="top-center">100µF</text>
+<text x="0" y="-1.27" size="1.27" layer="25" font="vector" ratio="20" align="top-center">100µF</text>
 </package>
 <package name="DIL28-3">
 <description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
@@ -421,7 +421,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.905" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="0.8128"/>
 <pad name="A" x="1.27" y="0" drill="0.8128"/>
-<text x="2.286" y="1.778" size="0.508" layer="27" ratio="15" rot="R180">4.7kΩ</text>
+<text x="2.286" y="1.778" size="0.508" layer="25" ratio="15" rot="R180">4.7kΩ</text>
 </package>
 <package name="VERT_CAP">
 <description>&lt;B&gt;Vertical Capacitor&lt;/B&gt;&lt;p&gt;</description>
@@ -431,7 +431,7 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <circle x="-1.27" y="0" radius="1.55" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1"/>
 <pad name="A" x="1.15" y="0" drill="1"/>
-<text x="2.159" y="1.524" size="0.508" layer="27" ratio="16" rot="R180">0.1µF</text>
+<text x="2.159" y="1.524" size="0.508" layer="25" ratio="16" rot="R180">0.1µF</text>
 </package>
 </packages>
 <symbols>
@@ -1939,6 +1939,30 @@ In this library the device names are the same as the pin names of the symbols, t
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1@BBB_IO,48.26,45.72,IC1,VDD,+3V3,,,"/>
+<approved hash="104,1@BBB_IO,88.9,45.72,IC1,VSS,GND3,,,"/>
+<approved hash="213,1,116.84,25.4,IN0,in,,,,"/>
+<approved hash="213,1,99.06,25.4,IN1,in,,,,"/>
+<approved hash="113,1,108.898,100.33,LED1,,,,,"/>
+<approved hash="113,1,58.0983,100.33,LED2,,,,,"/>
+<approved hash="113,1,159.698,100.33,LED0,,,,,"/>
+<approved hash="113,1@BBB_IO,68.2904,17.7377,SV1,,,,,"/>
+<approved hash="118,1@3V3_TO_12V_1BIT,58.42,34.29,Net,GND3,,,,"/>
+<approved hash="118,1@3V3_TO_12V_1BIT,48.26,64.77,Net,+12V,,,,"/>
+<approved hash="118,1@3V3_TO_12V_1BIT,45.72,91.44,Net,GND,,,,"/>
+<approved hash="118,1@12V_PWR_BLK,74.93,60.96,Net,+12V,,,,"/>
+<approved hash="118,1@12V_PWR_BLK,80.01,53.34,Net,GND,,,,"/>
+<approved hash="118,1@3V3_PWR_BLK,31.75,5.08,Net,GND3,,,,"/>
+<approved hash="118,1@3V3_PWR_BLK,22.86,12.7,Net,+3V3,,,,"/>
+<approved hash="118,1@12V_TO_3V3_1BIT,33.02,10.16,Net,+3V3,,,,"/>
+<approved hash="118,1@12V_TO_3V3_1BIT,17.78,22.86,Net,GND,,,,"/>
+<approved hash="118,1@DUAL_12V⇆3V3_1BIT,124.46,17.5006,Net,+3V3,,,,"/>
+<approved hash="118,1@DUAL_12V⇆3V3_1BIT,35.56,17.5006,Net,GND3,,,,"/>
+<approved hash="118,1@DUAL_12V⇆3V3_1BIT,40.64,48.5394,Net,GND,,,,"/>
+<approved hash="118,1@DUAL_12V⇆3V3_1BIT,33.02,48.5394,Net,+12V,,,,"/>
+<approved hash="118,1@BBB_IO,34.29,30.48,Net,+3V3,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
