@@ -1057,7 +1057,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="1.778" drill="0">
+</class>
+<class number="1" name="pwr" width="0" drill="0">
 </class>
 </classes>
 <modules>
@@ -1761,7 +1763,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <portref moduleinst="12V_PWR_BLK" port="GND"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
@@ -1794,7 +1796,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="58.42" y1="109.22" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="+12V" class="1">
 <segment>
 <portref moduleinst="12V_PWR_BLK" port="+12V"/>
 <pinref part="SUPPLY17" gate="+12V" pin="+12V"/>
@@ -1818,7 +1820,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="40.64" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <portref moduleinst="12V_TO_3V3_1BIT1" port="+3V3"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -1832,7 +1834,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="GND3" class="0">
+<net name="GND3" class="1">
 <segment>
 <portref moduleinst="3V3_TO_12_1BIT1" port="GND3"/>
 <pinref part="SUPPLY4" gate="G$1" pin="GND3"/>

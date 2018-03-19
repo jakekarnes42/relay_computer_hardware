@@ -6,12 +6,12 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -146,10 +146,21 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="60.94" y2="0" width="0" layer="20"/>
-<wire x1="60.94" y1="0" x2="60.94" y2="54.28" width="0" layer="20"/>
-<wire x1="60.94" y1="54.28" x2="0" y2="54.28" width="0" layer="20"/>
-<wire x1="0" y1="54.28" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="59.67" y2="0" width="0" layer="20"/>
+<wire x1="59.67" y1="0" x2="59.67" y2="46.66" width="0" layer="20"/>
+<wire x1="59.67" y1="46.66" x2="0" y2="46.66" width="0" layer="20"/>
+<wire x1="0" y1="46.66" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="22.479" x2="35.814" y2="22.479" width="0.1524" layer="51" style="shortdash"/>
+<wire x1="35.814" y1="22.479" x2="38.989" y2="19.304" width="0.1524" layer="51" style="shortdash"/>
+<wire x1="38.989" y1="19.304" x2="59.69" y2="19.304" width="0.1524" layer="51" style="shortdash"/>
+<text x="0.635" y="22.86" size="0.508" layer="51">12V</text>
+<text x="0.635" y="21.59" size="0.508" layer="51">3.3V</text>
+<text x="13.335" y="0.635" size="0.508" layer="51">3.3V</text>
+<text x="15.875" y="0.635" size="0.508" layer="51">GND</text>
+<text x="18.415" y="0.635" size="0.508" layer="51">SCL</text>
+<text x="20.955" y="0.635" size="0.508" layer="51">SDA</text>
+<text x="0.635" y="43.815" size="0.508" layer="51" rot="R90">12V</text>
+<text x="0.635" y="39.37" size="0.508" layer="51" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="relay_computer_custom">
@@ -408,40 +419,40 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="1.778" drill="0">
+</class>
+<class number="1" name="pwr" width="0" drill="0">
 </class>
 </classes>
-<designrules name="OSH_PARK_RULES_custom *">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="oshpark-4layer">
+<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+Please make sure your boards conform to these design rules.
+&lt;/p&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.07mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.07mm"/>
-<param name="mtIsolate" value="30mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
+&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+&lt;/p&gt;</description>
+<param name="layerSetup" value="(1*2*15*16)"/>
+<param name="mtCopper" value="0.035559375mm 0.01778125mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.01778125mm 0.035559375mm"/>
+<param name="mtIsolate" value="0.17018125mm 47mil 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.17018125mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="75mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -450,15 +461,15 @@ Please make sure your boards conform to these design rules.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMinPadTop" value="4mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMinPadInner" value="4mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMinPadBottom" value="4mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="4mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="4mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -471,8 +482,8 @@ Please make sure your boards conform to these design rules.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="2.5mil"/>
+<param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -588,128 +599,137 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="12V_PWR_BLK:C1" library="relay_computer_custom" package="CPOL-RADIAL-5MM-8MM" value="100uF" x="13.97" y="49.53" rot="R90">
-<attribute name="PROD_ID" value="ECA1HM101" x="13.97" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="12V_PWR_BLK:C1" library="relay_computer_custom" package="CPOL-RADIAL-5MM-8MM" value="100uF" x="13.97" y="41.91" rot="R90">
+<attribute name="PROD_ID" value="ECA1HM101" x="13.97" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="12V_PWR_BLK:PWR" library="relay_computer_custom" package="1751248" value="PWR_BLK" x="5.08" y="49.53" smashed="yes" rot="R90">
-<attribute name="MF" value="" x="5.08" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="5.08" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="5.08" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="5.08" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="12V_PWR_BLK:PWR" library="relay_computer_custom" package="1751248" value="PWR_BLK" x="5.08" y="41.91" smashed="yes" rot="R90">
+<attribute name="MF" value="" x="5.08" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="5.08" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.08" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="5.08" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="12V_TO_3V3_1BIT1:D5" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="55.88" y="34.29" rot="R180">
-<attribute name="MF" value="" x="55.88" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="1N4007-E3/73" x="55.88" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="78K2222" x="55.88" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="12V_TO_3V3_1BIT1:D5" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="57.15" y="28.575" rot="R270">
+<attribute name="MF" value="" x="57.15" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="1N4007-E3/73" x="57.15" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="78K2222" x="57.15" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="12V_TO_3V3_1BIT1:D6" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="50.8" y="34.29">
-<attribute name="MF" value="ON SEMICONDUCTOR" x="50.8" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1N5359BRLG" x="50.8" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="42K2893" x="50.8" y="34.29" size="1.778" layer="27" display="off"/>
+<element name="12V_TO_3V3_1BIT1:D6" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="57.15" y="23.495" rot="R90">
+<attribute name="MF" value="ON SEMICONDUCTOR" x="57.15" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1N5359BRLG" x="57.15" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="42K2893" x="57.15" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="12V_TO_3V3_1BIT1:K3" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="55.88" y="3.81" rot="R90">
-<attribute name="MF" value="" x="55.88" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="55.88" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="55.88" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="12V_TO_3V3_1BIT1:K3" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="54.61" y="2.54" rot="R90">
+<attribute name="MF" value="" x="54.61" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="54.61" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="54.61" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="3V3_TO_12_1BIT1:D3" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="44.45" y="34.29" rot="R180">
-<attribute name="MF" value="" x="44.45" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="1N4007-E3/73" x="44.45" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="78K2222" x="44.45" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="3V3_TO_12_1BIT1:D3" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="46.99" y="28.575" rot="R270">
+<attribute name="MF" value="" x="46.99" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="1N4007-E3/73" x="46.99" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="78K2222" x="46.99" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="3V3_TO_12_1BIT1:D4" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="39.37" y="34.29">
-<attribute name="MF" value="ON SEMICONDUCTOR" x="39.37" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1N5359BRLG" x="39.37" y="34.29" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="42K2893" x="39.37" y="34.29" size="1.778" layer="27" display="off"/>
+<element name="3V3_TO_12_1BIT1:D4" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="46.99" y="23.495" rot="R90">
+<attribute name="MF" value="ON SEMICONDUCTOR" x="46.99" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="1N5359BRLG" x="46.99" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="42K2893" x="46.99" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="3V3_TO_12_1BIT1:K2" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="58.42" y="44.45" rot="R180">
-<attribute name="MF" value="" x="58.42" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="58.42" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="58.42" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="3V3_TO_12_1BIT1:K2" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="58.42" y="36.83" rot="R180">
+<attribute name="MF" value="" x="58.42" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="58.42" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="58.42" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="3V3_TO_12_1BIT1:U1" library="relay_computer_custom" package="TO170P440X1000X1975-5B" value="BTS442E2" x="24.13" y="29.21" rot="R180">
-<attribute name="MF" value="" x="24.13" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="BTS442E2BKSA1" x="24.13" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="78X4831" x="24.13" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="3V3_TO_12_1BIT1:U1" library="relay_computer_custom" package="TO170P440X1000X1975-5B" value="BTS442E2" x="21.59" y="25.4" rot="R180">
+<attribute name="MF" value="" x="21.59" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="BTS442E2BKSA1" x="21.59" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="78X4831" x="21.59" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="BBB_IO1:C1" library="relay_computer_custom" package="CPOL-RADIAL-5MM-8MM" value="100uF" x="5.08" y="5.08" rot="R90">
-<attribute name="PROD_ID" value="ECA1HM101" x="5.08" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="BBB_IO1:C1" library="relay_computer_custom" package="CPOL-RADIAL-5MM-8MM" value="100uF" x="5.08" y="4.445" rot="R90">
+<attribute name="PROD_ID" value="ECA1HM101" x="5.08" y="4.445" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="BBB_IO1:C2" library="relay_computer_custom" package="VERT_CAP" value="0.1UF" x="29.21" y="22.86" rot="R180"/>
-<element name="BBB_IO1:IC1" library="relay_computer_custom" package="DIL28-3" value="MCP23017SP" x="19.05" y="15.24"/>
+<element name="BBB_IO1:C2" library="relay_computer_custom" package="VERT_CAP" value="0.1UF" x="30.48" y="20.955" rot="R180"/>
+<element name="BBB_IO1:IC1" library="relay_computer_custom" package="DIL28-3" value="MCP23017SP" x="20.32" y="13.97" smashed="yes">
+<attribute name="VALUE" x="4.572" y="13.0302" size="1.778" layer="27" ratio="10"/>
+</element>
 <element name="BBB_IO1:R1" library="relay_computer_custom" package="RAD2.5_RES" value="4.7KOHM" x="27.94" y="3.81" rot="R270"/>
 <element name="BBB_IO1:R2" library="relay_computer_custom" package="RAD2.5_RES" value="4.7KOHM" x="33.02" y="3.81" rot="R270"/>
-<element name="BBB_IO1:SV1" library="relay_computer_custom" package="FE04-1" value="" x="17.78" y="3.81">
-<attribute name="MF" value="Sullins Connector Solutions" x="17.78" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PPPC041LFBN-RC" x="17.78" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="17.78" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="17.78" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="BBB_IO1:SV1" library="relay_computer_custom" package="FE04-1" value="" x="17.78" y="2.54" smashed="yes">
+<attribute name="MF" value="Sullins Connector Solutions" x="17.78" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="PPPC041LFBN-RC" x="17.78" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="17.78" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="17.78" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.78" y="4.191" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D5" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="27.94" y="36.83">
-<attribute name="MF" value="" x="27.94" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1N4007-E3/73" x="27.94" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="78K2222" x="27.94" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D5" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="36.83" y="25.4">
+<attribute name="MF" value="" x="36.83" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="1N4007-E3/73" x="36.83" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="78K2222" x="36.83" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D6" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="33.02" y="36.83" rot="R180">
-<attribute name="MF" value="ON SEMICONDUCTOR" x="33.02" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="1N5359BRLG" x="33.02" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="42K2893" x="33.02" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D6" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="35.56" y="29.21" rot="R180">
+<attribute name="MF" value="ON SEMICONDUCTOR" x="35.56" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="1N5359BRLG" x="35.56" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="42K2893" x="35.56" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="44.45" y="3.81" rot="R90">
-<attribute name="MF" value="" x="44.45" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="44.45" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="44.45" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="44.45" y="2.54" rot="R90">
+<attribute name="MF" value="" x="44.45" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="44.45" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="44.45" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D3" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="3.81" y="36.83">
-<attribute name="MF" value="" x="3.81" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1N4007-E3/73" x="3.81" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="78K2222" x="3.81" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D3" library="relay_computer_custom" package="RAD2,5" value="1N4007" x="29.21" y="25.4" rot="R180">
+<attribute name="MF" value="" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="1N4007-E3/73" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="78K2222" x="29.21" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D4" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="8.89" y="36.83" rot="R180">
-<attribute name="MF" value="ON SEMICONDUCTOR" x="8.89" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="1N5359BRLG" x="8.89" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="42K2893" x="8.89" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D4" library="relay_computer_custom" package="RAD2.5_D2" value="1N5359VERT_SML" x="29.21" y="29.21">
+<attribute name="MF" value="ON SEMICONDUCTOR" x="29.21" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="1N5359BRLG" x="29.21" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="42K2893" x="29.21" y="29.21" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:K2" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="29.21" y="44.45" rot="R180">
-<attribute name="MF" value="" x="29.21" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="29.21" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="29.21" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:K2" library="relay_computer_custom" package="HF41F-12-H" value="HF41F-12-H" x="29.21" y="36.83" rot="R180">
+<attribute name="MF" value="" x="29.21" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="29.21" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="29.21" y="36.83" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:U1" library="relay_computer_custom" package="TO170P440X1000X1975-5B" value="BTS442E2" x="10.16" y="29.21" rot="R180">
-<attribute name="MF" value="" x="10.16" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="BTS442E2BKSA1" x="10.16" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="78X4831" x="10.16" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:U1" library="relay_computer_custom" package="TO170P440X1000X1975-5B" value="BTS442E2" x="8.89" y="25.4" rot="R180">
+<attribute name="MF" value="" x="8.89" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="BTS442E2BKSA1" x="8.89" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="78X4831" x="8.89" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED1" library="relay_computer_custom" package="LED3MM" value="" x="38.1" y="49.53">
-<attribute name="MF" value="" x="38.1" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="38.1" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="38.1" y="49.53" size="1.778" layer="27" display="off"/>
+<element name="LED1" library="relay_computer_custom" package="LED3MM" value="" x="38.1" y="41.91" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="38.1" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="38.1" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="36.195" y="44.831" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_NEWARK" value="unknown" x="38.1" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="36.449" y="40.005" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LED2" library="relay_computer_custom" package="LED3MM" value="" x="21.59" y="49.53">
-<attribute name="MF" value="" x="21.59" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="21.59" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="21.59" y="49.53" size="1.778" layer="27" display="off"/>
+<element name="LED2" library="relay_computer_custom" package="LED3MM" value="" x="21.59" y="41.91" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="21.59" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="21.59" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.685" y="44.831" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_NEWARK" value="unknown" x="21.59" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="19.939" y="40.005" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LED0" library="relay_computer_custom" package="LED3MM" value="" x="54.61" y="49.53">
-<attribute name="MF" value="" x="54.61" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="54.61" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="54.61" y="49.53" size="1.778" layer="27" display="off"/>
+<element name="LED0" library="relay_computer_custom" package="LED3MM" value="" x="54.61" y="41.91" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="54.61" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="54.61" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="52.705" y="44.831" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_NEWARK" value="unknown" x="54.61" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="52.959" y="40.005" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="X1" library="relay_computer_custom" package="1751248" value="SWTCH_BLCK" x="30.48" y="49.53">
-<attribute name="MF" value="" x="30.48" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="30.48" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="30.48" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="30.48" y="49.53" size="1.778" layer="27" display="off"/>
+<element name="X1" library="relay_computer_custom" package="1751248" value="SWTCH_BLCK" x="30.48" y="41.91" smashed="yes">
+<attribute name="MF" value="" x="30.48" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="30.48" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="30.48" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="30.48" y="41.91" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X0" library="relay_computer_custom" package="1751248" value="SWTCH_BLCK" x="46.99" y="49.53">
-<attribute name="MF" value="" x="46.99" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="46.99" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="46.99" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="46.99" y="49.53" size="1.778" layer="27" display="off"/>
+<element name="X0" library="relay_computer_custom" package="1751248" value="SWTCH_BLCK" x="46.99" y="41.91" smashed="yes">
+<attribute name="MF" value="" x="46.99" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="46.99" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="46.99" y="41.91" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="46.99" y="41.91" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
-<signal name="GND">
+<signal name="GND" class="1">
 <contactref element="LED1" pad="K"/>
 <contactref element="LED0" pad="K"/>
 <contactref element="LED2" pad="K"/>
@@ -723,20 +743,16 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D6" pad="C"/>
 <contactref element="12V_TO_3V3_1BIT1:K3" pad="2"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" pad="2"/>
-<wire x1="39.37" y1="49.53" x2="55.88" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="35.16" y1="43.25" x2="39.37" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="38.1" y1="34.29" x2="35.16" y2="43.25" width="0" layer="19" extent="1-1"/>
-<wire x1="43.25" y1="27.07" x2="38.1" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="49.53" y1="34.29" x2="43.25" y2="27.07" width="0" layer="19" extent="1-1"/>
-<wire x1="54.68" y1="27.07" x2="49.53" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="36.83" x2="35.16" y2="43.25" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="49.53" x2="34.29" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="47.03" x2="22.86" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="5.18" y1="47.78" x2="13.97" y2="47.03" width="0" layer="19" extent="1-1"/>
-<wire x1="5.95" y1="43.25" x2="5.18" y2="47.78" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="36.83" x2="5.95" y2="43.25" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="2">
+<vertex x="0" y="46.355"/>
+<vertex x="59.69" y="46.355"/>
+<vertex x="59.69" y="19.685"/>
+<vertex x="39.37" y="19.685"/>
+<vertex x="36.195" y="22.86"/>
+<vertex x="0" y="22.86"/>
+</polygon>
 </signal>
-<signal name="+12V">
+<signal name="+12V" class="1">
 <contactref element="X0" pad="2"/>
 <contactref element="X1" pad="2"/>
 <contactref element="3V3_TO_12_1BIT1:U1" pad="3"/>
@@ -745,27 +761,42 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:K2" pad="4"/>
 <contactref element="12V_PWR_BLK:PWR" pad="2"/>
 <contactref element="12V_PWR_BLK:C1" pad="1"/>
-<wire x1="51.54" y1="43.25" x2="48.74" y2="49.43" width="0" layer="19" extent="1-1"/>
-<wire x1="32.23" y1="49.43" x2="48.74" y2="49.43" width="0" layer="19" extent="1-1"/>
-<wire x1="22.33" y1="43.25" x2="32.23" y2="49.43" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="52.03" x2="22.33" y2="43.25" width="0" layer="19" extent="1-1"/>
-<wire x1="5.18" y1="51.28" x2="13.97" y2="52.03" width="0" layer="19" extent="1-1"/>
-<wire x1="26.08" y1="29.21" x2="22.33" y2="43.25" width="0" layer="19" extent="1-1"/>
-<wire x1="12.11" y1="29.21" x2="26.08" y2="29.21" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="15">
+<vertex x="59.69" y="19.685"/>
+<vertex x="59.69" y="46.355"/>
+<vertex x="0" y="46.355"/>
+<vertex x="0" y="22.86"/>
+<vertex x="36.195" y="22.86"/>
+<vertex x="39.37" y="19.685"/>
+</polygon>
 </signal>
 <signal name="N$1">
 <contactref element="LED1" pad="A"/>
 <contactref element="3V3_TO_12_1BIT1:K2" pad="5"/>
-<wire x1="36.83" y1="49.53" x2="56.58" y2="43.25" width="0" layer="19" extent="1-1"/>
+<wire x1="41.11625" y1="43.18" x2="38.1" y2="43.18" width="1.778" layer="16"/>
+<wire x1="46.6725" y1="37.62375" x2="41.11625" y2="43.18" width="1.778" layer="16"/>
+<wire x1="54.61" y1="37.62375" x2="46.6725" y2="37.62375" width="1.778" layer="16"/>
+<wire x1="56.515" y1="35.71875" x2="54.61" y2="37.62375" width="1.778" layer="16"/>
+<wire x1="56.515" y1="35.71875" x2="56.58" y2="35.63" width="1.778" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="X0" pad="1"/>
 <contactref element="LED0" pad="A"/>
 <contactref element="12V_TO_3V3_1BIT1:D5" pad="C"/>
 <contactref element="12V_TO_3V3_1BIT1:K3" pad="1"/>
-<wire x1="45.24" y1="49.43" x2="53.34" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="34.29" x2="53.34" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="54.68" y1="30.85" x2="57.15" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="56.99125" y1="29.68625" x2="53.6575" y2="29.68625" width="1.778" layer="1"/>
+<wire x1="53.6575" y1="29.68625" x2="53.49875" y2="29.68625" width="1.778" layer="1"/>
+<wire x1="57.15" y1="29.845" x2="56.99125" y2="29.68625" width="1.778" layer="1"/>
+<wire x1="53.49875" y1="29.68625" x2="53.41" y2="29.58" width="1.778" layer="1"/>
+<wire x1="50.165" y1="43.18" x2="52.86375" y2="43.18" width="1.778" layer="1"/>
+<wire x1="52.86375" y1="43.18" x2="54.61" y2="43.18" width="1.778" layer="1"/>
+<wire x1="49.53" y1="43.815" x2="50.165" y2="43.18" width="1.778" layer="1"/>
+<wire x1="47.14875" y1="43.815" x2="49.53" y2="43.815" width="1.778" layer="1"/>
+<wire x1="45.24375" y1="41.91" x2="47.14875" y2="43.815" width="1.778" layer="1"/>
+<wire x1="45.24375" y1="41.91" x2="45.24" y2="41.81" width="1.778" layer="1"/>
+<wire x1="53.6575" y1="39.21125" x2="53.6575" y2="29.68625" width="1.778" layer="1"/>
+<wire x1="52.86375" y1="40.005" x2="53.6575" y2="39.21125" width="1.778" layer="1"/>
+<wire x1="52.86375" y1="43.18" x2="52.86375" y2="40.005" width="1.778" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED2" pad="A"/>
@@ -773,22 +804,40 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:K2" pad="5"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D5" pad="C"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" pad="1"/>
-<wire x1="27.37" y1="43.25" x2="28.73" y2="49.43" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="49.53" x2="28.73" y2="49.43" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="36.83" x2="27.37" y2="43.25" width="0" layer="19" extent="1-1"/>
-<wire x1="43.25" y1="30.85" x2="26.67" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="28.2575" x2="43.18" y2="29.5275" width="1.778" layer="1"/>
+<wire x1="40.005" y1="25.0825" x2="43.18" y2="28.2575" width="1.778" layer="1"/>
+<wire x1="40.005" y1="24.765" x2="40.005" y2="25.0825" width="1.778" layer="1"/>
+<wire x1="38.735" y1="23.495" x2="40.005" y2="24.765" width="1.778" layer="1"/>
+<wire x1="37.465" y1="23.495" x2="38.735" y2="23.495" width="1.778" layer="1"/>
+<wire x1="35.56" y1="25.4" x2="37.465" y2="23.495" width="1.778" layer="1"/>
+<wire x1="43.18" y1="29.5275" x2="43.25" y2="29.58" width="1.778" layer="1"/>
+<wire x1="27.305" y1="43.18" x2="21.59" y2="43.18" width="1.778" layer="1"/>
+<wire x1="28.575" y1="41.91" x2="28.019375" y2="42.465625" width="1.778" layer="1"/>
+<wire x1="28.019375" y1="42.465625" x2="27.305" y2="43.18" width="1.778" layer="1"/>
+<wire x1="28.575" y1="41.91" x2="28.73" y2="41.81" width="1.778" layer="1"/>
+<wire x1="27.46375" y1="41.91" x2="27.46375" y2="35.71875" width="1.778" layer="1"/>
+<wire x1="27.46375" y1="35.71875" x2="27.37" y2="35.63" width="1.778" layer="1"/>
+<wire x1="27.46375" y1="41.91" x2="28.019375" y2="42.465625" width="1.778" layer="1"/>
+<wire x1="39.21125" y1="29.845" x2="42.38625" y2="29.845" width="1.778" layer="1"/>
+<wire x1="35.2425" y1="33.81375" x2="39.21125" y2="29.845" width="1.778" layer="1"/>
+<wire x1="29.845" y1="33.81375" x2="35.2425" y2="33.81375" width="1.778" layer="1"/>
+<wire x1="28.2575" y1="35.40125" x2="29.845" y2="33.81375" width="1.778" layer="1"/>
+<wire x1="42.38625" y1="29.845" x2="43.18" y2="29.5275" width="1.778" layer="1"/>
+<wire x1="28.2575" y1="35.40125" x2="27.37" y2="35.63" width="1.778" layer="1"/>
 </signal>
 <signal name="3V3_TO_12_1BIT1:D$2">
 <contactref element="3V3_TO_12_1BIT1:D3" pad="A"/>
 <contactref element="3V3_TO_12_1BIT1:D4" pad="A"/>
-<wire x1="40.64" y1="34.29" x2="43.18" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="24.765" x2="46.99" y2="27.305" width="1.778" layer="1"/>
 </signal>
 <signal name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D$2">
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D3" pad="A"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D4" pad="A"/>
-<wire x1="7.62" y1="36.83" x2="5.08" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="26.19375" x2="27.94" y2="25.4" width="1.778" layer="16"/>
+<wire x1="30.48" y1="28.73375" x2="27.94" y2="26.19375" width="1.778" layer="16"/>
+<wire x1="30.48" y1="29.21" x2="30.48" y2="28.73375" width="1.778" layer="16"/>
 </signal>
-<signal name="GND3">
+<signal name="GND3" class="1">
 <contactref element="3V3_TO_12_1BIT1:U1" pad="1"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:U1" pad="1"/>
 <contactref element="BBB_IO1:C1" pad="2"/>
@@ -798,60 +847,102 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="BBB_IO1:IC1" pad="15"/>
 <contactref element="BBB_IO1:IC1" pad="16"/>
 <contactref element="BBB_IO1:C2" pad="C"/>
-<wire x1="33.02" y1="19.05" x2="35.56" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="19.05" x2="33.02" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="22.86" x2="30.48" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="26.08" y1="25.81" x2="30.48" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="11.43" x2="30.48" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="12.11" y1="25.81" x2="26.08" y2="25.81" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="3.81" x2="25.4" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="2.58" x2="16.51" y2="3.81" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="2">
+<vertex x="0" y="22.225"/>
+<vertex x="35.56" y="22.225"/>
+<vertex x="38.735" y="19.05"/>
+<vertex x="59.69" y="19.05"/>
+<vertex x="59.69" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 <signal name="N$6">
 <contactref element="3V3_TO_12_1BIT1:U1" pad="2"/>
 <contactref element="BBB_IO1:IC1" pad="28"/>
-<wire x1="2.54" y1="19.05" x2="22.18" y2="27.51" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="26.82875" x2="3.81" y2="17.78" width="1.778" layer="16"/>
+<wire x1="7.77875" y1="30.7975" x2="3.81" y2="26.82875" width="1.778" layer="16"/>
+<wire x1="12.54125" y1="30.7975" x2="7.77875" y2="30.7975" width="1.778" layer="16"/>
+<wire x1="19.52625" y1="23.8125" x2="12.54125" y2="30.7975" width="1.778" layer="16"/>
+<wire x1="19.52625" y1="23.8125" x2="19.64" y2="23.7" width="1.778" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:U1" pad="2"/>
 <contactref element="BBB_IO1:IC1" pad="8"/>
-<wire x1="20.32" y1="11.43" x2="8.21" y2="27.51" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="10.63625" x2="21.59" y2="10.16" width="1.778" layer="1"/>
+<wire x1="16.8275" y1="15.39875" x2="21.59" y2="10.63625" width="1.778" layer="1"/>
+<wire x1="3.175" y1="15.39875" x2="16.8275" y2="15.39875" width="1.778" layer="1"/>
+<wire x1="2.06375" y1="16.51" x2="3.175" y2="15.39875" width="1.778" layer="1"/>
+<wire x1="2.06375" y1="19.05" x2="2.06375" y2="16.51" width="1.778" layer="1"/>
+<wire x1="6.82625" y1="23.8125" x2="2.06375" y2="19.05" width="1.778" layer="1"/>
+<wire x1="6.82625" y1="23.8125" x2="6.94" y2="23.7" width="1.778" layer="1"/>
 </signal>
 <signal name="3V3_TO_12_1BIT1:N$1">
 <contactref element="3V3_TO_12_1BIT1:K2" pad="1"/>
 <contactref element="3V3_TO_12_1BIT1:D3" pad="C"/>
 <contactref element="3V3_TO_12_1BIT1:U1" pad="5"/>
-<wire x1="31.38" y1="43.25" x2="45.72" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="26.08" y1="32.61" x2="31.38" y2="43.25" width="0" layer="19" extent="1-1"/>
+<wire x1="30.32125" y1="35.56" x2="31.27375" y2="35.56" width="1.778" layer="16"/>
+<wire x1="23.65375" y1="28.8925" x2="29.130625" y2="34.369375" width="1.778" layer="16"/>
+<wire x1="29.130625" y1="34.369375" x2="30.32125" y2="35.56" width="1.778" layer="16"/>
+<wire x1="31.27375" y1="35.56" x2="31.38" y2="35.63" width="1.778" layer="16"/>
+<wire x1="23.65375" y1="28.8925" x2="23.54" y2="28.8" width="1.778" layer="16"/>
+<wire x1="45.56125" y1="29.845" x2="46.99" y2="29.845" width="1.778" layer="16"/>
+<wire x1="41.5925" y1="33.81375" x2="45.56125" y2="29.845" width="1.778" layer="16"/>
+<wire x1="29.68625" y1="33.81375" x2="41.5925" y2="33.81375" width="1.778" layer="16"/>
+<wire x1="29.68625" y1="33.81375" x2="29.130625" y2="34.369375" width="1.778" layer="16"/>
 </signal>
 <signal name="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:N$1">
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:K2" pad="1"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:D3" pad="C"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:3V3_TO_12_1BIT1:U1" pad="5"/>
-<wire x1="12.11" y1="32.61" x2="2.54" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="2.17" y1="43.25" x2="2.54" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="3.4925" y1="35.56" x2="2.2225" y2="35.56" width="1.778" layer="1"/>
+<wire x1="10.16" y1="28.8925" x2="8.810625" y2="30.241875" width="1.778" layer="1"/>
+<wire x1="8.810625" y1="30.241875" x2="3.4925" y2="35.56" width="1.778" layer="1"/>
+<wire x1="10.795" y1="28.8925" x2="10.16" y2="28.8925" width="1.778" layer="1"/>
+<wire x1="2.2225" y1="35.56" x2="2.17" y2="35.63" width="1.778" layer="1"/>
+<wire x1="10.795" y1="28.8925" x2="10.84" y2="28.8" width="1.778" layer="1"/>
+<wire x1="28.575" y1="23.495" x2="30.48" y2="25.4" width="1.778" layer="1"/>
+<wire x1="27.305" y1="23.495" x2="28.575" y2="23.495" width="1.778" layer="1"/>
+<wire x1="25.55875" y1="25.24125" x2="27.305" y2="23.495" width="1.778" layer="1"/>
+<wire x1="25.55875" y1="29.68625" x2="25.55875" y2="25.24125" width="1.778" layer="1"/>
+<wire x1="24.4475" y1="30.7975" x2="25.55875" y2="29.68625" width="1.778" layer="1"/>
+<wire x1="9.36625" y1="30.7975" x2="24.4475" y2="30.7975" width="1.778" layer="1"/>
+<wire x1="9.36625" y1="30.7975" x2="8.810625" y2="30.241875" width="1.778" layer="1"/>
 </signal>
 <signal name="12V_TO_3V3_1BIT1:D$3">
 <contactref element="12V_TO_3V3_1BIT1:D5" pad="A"/>
 <contactref element="12V_TO_3V3_1BIT1:D6" pad="A"/>
-<wire x1="52.07" y1="34.29" x2="54.61" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="24.765" x2="57.15" y2="27.305" width="1.778" layer="1"/>
 </signal>
 <signal name="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D$3">
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D5" pad="A"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:D6" pad="A"/>
-<wire x1="31.75" y1="36.83" x2="29.21" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="36.195" y1="23.495" x2="38.1" y2="25.4" width="1.778" layer="16"/>
+<wire x1="34.925" y1="23.495" x2="36.195" y2="23.495" width="1.778" layer="16"/>
+<wire x1="33.655" y1="24.765" x2="34.925" y2="23.495" width="1.778" layer="16"/>
+<wire x1="33.655" y1="28.575" x2="33.655" y2="24.765" width="1.778" layer="16"/>
+<wire x1="34.29" y1="29.21" x2="33.655" y2="28.575" width="1.778" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="12V_TO_3V3_1BIT1:K3" pad="5"/>
 <contactref element="BBB_IO1:IC1" pad="21"/>
-<wire x1="20.32" y1="19.05" x2="54.68" y2="5.65" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="17.30375" x2="21.59" y2="17.78" width="1.778" layer="1"/>
+<wire x1="26.3525" y1="12.54125" x2="21.59" y2="17.30375" width="1.778" layer="1"/>
+<wire x1="45.24375" y1="12.54125" x2="26.3525" y2="12.54125" width="1.778" layer="1"/>
+<wire x1="53.34" y1="4.445" x2="45.24375" y2="12.54125" width="1.778" layer="1"/>
+<wire x1="53.34" y1="4.445" x2="53.41" y2="4.38" width="1.778" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" pad="5"/>
 <contactref element="BBB_IO1:IC1" pad="1"/>
-<wire x1="2.54" y1="11.43" x2="43.25" y2="5.65" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="10.63625" x2="3.81" y2="10.16" width="1.778" layer="16"/>
+<wire x1="5.715" y1="12.54125" x2="3.81" y2="10.63625" width="1.778" layer="16"/>
+<wire x1="37.465" y1="12.54125" x2="5.715" y2="12.54125" width="1.778" layer="16"/>
+<wire x1="41.275" y1="8.73125" x2="37.465" y2="12.54125" width="1.778" layer="16"/>
+<wire x1="41.275" y1="6.35" x2="41.275" y2="8.73125" width="1.778" layer="16"/>
+<wire x1="43.18" y1="4.445" x2="41.275" y2="6.35" width="1.778" layer="16"/>
+<wire x1="43.18" y1="4.445" x2="43.25" y2="4.38" width="1.778" layer="16"/>
 </signal>
-<signal name="+3V3">
+<signal name="+3V3" class="1">
 <contactref element="12V_TO_3V3_1BIT1:K3" pad="4"/>
 <contactref element="DUAL_12V⇆3V3_1BIT1:12V_TO_3V3_1BIT1:K3" pad="4"/>
 <contactref element="BBB_IO1:C1" pad="1"/>
@@ -861,28 +952,38 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="BBB_IO1:R1" pad="A"/>
 <contactref element="BBB_IO1:R2" pad="A"/>
 <contactref element="BBB_IO1:C2" pad="A"/>
-<wire x1="43.25" y1="10.69" x2="54.68" y2="10.69" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="2.54" x2="43.25" y2="10.69" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="2.54" x2="33.02" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="11.43" x2="27.94" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="19.05" x2="22.86" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="28.06" y1="22.86" x2="27.94" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="3.81" x2="27.94" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="7.58" x2="13.97" y2="3.81" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="15">
+<vertex x="0.635" y="22.225"/>
+<vertex x="35.56" y="22.225"/>
+<vertex x="38.735" y="19.05"/>
+<vertex x="59.055" y="19.05"/>
+<vertex x="59.055" y="0"/>
+<vertex x="0" y="0"/>
+<vertex x="0" y="22.225"/>
+</polygon>
 </signal>
 <signal name="BBB_IO1:SCL">
 <contactref element="BBB_IO1:SV1" pad="3"/>
 <contactref element="BBB_IO1:IC1" pad="12"/>
 <contactref element="BBB_IO1:R1" pad="C"/>
-<wire x1="27.94" y1="5.08" x2="30.48" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="3.81" x2="27.94" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="5.87375" x2="27.94" y2="5.08" width="1.778" layer="1"/>
+<wire x1="31.75" y1="9.68375" x2="27.94" y2="5.87375" width="1.778" layer="1"/>
+<wire x1="31.75" y1="10.16" x2="31.75" y2="9.68375" width="1.778" layer="1"/>
+<wire x1="21.2725" y1="4.7625" x2="19.05" y2="2.54" width="1.778" layer="1"/>
+<wire x1="27.14625" y1="4.7625" x2="21.2725" y2="4.7625" width="1.778" layer="1"/>
+<wire x1="27.14625" y1="4.7625" x2="27.94" y2="5.08" width="1.778" layer="1"/>
 </signal>
 <signal name="BBB_IO1:SDA">
 <contactref element="BBB_IO1:SV1" pad="4"/>
 <contactref element="BBB_IO1:IC1" pad="13"/>
 <contactref element="BBB_IO1:R2" pad="C"/>
-<wire x1="33.02" y1="5.08" x2="33.02" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="3.81" x2="33.02" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="8.41375" x2="33.02" y2="6.82625" width="1.778" layer="16"/>
+<wire x1="33.02" y1="6.82625" x2="33.02" y2="5.08" width="1.778" layer="16"/>
+<wire x1="34.29" y1="9.68375" x2="33.02" y2="8.41375" width="1.778" layer="16"/>
+<wire x1="34.29" y1="10.16" x2="34.29" y2="9.68375" width="1.778" layer="16"/>
+<wire x1="23.01875" y1="2.54" x2="21.59" y2="2.54" width="1.778" layer="16"/>
+<wire x1="27.305" y1="6.82625" x2="23.01875" y2="2.54" width="1.778" layer="16"/>
+<wire x1="33.02" y1="6.82625" x2="27.305" y2="6.82625" width="1.778" layer="16"/>
 </signal>
 </signals>
 </board>
