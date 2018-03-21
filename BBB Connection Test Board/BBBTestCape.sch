@@ -1058,7 +1058,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="1.27" drill="0">
+<class number="0" name="default" width="1.016" drill="0">
 </class>
 <class number="1" name="pwr" width="0" drill="0">
 </class>
