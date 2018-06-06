@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2549,7 +2549,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <moduleinst name="PWR_BLK" module="PWR_BLK" x="76.2" y="129.54" rot="R180"/>
 <moduleinst name="INPUT4-1" module="INPUT4" x="35.56" y="99.06"/>
 <moduleinst name="INPUT4-2" module="INPUT4" x="78.74" y="99.06"/>
-<moduleinst name="INPUT3-1" module="INPUT3" x="154.94" y="91.44" rot="R270"/>
+<moduleinst name="INPUT3-1" module="INPUT3" x="124.46" y="99.06"/>
 <moduleinst name="ENABLE4-1" module="ENABLE4" x="35.56" y="63.5"/>
 <moduleinst name="ENABLE4-2" module="ENABLE4" x="78.74" y="63.5"/>
 <moduleinst name="INC/DEC_FILTER1" module="INC/DEC_FILTER" x="78.74" y="27.94"/>
@@ -2566,7 +2566,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY18" gate="GND" x="71.12" y="142.24" rot="R180"/>
 <instance part="SUPPLY2" gate="GND" x="15.24" y="101.6" rot="R180"/>
 <instance part="SUPPLY4" gate="GND" x="58.42" y="101.6" rot="R180"/>
-<instance part="SUPPLY1" gate="GND" x="154.94" y="111.76" rot="R180"/>
+<instance part="SUPPLY1" gate="GND" x="104.14" y="101.6" rot="R180"/>
 <instance part="SUPPLY3" gate="GND" x="58.42" y="58.42"/>
 <instance part="SUPPLY5" gate="GND" x="15.24" y="58.42"/>
 <instance part="SUPPLY6" gate="+12V" x="53.34" y="30.48" rot="R90"/>
@@ -2602,7 +2602,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="INPUT3-1" port="GND"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="154.94" y1="111.76" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="ENABLE4-2" port="GND"/>
@@ -2662,14 +2661,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="AUE" class="0">
 <segment>
-<label x="121.92" y="114.3" size="1.778" layer="95"/>
 <portref moduleinst="ENABLE4-2" port="ENABLE"/>
 <wire x1="58.42" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="114.3" x2="-15.24" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="114.3" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
-<junction x="53.34" y="114.3"/>
 <portref moduleinst="ENABLE4-1" port="ENABLE"/>
 <wire x1="-15.24" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <label x="12.7" y="68.58" size="1.778" layer="95"/>
@@ -2685,8 +2681,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="-15.24" y="-111.76"/>
 <label x="-10.16" y="-127" size="1.778" layer="95"/>
 <label x="50.8" y="-111.76" size="1.778" layer="95"/>
+<wire x1="53.34" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="114.3" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<junction x="53.34" y="114.3"/>
 <portref moduleinst="INPUT3-1" port="IN2"/>
-<wire x1="139.7" y1="99.06" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<label x="93.98" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2740,11 +2740,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="INC/DEC" class="0">
 <segment>
-<portref moduleinst="INPUT3-1" port="IN1"/>
 <portref moduleinst="INC/DEC_FILTER1" port="ENABLE"/>
-<wire x1="139.7" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="91.44" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-<label x="119.38" y="91.44" size="1.778" layer="95"/>
+<wire x1="132.08" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
+<label x="104.14" y="27.94" size="1.778" layer="95"/>
+<portref moduleinst="INPUT3-1" port="IN0"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -2833,17 +2833,15 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="SUB" class="0">
 <segment>
-<wire x1="129.54" y1="83.82" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="83.82" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
 <portref moduleinst="SUB_XOR1" port="ENABLE"/>
-<wire x1="129.54" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
-<label x="119.38" y="-5.08" size="1.778" layer="95"/>
+<wire x1="124.46" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="-2.54" size="1.778" layer="95"/>
 <portref moduleinst="ADDER8-1" port="CIN"/>
-<wire x1="129.54" y1="-5.08" x2="129.54" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-43.18" x2="101.6" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="129.54" y="-5.08"/>
-<label x="119.38" y="-43.18" size="1.778" layer="95"/>
-<portref moduleinst="INPUT3-1" port="IN0"/>
-<wire x1="129.54" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-5.08" x2="124.46" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-43.18" x2="101.6" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="124.46" y="-5.08"/>
+<label x="104.14" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
