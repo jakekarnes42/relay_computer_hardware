@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -383,17 +383,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <plain>
 </plain>
 <instances>
-<instance part="K1" gate="1" x="17.78" y="15.24" rot="MR90"/>
-<instance part="K1" gate="2" x="15.24" y="68.58" rot="MR90"/>
-<instance part="K1" gate="3" x="15.24" y="55.88" rot="MR90"/>
-<instance part="K1" gate="4" x="15.24" y="43.18" rot="MR90"/>
-<instance part="K1" gate="5" x="15.24" y="30.48" rot="MR90"/>
-<instance part="SUPPLY1" gate="GND" x="35.56" y="12.7" rot="R90"/>
+<instance part="K1" gate="1" x="17.78" y="15.24" smashed="yes" rot="MR90">
+<attribute name="PART" x="22.86" y="16.51" size="1.778" layer="95" rot="MR90"/>
+</instance>
+<instance part="K1" gate="2" x="15.24" y="68.58" smashed="yes" rot="MR90">
+<attribute name="PART" x="15.24" y="71.12" size="1.778" layer="95" rot="MR90"/>
+</instance>
+<instance part="K1" gate="3" x="15.24" y="55.88" smashed="yes" rot="MR90">
+<attribute name="PART" x="15.24" y="58.42" size="1.778" layer="95" rot="MR90"/>
+</instance>
+<instance part="K1" gate="4" x="15.24" y="43.18" smashed="yes" rot="MR90">
+<attribute name="PART" x="15.24" y="45.72" size="1.778" layer="95" rot="MR90"/>
+</instance>
+<instance part="K1" gate="5" x="15.24" y="30.48" smashed="yes" rot="MR90">
+<attribute name="PART" x="15.24" y="33.02" size="1.778" layer="95" rot="MR90"/>
+</instance>
+<instance part="SUPPLY1" gate="GND" x="35.56" y="12.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="38.735" y="10.795" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="D1" gate="1" x="15.24" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.24" y="10.9474" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="16.51" y="6.1214" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D2" gate="1" x="22.86" y="7.62"/>
+<instance part="D2" gate="1" x="22.86" y="7.62" smashed="yes">
+<attribute name="NAME" x="21.082" y="9.525" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.082" y="4.191" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
