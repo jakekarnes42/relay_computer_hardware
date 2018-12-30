@@ -680,11 +680,11 @@ diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
 diameter 2.54 mm, vertical, grid 2.54 mm</description>
 <wire x1="0.3048" y1="0" x2="-0.2794" y2="0" width="0.6096" layer="21"/>
-<wire x1="1.27" y1="0" x2="0.508" y2="0" width="0.6096" layer="51"/>
+<wire x1="1.524" y1="0" x2="0.508" y2="0" width="0.6096" layer="51"/>
 <wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.6096" layer="51"/>
 <circle x="-1.27" y="0" radius="1.778" width="0.1524" layer="21"/>
 <pad name="C" x="-1.27" y="0" drill="1.397"/>
-<pad name="A" x="1.27" y="0" drill="1.397"/>
+<pad name="A" x="1.524" y="0" drill="1.397"/>
 <text x="0.508" y="1.27" size="0.508" layer="25" font="vector" ratio="15">1N5359</text>
 </package>
 <package name="VERT_CAP">
